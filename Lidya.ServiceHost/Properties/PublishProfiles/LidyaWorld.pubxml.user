@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Publish\LidyaServicePublish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Autofac.dll">
+      <publishTime>02/12/2014 11:48:22</publishTime>
+    </File>
+    <File Include="bin/Autofac.Integration.Wcf.dll">
+      <publishTime>02/12/2014 11:41:00</publishTime>
+    </File>
+    <File Include="bin/Autofac.xml">
+      <publishTime>02/12/2014 11:48:22</publishTime>
+    </File>
+    <File Include="bin/AWSSDK.dll">
+      <publishTime>02/12/2014 14:02:47</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>02/12/2014 14:04:35</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.xml">
+      <publishTime>02/12/2014 14:04:35</publishTime>
+    </File>
+    <File Include="bin/HtmlAgilityPack.dll">
+      <publishTime>02/12/2014 11:48:30</publishTime>
+    </File>
+    <File Include="bin/HtmlAgilityPack.xml">
+      <publishTime>02/12/2014 11:48:30</publishTime>
+    </File>
+    <File Include="bin/ImageResizer.dll">
+      <publishTime>02/12/2014 12:07:22</publishTime>
+    </File>
+    <File Include="bin/ImageResizer.Plugins.PrettyGifs.dll">
+      <publishTime>02/12/2014 12:06:03</publishTime>
+    </File>
+    <File Include="bin/ImageResizer.Plugins.PrettyGifs.xml">
+      <publishTime>02/12/2014 12:06:03</publishTime>
+    </File>
+    <File Include="bin/ImageResizer.xml">
+      <publishTime>02/12/2014 12:07:22</publishTime>
+    </File>
+    <File Include="bin/Lidya.Business.dll">
+      <publishTime>06/20/2014 12:52:14</publishTime>
+    </File>
+    <File Include="bin/Lidya.Common.dll">
+      <publishTime>06/11/2014 17:36:49</publishTime>
+    </File>
+    <File Include="bin/Lidya.Models.dll">
+      <publishTime>06/11/2014 17:36:49</publishTime>
+    </File>
+    <File Include="bin/Lidya.Repository.dll">
+      <publishTime>06/20/2014 12:52:13</publishTime>
+    </File>
+    <File Include="bin/Lidya.ServiceHost.dll">
+      <publishTime>06/20/2014 12:52:16</publishTime>
+    </File>
+    <File Include="bin/Lidya.ServiceHost.dll.config">
+      <publishTime>04/28/2014 11:38:02</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>02/12/2014 11:40:53</publishTime>
+    </File>
+    <File Include="bin/log4net.xml">
+      <publishTime>02/12/2014 11:40:53</publishTime>
+    </File>
+    <File Include="bin/Oracle.ManagedDataAccess.dll">
+      <publishTime>02/12/2014 12:09:05</publishTime>
+    </File>
+    <File Include="bin/RazorEngine.dll">
+      <publishTime>02/12/2014 14:07:25</publishTime>
+    </File>
+    <File Include="bin/RazorEngine.xml">
+      <publishTime>02/12/2014 14:07:25</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>02/12/2014 11:58:17</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.xml">
+      <publishTime>02/12/2014 11:58:17</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>02/12/2014 11:38:42</publishTime>
+    </File>
+    <File Include="Global.asax.cs">
+      <publishTime>02/12/2014 11:38:42</publishTime>
+    </File>
+    <File Include="IIntegration.cs">
+      <publishTime>06/01/2014 15:32:18</publishTime>
+    </File>
+    <File Include="Integration.svc">
+      <publishTime>02/12/2014 11:38:42</publishTime>
+    </File>
+    <File Include="Integration.svc.cs">
+      <publishTime>06/01/2014 15:33:39</publishTime>
+    </File>
+    <File Include="Lidya.ServiceHost.csproj">
+      <publishTime>05/09/2014 17:47:14</publishTime>
+    </File>
+    <File Include="Lidya.ServiceHost.csproj.user">
+      <publishTime>05/09/2014 17:47:14</publishTime>
+    </File>
+    <File Include="Logs/EventLog.txt">
+      <publishTime>06/04/2014 10:24:45</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>02/12/2014 13:36:15</publishTime>
+    </File>
+    <File Include="Properties/AssemblyInfo.cs">
+      <publishTime>02/12/2014 11:38:42</publishTime>
+    </File>
+    <File Include="Properties/PublishProfiles/LidyaWorld.pubxml">
+      <publishTime>02/12/2014 11:38:42</publishTime>
+    </File>
+    <File Include="Properties/PublishProfiles/LidyaWorld.pubxml.user">
+      <publishTime>06/11/2014 18:10:30</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/30/2014 17:27:20</publishTime>
+    </File>
+    <File Include="Web.Debug.config">
+      <publishTime>02/12/2014 11:38:42</publishTime>
+    </File>
+    <File Include="Web.Release.config">
+      <publishTime>02/12/2014 11:38:42</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

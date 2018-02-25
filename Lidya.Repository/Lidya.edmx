@@ -1,0 +1,2352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Model.Store" Alias="Self" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="11.2" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="ModelStoreContainer">
+          <EntitySet Name="KODX" EntityType="Model.Store.KODX" store:Type="Tables" Schema="LDYA" />
+          <EntitySet Name="TADDRLIST" EntityType="Model.Store.TADDRLIST" store:Type="Tables" Schema="LDYA" />
+          <EntitySet Name="TCARTITMLIST" EntityType="Model.Store.TCARTITMLIST" store:Type="Tables" Schema="LDYA" />
+          <EntitySet Name="TCARTLIST" EntityType="Model.Store.TCARTLIST" store:Type="Tables" Schema="LDYA" />
+          <EntitySet Name="TCARTPYMNT" EntityType="Model.Store.TCARTPYMNT" store:Type="Tables" Schema="LDYA" />
+          <EntitySet Name="TCCTICKET" EntityType="Model.Store.TCCTICKET" store:Type="Tables" Schema="LDYA" />
+          <EntitySet Name="TGREYON" EntityType="Model.Store.TGREYON" store:Type="Tables" Schema="LDYA" />
+          <EntitySet Name="TINTLOG" EntityType="Model.Store.TINTLOG" store:Type="Tables" Schema="LDYA" />
+          <EntitySet Name="TITEMLIST" EntityType="Model.Store.TITEMLIST" store:Type="Tables" Schema="LDYA" />
+          <EntitySet Name="TMEDIALIST" EntityType="Model.Store.TMEDIALIST" store:Type="Tables" Schema="LDYA" />
+          <EntitySet Name="TMEDIAQUEUE" EntityType="Model.Store.TMEDIAQUEUE" store:Type="Tables" Schema="LDYA" />
+          <EntitySet Name="TMEDIASIZE" EntityType="Model.Store.TMEDIASIZE" store:Type="Tables" Schema="LDYA" />
+          <EntitySet Name="TMSGMASTER" EntityType="Model.Store.TMSGMASTER" store:Type="Tables" Schema="LDYA" />
+          <EntitySet Name="TMSGQUEUE" EntityType="Model.Store.TMSGQUEUE" store:Type="Tables" Schema="LDYA" />
+          <EntitySet Name="TMSGTEMPLATE" EntityType="Model.Store.TMSGTEMPLATE" store:Type="Tables" Schema="LDYA" />
+          <EntitySet Name="TRITMREYON" EntityType="Model.Store.TRITMREYON" store:Type="Tables" Schema="LDYA" />
+          <EntitySet Name="TRUSERITEM" EntityType="Model.Store.TRUSERITEM" store:Type="Tables" Schema="LDYA" />
+          <EntitySet Name="TRYNMAP" EntityType="Model.Store.TRYNMAP" store:Type="Tables" Schema="LDYA" />
+          <EntitySet Name="TSREYON" EntityType="Model.Store.TSREYON" store:Type="Tables" Schema="LDYA" />
+          <EntitySet Name="TSUPPLIER" EntityType="Model.Store.TSUPPLIER" store:Type="Tables" Schema="LDYA" />
+          <EntitySet Name="TUSERLIST" EntityType="Model.Store.TUSERLIST" store:Type="Tables" Schema="LDYA" />
+          <AssociationSet Name="FK_TADDRLIST_R01" Association="Model.Store.FK_TADDRLIST_R01">
+            <End Role="TUSERLIST" EntitySet="TUSERLIST" />
+            <End Role="TADDRLIST" EntitySet="TADDRLIST" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TCARTITMLIST_CARTID" Association="Model.Store.FK_TCARTITMLIST_CARTID">
+            <End Role="TCARTLIST" EntitySet="TCARTLIST" />
+            <End Role="TCARTITMLIST" EntitySet="TCARTITMLIST" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TCARTITMLIST_R01" Association="Model.Store.FK_TCARTITMLIST_R01">
+            <End Role="TRUSERITEM" EntitySet="TRUSERITEM" />
+            <End Role="TCARTITMLIST" EntitySet="TCARTITMLIST" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TCARTITMLIST_R03" Association="Model.Store.FK_TCARTITMLIST_R03">
+            <End Role="TUSERLIST" EntitySet="TUSERLIST" />
+            <End Role="TCARTITMLIST" EntitySet="TCARTITMLIST" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TCARTITMLIST_R04" Association="Model.Store.FK_TCARTITMLIST_R04">
+            <End Role="TITEMLIST" EntitySet="TITEMLIST" />
+            <End Role="TCARTITMLIST" EntitySet="TCARTITMLIST" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TCARTLIST_INVADDRID" Association="Model.Store.FK_TCARTLIST_INVADDRID">
+            <End Role="TADDRLIST" EntitySet="TADDRLIST" />
+            <End Role="TCARTLIST" EntitySet="TCARTLIST" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TCARTLIST_SHIPADDRID" Association="Model.Store.FK_TCARTLIST_SHIPADDRID">
+            <End Role="TADDRLIST" EntitySet="TADDRLIST" />
+            <End Role="TCARTLIST" EntitySet="TCARTLIST" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TCARTLIST_USRID" Association="Model.Store.FK_TCARTLIST_USRID">
+            <End Role="TUSERLIST" EntitySet="TUSERLIST" />
+            <End Role="TCARTLIST" EntitySet="TCARTLIST" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TCARTPYMNT_R01" Association="Model.Store.FK_TCARTPYMNT_R01">
+            <End Role="TCARTLIST" EntitySet="TCARTLIST" />
+            <End Role="TCARTPYMNT" EntitySet="TCARTPYMNT" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TCARTPYMNT_R02" Association="Model.Store.FK_TCARTPYMNT_R02">
+            <End Role="TSUPPLIER" EntitySet="TSUPPLIER" />
+            <End Role="TCARTPYMNT" EntitySet="TCARTPYMNT" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TGREYON_R01" Association="Model.Store.FK_TGREYON_R01">
+            <End Role="TGREYON" EntitySet="TGREYON" />
+            <End Role="TGREYON1" EntitySet="TGREYON" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TITEMLIST_R01" Association="Model.Store.FK_TITEMLIST_R01">
+            <End Role="TSUPPLIER" EntitySet="TSUPPLIER" />
+            <End Role="TITEMLIST" EntitySet="TITEMLIST" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TITEMLIST_R03" Association="Model.Store.FK_TITEMLIST_R03">
+            <End Role="TSREYON" EntitySet="TSREYON" />
+            <End Role="TITEMLIST" EntitySet="TITEMLIST" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TRITMREYON_R01" Association="Model.Store.FK_TRITMREYON_R01">
+            <End Role="TITEMLIST" EntitySet="TITEMLIST" />
+            <End Role="TRITMREYON" EntitySet="TRITMREYON" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TRITMREYON_R02" Association="Model.Store.FK_TRITMREYON_R02">
+            <End Role="TGREYON" EntitySet="TGREYON" />
+            <End Role="TRITMREYON" EntitySet="TRITMREYON" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TRITMREYON_R03" Association="Model.Store.FK_TRITMREYON_R03">
+            <End Role="TSREYON" EntitySet="TSREYON" />
+            <End Role="TRITMREYON" EntitySet="TRITMREYON" />
+          </AssociationSet>
+          <AssociationSet Name="FK_USERITEMS_USERLIST" Association="Model.Store.FK_USERITEMS_USERLIST">
+            <End Role="TUSERLIST" EntitySet="TUSERLIST" />
+            <End Role="TRUSERITEM" EntitySet="TRUSERITEM" />
+          </AssociationSet>
+          <AssociationSet Name="TMSGTEMPLATE_TMSGMASTER_FK1" Association="Model.Store.TMSGTEMPLATE_TMSGMASTER_FK1">
+            <End Role="TMSGMASTER" EntitySet="TMSGMASTER" />
+            <End Role="TMSGTEMPLATE" EntitySet="TMSGTEMPLATE" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="KODX">
+          <Key>
+            <PropertyRef Name="KODID" />
+            <PropertyRef Name="NVALUKOD" />
+          </Key>
+          <Property Name="KODID" Type="varchar2" Nullable="false" MaxLength="10" />
+          <Property Name="NVALUKOD" Type="number" Nullable="false" Precision="5" />
+          <Property Name="CSTATKOD" Type="number" Precision="5" />
+          <Property Name="TDESCTUR" Type="varchar2" MaxLength="50" />
+          <Property Name="TDESCENG" Type="varchar2" MaxLength="50" />
+          <Property Name="NSORTKOD" Type="number" Precision="4" />
+          <Property Name="TMNEMKOD" Type="varchar2" MaxLength="15" />
+          <Property Name="DRECDGEN" Type="date" />
+          <Property Name="TUSERGEN" Type="varchar2" MaxLength="10" />
+          <Property Name="DMODIKOD" Type="date" />
+          <Property Name="TMODIKOD" Type="varchar2" MaxLength="20" />
+          <Property Name="TCODEKOD" Type="varchar2" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="TADDRLIST">
+          <Key>
+            <PropertyRef Name="ADDRID" />
+          </Key>
+          <Property Name="ADDRID" Type="number" Nullable="false" />
+          <Property Name="USRID" Type="varchar2" Nullable="false" MaxLength="36" />
+          <Property Name="TADDRTYPE" Type="varchar2" MaxLength="30" />
+          <Property Name="TPHONERCPT" Type="varchar2" MaxLength="15" />
+          <Property Name="TNAMERCPT" Type="varchar2" MaxLength="100" />
+          <Property Name="TUNIQUEID" Type="varchar2" MaxLength="30" />
+          <Property Name="TADDRLINE1" Type="varchar2" MaxLength="300" />
+          <Property Name="TADDRLINE2" Type="varchar2" MaxLength="300" />
+          <Property Name="TCOUNCODE" Type="varchar2" MaxLength="3" />
+          <Property Name="TCOUNTRY" Type="varchar2" MaxLength="100" />
+          <Property Name="CITYID" Type="number" Precision="12" />
+          <Property Name="TCITY" Type="varchar2" MaxLength="100" />
+          <Property Name="TOWNID" Type="number" Precision="12" />
+          <Property Name="TTOWN" Type="varchar2" MaxLength="100" />
+          <Property Name="TZIPCODE" Type="varchar2" MaxLength="10" />
+          <Property Name="CSTATADDR" Type="number" />
+          <Property Name="DRECDGEN" Type="date" />
+          <Property Name="DMODIADDR" Type="date" />
+          <Property Name="TEMAIL" Type="varchar2" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="TCARTITMLIST">
+          <Key>
+            <PropertyRef Name="CARTITMID" />
+          </Key>
+          <Property Name="CARTITMID" Type="number" Nullable="false" />
+          <Property Name="CARTID" Type="number" />
+          <Property Name="DEALID" Type="number" Precision="12" />
+          <Property Name="STRID" Type="number" />
+          <Property Name="USRID" Type="varchar2" MaxLength="30" />
+          <Property Name="ITMID" Type="number" Precision="12" />
+          <Property Name="NQTY" Type="number" />
+          <Property Name="NPRICUIR" Type="number" />
+          <Property Name="NINIPITM" Type="number" />
+          <Property Name="NTERMAMNT" Type="number" />
+          <Property Name="NITMAMNT" Type="number" />
+          <Property Name="NCOUPON" Type="number" />
+          <Property Name="NCASHPYMT" Type="number" />
+          <Property Name="NLDYPYMT" Type="number" />
+          <Property Name="NCARGOAMNT" Type="number" />
+          <Property Name="TREFNTRX" Type="varchar2" MaxLength="100" />
+          <Property Name="DRECDATE" Type="date" />
+          <Property Name="NVAT" Type="number" />
+          <Property Name="TNOTE" Type="varchar2" MaxLength="1024" />
+          <Property Name="CSTATINT" Type="number" />
+          <Property Name="TSUPORDERID" Type="varchar2" MaxLength="40" />
+          <Property Name="TCANCELMSG" Type="varchar2" MaxLength="400" />
+          <Property Name="DDATECANCEL" Type="date" />
+          <Property Name="TMODIUSR" Type="varchar2" MaxLength="36" />
+          <Property Name="TCARGOINFO" Type="varchar2" MaxLength="512" />
+          <Property Name="NPROFIT" Type="number" />
+          <Property Name="NADVANTAGE" Type="number" />
+          <Property Name="FROMSTRID" Type="number" Precision="12" />
+          <Property Name="RETCARTITMID" Type="number" />
+          <Property Name="DMODIDATE" Type="date" />
+          <Property Name="DAPPDATE" Type="date" />
+          <Property Name="NLDYBUYER" Type="number" />
+          <Property Name="NCOMSELLER" Type="number" />
+          <Property Name="BMAILSENT" Type="number" />
+          <Property Name="NTRYCOUNT" Type="number" />
+          <Property Name="NRETAMNT" Type="number" />
+          <Property Name="NRETQTY" Type="number" />
+          <Property Name="NDISCOUNT" Type="number" Precision="15" Scale="2" />
+        </EntityType>
+        <EntityType Name="TCARTLIST">
+          <Key>
+            <PropertyRef Name="CARTID" />
+          </Key>
+          <Property Name="CARTID" Type="number" Nullable="false" />
+          <Property Name="USRID" Type="varchar2" Nullable="false" MaxLength="100" />
+          <Property Name="SHIPADDRID" Type="number" />
+          <Property Name="INVADDRID" Type="number" />
+          <Property Name="NTOTALPROD" Type="number" />
+          <Property Name="NTOTALCARGO" Type="number" />
+          <Property Name="NDISCARGO" Type="number" />
+          <Property Name="NCARGOAMNT" Type="number" />
+          <Property Name="NTOTALAMNT" Type="number" />
+          <Property Name="TREFNTRX" Type="varchar2" MaxLength="100" />
+          <Property Name="NCASHADV" Type="number" />
+          <Property Name="NLIDYAADV" Type="number" />
+          <Property Name="BUSEBAL" Type="number" Nullable="false" />
+          <Property Name="BNKID" Type="number" />
+          <Property Name="NINST" Type="number" />
+          <Property Name="NCASHPYMT" Type="number" />
+          <Property Name="NLDYPYMT" Type="number" />
+          <Property Name="NCARDPYMT" Type="number" />
+          <Property Name="CSTATCART" Type="number" Nullable="false" />
+          <Property Name="DDATECREATE" Type="date" />
+          <Property Name="DDATESHIP" Type="date" />
+          <Property Name="DDATEEXP" Type="date" />
+          <Property Name="USELIDYA" Type="number" Nullable="false" />
+          <Property Name="NPYMNTCARD" Type="number" />
+          <Property Name="NPYMNTCASH" Type="number" />
+          <Property Name="NPYMNTLIDYA" Type="number" />
+          <Property Name="TMODIUSR" Type="varchar2" MaxLength="36" />
+          <Property Name="DMODICART" Type="date" />
+          <Property Name="BMAILSENT" Type="number" />
+          <Property Name="NTRYCOUNT" Type="number" />
+          <Property Name="BNKOID" Type="number" />
+          <Property Name="TNOTE" Type="varchar2" MaxLength="1000" />
+          <Property Name="TPRCHCODE" Type="varchar2" MaxLength="100" />
+          <Property Name="NRETAMNT" Type="number" />
+          <Property Name="NDISCOUNT" Type="number" Precision="15" Scale="2" />
+        </EntityType>
+        <EntityType Name="TCARTPYMNT">
+          <Key>
+            <PropertyRef Name="CARTID" />
+            <PropertyRef Name="SUPID" />
+          </Key>
+          <Property Name="CARTID" Type="number" Nullable="false" />
+          <Property Name="SUPID" Type="number" Nullable="false" />
+          <Property Name="TCOMPANY" Type="varchar2" Nullable="false" MaxLength="400" />
+          <Property Name="NORDERAMNT" Type="number" Precision="15" Scale="2" />
+          <Property Name="NINST" Type="number" Nullable="false" />
+          <Property Name="NINSTRATE" Type="number" Precision="3" Scale="2" />
+          <Property Name="NTOTALPROD" Type="number" Precision="15" Scale="2" />
+          <Property Name="NLIMCARGO" Type="number" Precision="15" Scale="2" />
+          <Property Name="NCARGOAMNT" Type="number" Precision="15" Scale="2" />
+          <Property Name="NTOTALAMNT" Type="number" Precision="15" Scale="2" />
+          <Property Name="NCARGOPYMT" Type="number" Precision="15" Scale="2" />
+          <Property Name="NCASHPYMT" Type="number" Precision="15" Scale="2" />
+          <Property Name="NCASHITMPYMT" Type="number" Precision="15" Scale="2" />
+          <Property Name="NLDYPYMT" Type="number" Precision="15" Scale="2" />
+          <Property Name="NLDYITMPYMT" Type="number" Precision="15" Scale="2" />
+          <Property Name="NTOTALPYMNT" Type="number" Precision="15" Scale="2" />
+          <Property Name="NCRDPYMT" Type="number" Precision="15" Scale="2" />
+          <Property Name="NBNKCOST" Type="number" Precision="15" Scale="2" />
+          <Property Name="NBNKRCVD" Type="number" Precision="15" Scale="2" />
+          <Property Name="NCOLLECTED" Type="number" Precision="15" Scale="2" />
+          <Property Name="NTOTALVAT" Type="number" Precision="15" Scale="2" />
+          <Property Name="NLWMARGIN" Type="number" Precision="15" Scale="2" />
+          <Property Name="NLWINCOME" Type="number" Precision="15" Scale="2" />
+          <Property Name="NLWCOMVAT" Type="number" Precision="15" Scale="2" />
+          <Property Name="NSUPPYMT" Type="number" Precision="15" Scale="2" />
+          <Property Name="TMODIUSR" Type="varchar2" MaxLength="36" />
+          <Property Name="DMODIDATE" Type="date" />
+          <Property Name="CTYPEPYMT" Type="number" Precision="1" />
+          <Property Name="CSTATPYMT" Type="number" Precision="1" />
+          <Property Name="DDATEPYMT" Type="date" />
+          <Property Name="BMAILSENT" Type="number" Precision="1" />
+          <Property Name="NTRYCOUNT" Type="number" Precision="1" />
+          <Property Name="TINVINFO" Type="varchar2" MaxLength="1000" />
+          <Property Name="DDATEINV" Type="date" />
+          <Property Name="DDATEDLV" Type="date" />
+          <Property Name="TREFNTRX" Type="varchar2" MaxLength="30" />
+          <Property Name="TBANKDESC" Type="varchar2" MaxLength="100" />
+          <Property Name="TIBAN" Type="varchar2" MaxLength="40" />
+          <Property Name="TBANKREF" Type="varchar2" MaxLength="100" />
+          <Property Name="DBNKPYMT" Type="date" />
+          <Property Name="NDEDUCTAMNT" Type="number" Precision="15" Scale="2" />
+          <Property Name="TDESCDEDUCT" Type="varchar2" MaxLength="1000" />
+          <Property Name="NRETAMNT" Type="number" Precision="15" Scale="2" />
+        </EntityType>
+        <EntityType Name="TCCTICKET">
+          <Key>
+            <PropertyRef Name="TICKETID" />
+          </Key>
+          <Property Name="TICKETID" Type="number" Nullable="false" />
+          <Property Name="TCCTICKETID" Type="varchar2" MaxLength="400" />
+          <Property Name="TCCUSER" Type="varchar2" MaxLength="400" />
+          <Property Name="DCCDATE" Type="date" />
+          <Property Name="DCREATEDON" Type="date" />
+          <Property Name="TTOPICCODE" Type="varchar2" MaxLength="400" />
+          <Property Name="TTOPIC" Type="varchar2" MaxLength="2000" />
+          <Property Name="TDESCRIPTION" Type="clob" />
+          <Property Name="NPRIORITY" Type="number" />
+          <Property Name="CSTATISSUE" Type="number" />
+          <Property Name="DMODIFYON" Type="date" />
+          <Property Name="TASSIGNEE" Type="varchar2" MaxLength="400" />
+          <Property Name="TRESOLUTION" Type="varchar2" />
+          <Property Name="DRESOLUTIONTARGET" Type="date" />
+          <Property Name="DRESOLUTION" Type="date" />
+          <Property Name="ORDERID" Type="number" />
+          <Property Name="TCUSTNAME" Type="varchar2" MaxLength="400" />
+          <Property Name="TCUSTUSRID" Type="varchar2" MaxLength="40" />
+          <Property Name="TCUSTPHONE" Type="varchar2" MaxLength="20" />
+          <Property Name="TCUSTMAIL" Type="varchar2" MaxLength="400" />
+          <Property Name="SUPID" Type="number" />
+          <Property Name="ITMID" Type="number" />
+          <Property Name="TPRODUCTID" Type="varchar2" MaxLength="400" />
+          <Property Name="TPRODCODE" Type="varchar2" MaxLength="400" />
+          <Property Name="TCUSTTOWN" Type="varchar2" MaxLength="400" />
+          <Property Name="TCUSTCITY" Type="varchar2" MaxLength="400" />
+          <Property Name="TCARGOCOMPANY" Type="varchar2" MaxLength="400" />
+          <Property Name="TCARGOTRACKID" Type="varchar2" MaxLength="400" />
+        </EntityType>
+        <EntityType Name="TGREYON">
+          <Key>
+            <PropertyRef Name="GRYID" />
+          </Key>
+          <Property Name="GRYID" Type="number" Nullable="false" />
+          <Property Name="CCATGITM" Type="number" />
+          <Property Name="TDESCTUR" Type="varchar2" MaxLength="100" />
+          <Property Name="TDESCENG" Type="varchar2" MaxLength="100" />
+          <Property Name="TIMAGE" Type="varchar2" MaxLength="255" />
+          <Property Name="TIMAGE2" Type="varchar2" MaxLength="255" />
+          <Property Name="TIMAGE3" Type="varchar2" MaxLength="255" />
+          <Property Name="TIMAGE4" Type="varchar2" MaxLength="255" />
+          <Property Name="PARID" Type="number" />
+          <Property Name="NLEVEL" Type="number" />
+          <Property Name="CSTATGRY" Type="number" />
+          <Property Name="BIMGCHG" Type="number" />
+          <Property Name="TQRYSTR" Type="varchar2" MaxLength="2000" />
+          <Property Name="NSORTORDER" Type="number" Precision="2" />
+          <Property Name="NIMGVERSION" Type="number" />
+          <Property Name="TPATH" Type="varchar2" MaxLength="1000" />
+        </EntityType>
+        <EntityType Name="TINTLOG">
+          <Key>
+            <PropertyRef Name="DLOGDATE" />
+          </Key>
+          <Property Name="DLOGDATE" Type="date" Nullable="false" />
+          <Property Name="USRID" Type="varchar2" MaxLength="100" />
+          <Property Name="TNAME" Type="varchar2" MaxLength="100" />
+          <Property Name="TLOGDATA" Type="clob" />
+          <Property Name="CTYPELOG" Type="number" />
+        </EntityType>
+        <EntityType Name="TITEMLIST">
+          <Key>
+            <PropertyRef Name="ITMID" />
+          </Key>
+          <Property Name="ITMID" Type="number" Nullable="false" Precision="12" />
+          <Property Name="TDESCTUR" Type="varchar2" MaxLength="200" />
+          <Property Name="TDESCENG" Type="varchar2" MaxLength="200" />
+          <Property Name="LAST_PRICE" Type="number" Precision="13" Scale="2" />
+          <Property Name="LAST_PRICE_DATE" Type="date" />
+          <Property Name="CCATGITM" Type="number" />
+          <Property Name="CUNITITM" Type="number" Precision="5" />
+          <Property Name="PREV_PRICE" Type="number" Precision="13" Scale="2" />
+          <Property Name="CTYPEITM" Type="number" Precision="5" />
+          <Property Name="DLAUNITM" Type="date" />
+          <Property Name="NINIPITM" Type="number" Precision="13" Scale="2" />
+          <Property Name="NLIFEITM" Type="number" Precision="10" />
+          <Property Name="NMINPITM" Type="number" Precision="13" Scale="2" />
+          <Property Name="NMAXPITM" Type="number" Precision="13" Scale="2" />
+          <Property Name="NADETITM" Type="number" Precision="13" />
+          <Property Name="TBRANDNAME" Type="varchar2" MaxLength="100" />
+          <Property Name="TPRODCODE" Type="varchar2" MaxLength="200" />
+          <Property Name="TPRODUCTID" Type="varchar2" MaxLength="200" />
+          <Property Name="TMODELID" Type="varchar2" MaxLength="200" />
+          <Property Name="TMODELSIZE" Type="varchar2" MaxLength="30" />
+          <Property Name="NCOGSITM" Type="number" />
+          <Property Name="SUPID" Type="number" />
+          <Property Name="BFIXPITM" Type="number" Precision="1" />
+          <Property Name="NITMGRPID" Type="number" />
+          <Property Name="TSPEC1" Type="varchar2" MaxLength="100" />
+          <Property Name="TSPEC2" Type="varchar2" MaxLength="100" />
+          <Property Name="TSPEC3" Type="varchar2" MaxLength="400" />
+          <Property Name="NITMFAMID" Type="number" />
+          <Property Name="CSTATITM" Type="number" Precision="5" />
+          <Property Name="DGENEITM" Type="date" />
+          <Property Name="TGENEITM" Type="varchar2" MaxLength="50" />
+          <Property Name="DMODIITM" Type="date" />
+          <Property Name="TMODIITM" Type="varchar2" MaxLength="50" />
+          <Property Name="SR3ID" Type="number" />
+          <Property Name="BSYNCREQ" Type="number" Precision="1" />
+          <Property Name="NVAT" Type="number" />
+          <Property Name="TCOLGRP" Type="varchar2" MaxLength="100" />
+          <Property Name="TMODELCOLOR" Type="varchar2" MaxLength="100" />
+          <Property Name="TCOLGRPID" Type="number" Precision="12" />
+          <Property Name="NDLVDAYS" Type="number" />
+          <Property Name="NNOTESIZE" Type="number" />
+          <Property Name="NQTYLIMIT" Type="number" />
+          <Property Name="NINSTPITM" Type="number" />
+          <Property Name="BDEFITM" Type="number" />
+          <Property Name="TTHUMBID" Type="number" />
+          <Property Name="TDESC" Type="clob" />
+        </EntityType>
+        <EntityType Name="TMEDIALIST">
+          <Key>
+            <PropertyRef Name="MDYID" />
+          </Key>
+          <Property Name="MDYID" Type="number" Nullable="false" />
+          <Property Name="ENTITYID" Type="number" Nullable="false" />
+          <Property Name="PACKNO" Type="number" Nullable="false" />
+          <Property Name="MEDIAPATH" Type="varchar2" Nullable="false" MaxLength="256" />
+          <Property Name="ISDEFAULT" Type="number" Nullable="false" />
+          <Property Name="LASTSYNCTIME" Type="date" Nullable="false" />
+          <Property Name="MEDIASIZE" Type="number" Nullable="false" />
+          <Property Name="SUPID" Type="number" Nullable="false" />
+          <Property Name="MEDIATYPE" Type="number" Nullable="false" />
+          <Property Name="MDYQID" Type="number" />
+          <Property Name="TCOLGRP" Type="varchar2" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="TMEDIAQUEUE">
+          <Key>
+            <PropertyRef Name="MDYQID" />
+          </Key>
+          <Property Name="MDYQID" Type="number" Nullable="false" />
+          <Property Name="URL" Type="varchar2" Nullable="false" MaxLength="500" />
+          <Property Name="MEDIATYPE" Type="number" Nullable="false" />
+          <Property Name="SRYID" Type="number" />
+          <Property Name="ISUPLOADED" Type="number" />
+          <Property Name="UPLOADTRIES" Type="number" />
+          <Property Name="TCOLGRP" Type="varchar2" MaxLength="256" />
+          <Property Name="SUPID" Type="number" Nullable="false" />
+          <Property Name="MEDIAORDER" Type="number" Nullable="false" />
+          <Property Name="DRECDATE" Type="date" />
+        </EntityType>
+        <EntityType Name="TMEDIASIZE">
+          <Key>
+            <PropertyRef Name="MSID" />
+          </Key>
+          <Property Name="MSID" Type="number" Nullable="false" />
+          <Property Name="WIDTH" Type="number" Nullable="false" />
+          <Property Name="HEIGHT" Type="number" Nullable="false" />
+          <Property Name="ISACTIVE" Type="number" Nullable="false" />
+          <Property Name="TITLE" Type="varchar2" Nullable="false" MaxLength="64" />
+          <Property Name="QUALITY" Type="number" Nullable="false" />
+          <Property Name="FORMAT" Type="varchar2" Nullable="false" MaxLength="20" />
+          <Property Name="MEDIATYPE" Type="number" Nullable="false" />
+          <Property Name="FILENAME" Type="varchar2" MaxLength="40" />
+          <Property Name="SIZENO" Type="number" Nullable="false" />
+          <Property Name="BUCKETNAME" Type="varchar2" MaxLength="64" />
+          <Property Name="BUCKETFOLDER" Type="varchar2" MaxLength="128" />
+        </EntityType>
+        <EntityType Name="TMSGMASTER">
+          <Key>
+            <PropertyRef Name="MSMID" />
+          </Key>
+          <Property Name="MSMID" Type="number" Nullable="false" />
+          <Property Name="TDESC" Type="varchar2" Nullable="false" MaxLength="512" />
+          <Property Name="THTML" Type="long" Nullable="false" />
+          <Property Name="BACTIVE" Type="number" Nullable="false" Precision="1" />
+        </EntityType>
+        <EntityType Name="TMSGQUEUE">
+          <Key>
+            <PropertyRef Name="TMSGQID" />
+          </Key>
+          <Property Name="TBODY" Type="long" Nullable="false" />
+          <Property Name="TSUBJECT" Type="varchar2" Nullable="false" MaxLength="512" />
+          <Property Name="TMAILUSER" Type="varchar2" Nullable="false" MaxLength="1024" />
+          <Property Name="TMSGQID" Type="number" Nullable="false" />
+          <Property Name="TFRUSR" Type="varchar2" Nullable="false" MaxLength="256" />
+          <Property Name="TTOUSRS" Type="varchar2" Nullable="false" MaxLength="512" />
+          <Property Name="BISSENT" Type="number" Nullable="false" Precision="1" />
+          <Property Name="NSENDTRIES" Type="number" Nullable="false" />
+          <Property Name="TGENEMSGQ" Type="date" Nullable="false" />
+          <Property Name="TSENTMSGQ" Type="date" />
+        </EntityType>
+        <EntityType Name="TMSGTEMPLATE">
+          <Key>
+            <PropertyRef Name="MSTID" />
+          </Key>
+          <Property Name="MSTID" Type="number" Nullable="false" />
+          <Property Name="TSUBJECT" Type="varchar2" Nullable="false" MaxLength="512" />
+          <Property Name="TBODY" Type="long" Nullable="false" />
+          <Property Name="TDESC" Type="varchar2" Nullable="false" MaxLength="512" />
+          <Property Name="BACTIVE" Type="number" Nullable="false" />
+          <Property Name="TGENEMST" Type="date" Nullable="false" />
+          <Property Name="MSMID" Type="number" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TRITMREYON">
+          <Key>
+            <PropertyRef Name="ITMID" />
+            <PropertyRef Name="GRYID" />
+            <PropertyRef Name="SRYID" />
+          </Key>
+          <Property Name="ITMID" Type="number" Nullable="false" Precision="12" />
+          <Property Name="GRYID" Type="number" Nullable="false" />
+          <Property Name="SRYID" Type="number" Nullable="false" />
+          <Property Name="BDFLTIRR" Type="number" Nullable="false" />
+          <Property Name="CSTATIRR" Type="number" />
+          <Property Name="DGENEIRR" Type="date" />
+          <Property Name="TGENEIRR" Type="varchar2" MaxLength="255" />
+          <Property Name="DMODIIRR" Type="date" />
+          <Property Name="TMODIIRR" Type="varchar2" MaxLength="255" />
+          <Property Name="NSORTORDER" Type="number" />
+        </EntityType>
+        <EntityType Name="TRUSERITEM">
+          <Key>
+            <PropertyRef Name="UIRID" />
+          </Key>
+          <Property Name="UIRID" Type="number" Nullable="false" Precision="12" />
+          <Property Name="USRID" Type="varchar2" Nullable="false" MaxLength="36" />
+          <Property Name="ITMID" Type="number" Nullable="false" Precision="12" />
+          <Property Name="NADETUIR" Type="number" Precision="12" Scale="2" />
+          <Property Name="NUNICUIR" Type="number" Precision="13" Scale="2" />
+          <Property Name="NDEALUIR" Type="number" Precision="5" />
+          <Property Name="NBUYDUIR" Type="number" Precision="5" />
+          <Property Name="NSELDUIR" Type="number" Precision="5" />
+          <Property Name="STRID" Type="number" Precision="12" />
+          <Property Name="NPRICUIR" Type="number" Precision="13" Scale="2" />
+          <Property Name="NBUYBUIR" Type="number" Precision="13" Scale="2" />
+          <Property Name="NFRNDBUIR" Type="number" Precision="13" Scale="2" />
+          <Property Name="BUSRPICK" Type="number" Precision="1" />
+          <Property Name="BRYNPICT" Type="number" Precision="1" />
+        </EntityType>
+        <EntityType Name="TRYNMAP">
+          <Key>
+            <PropertyRef Name="GRYID" />
+            <PropertyRef Name="SRYID" />
+          </Key>
+          <Property Name="GRYID" Type="number" Nullable="false" />
+          <Property Name="SRYID" Type="number" Nullable="false" />
+          <Property Name="DMODIRYN" Type="date" />
+          <Property Name="TMODIRYN" Type="varchar2" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="TSREYON">
+          <Key>
+            <PropertyRef Name="SRYID" />
+          </Key>
+          <Property Name="SRYID" Type="number" Nullable="false" />
+          <Property Name="CCATGITM" Type="number" />
+          <Property Name="TDESCTUR" Type="varchar2" MaxLength="100" />
+          <Property Name="TDESCENG" Type="varchar2" MaxLength="100" />
+          <Property Name="TIMAGE" Type="varchar2" MaxLength="255" />
+          <Property Name="TIMAGE2" Type="varchar2" MaxLength="255" />
+          <Property Name="TIMAGE3" Type="varchar2" MaxLength="255" />
+          <Property Name="TIMAGE4" Type="varchar2" MaxLength="255" />
+          <Property Name="PARID" Type="number" />
+          <Property Name="NLEVEL" Type="number" />
+          <Property Name="SUPID" Type="number" />
+          <Property Name="GRYID" Type="number" />
+          <Property Name="CSTATSRY" Type="number" Precision="5" />
+          <Property Name="DGENESRY" Type="date" />
+          <Property Name="TGENESRY" Type="varchar2" MaxLength="50" />
+          <Property Name="DMODISRY" Type="date" />
+          <Property Name="TMODISRY" Type="varchar2" MaxLength="50" />
+          <Property Name="SCATID" Type="varchar2" MaxLength="300" />
+          <Property Name="SPARID" Type="varchar2" MaxLength="300" />
+          <Property Name="BIMGCHG" Type="number" />
+          <Property Name="NSORTORDER" Type="number" />
+          <Property Name="BSENSITIVE" Type="number" />
+          <Property Name="CTYPERYN" Type="number" />
+          <Property Name="NIMGVERSION" Type="number" />
+          <Property Name="BGRPBYCOL" Type="number" Precision="1" />
+          <Property Name="TPATH" Type="varchar2" MaxLength="1000" />
+        </EntityType>
+        <EntityType Name="TSUPPLIER">
+          <Key>
+            <PropertyRef Name="SUPID" />
+          </Key>
+          <Property Name="SUPID" Type="number" Nullable="false" />
+          <Property Name="TSUPNAME" Type="varchar2" MaxLength="255" />
+          <Property Name="TCOMPANY" Type="varchar2" MaxLength="255" />
+          <Property Name="TADDRLINE1" Type="varchar2" MaxLength="255" />
+          <Property Name="TADDRLINE2" Type="varchar2" MaxLength="255" />
+          <Property Name="TTOWN" Type="varchar2" MaxLength="100" />
+          <Property Name="TCITY" Type="varchar2" MaxLength="100" />
+          <Property Name="TZIPCODE" Type="varchar2" MaxLength="20" />
+          <Property Name="TPHONE" Type="varchar2" MaxLength="15" />
+          <Property Name="TCONTACT" Type="varchar2" MaxLength="100" />
+          <Property Name="TCNTPHONE" Type="varchar2" MaxLength="15" />
+          <Property Name="AD1ID" Type="number" />
+          <Property Name="AD2ID" Type="number" />
+          <Property Name="SS0ID" Type="number" />
+          <Property Name="BUIDREQ" Type="number" Precision="1" />
+          <Property Name="CCATGITM" Type="number" />
+          <Property Name="CSTATMRCH" Type="number" />
+          <Property Name="NADVANTAGE" Type="number" />
+          <Property Name="CTYPEADV" Type="number" />
+          <Property Name="NACCITMID" Type="number" />
+          <Property Name="BFIXPITM" Type="number" Precision="1" />
+          <Property Name="CSTORETYPE" Type="number" />
+          <Property Name="NINVCOUNT" Type="number" />
+          <Property Name="NADVMGZ" Type="number" />
+          <Property Name="NFRNDADV" Type="number" />
+          <Property Name="SORTORDER" Type="number" />
+          <Property Name="NLIMCARGO" Type="number" />
+          <Property Name="NCARGOAMNT" Type="number" />
+          <Property Name="NPROFIT" Type="number" />
+          <Property Name="BCHRGBNK" Type="number" />
+          <Property Name="UNAME" Type="varchar2" MaxLength="64" />
+          <Property Name="PASS" Type="varchar2" MaxLength="64" />
+          <Property Name="NVAT" Type="number" />
+          <Property Name="TINTRO" Type="varchar2" MaxLength="255" />
+          <Property Name="NPAYDAYS" Type="number" />
+          <Property Name="TXMLURL" Type="varchar2" MaxLength="1000" />
+          <Property Name="TCNTMAIL" Type="varchar2" MaxLength="400" />
+          <Property Name="TTAXBUREAU" Type="varchar2" MaxLength="400" />
+          <Property Name="TTAXNUMBER" Type="varchar2" MaxLength="100" />
+          <Property Name="TTECHCNT" Type="varchar2" MaxLength="400" />
+          <Property Name="TTECHPHONE" Type="varchar2" MaxLength="20" />
+          <Property Name="TTECHMAIL" Type="varchar2" MaxLength="400" />
+          <Property Name="TRETURNCNT" Type="varchar2" MaxLength="400" />
+          <Property Name="TRETURNPHONE" Type="varchar2" MaxLength="20" />
+          <Property Name="TRETURNMAIL" Type="varchar2" MaxLength="400" />
+          <Property Name="TRETURNADDR1" Type="varchar2" MaxLength="1000" />
+          <Property Name="TRETURNADDR2" Type="varchar2" MaxLength="1000" />
+          <Property Name="TRETURNTOWN" Type="varchar2" MaxLength="100" />
+          <Property Name="TRETURNCITY" Type="varchar2" MaxLength="100" />
+          <Property Name="TRETURNZIP" Type="varchar2" MaxLength="20" />
+          <Property Name="TCARGOCOMPANY1" Type="varchar2" MaxLength="100" />
+          <Property Name="TCARGOCOMPANY2" Type="varchar2" MaxLength="100" />
+          <Property Name="TCARGOCOMPANY3" Type="varchar2" MaxLength="100" />
+          <Property Name="TBANKNAME" Type="varchar2" MaxLength="200" />
+          <Property Name="TBANKBRANCH" Type="varchar2" MaxLength="200" />
+          <Property Name="TBANKACC" Type="varchar2" MaxLength="200" />
+          <Property Name="TIBANCODE" Type="varchar2" MaxLength="40" />
+          <Property Name="BCOMWITHVAT" Type="number" />
+        </EntityType>
+        <EntityType Name="TUSERLIST">
+          <Key>
+            <PropertyRef Name="USRID" />
+          </Key>
+          <Property Name="USRID" Type="varchar2" Nullable="false" MaxLength="36" />
+          <Property Name="CTYPEUSR" Type="number" Precision="5" />
+          <Property Name="TNICKUSR" Type="varchar2" MaxLength="30" />
+          <Property Name="TNAMEUSR" Type="varchar2" MaxLength="100" />
+          <Property Name="TMAILUSR" Type="varchar2" MaxLength="100" />
+          <Property Name="TMOBIUSR" Type="varchar2" MaxLength="20" />
+          <Property Name="LONGITUDE" Type="number" Precision="15" Scale="11" />
+          <Property Name="LATITUDE" Type="number" Precision="15" Scale="11" />
+          <Property Name="CSTATUSR" Type="number" Precision="5" />
+          <Property Name="CLANGUSR" Type="number" Precision="5" />
+          <Property Name="NRANKUSR" Type="number" Precision="12" />
+          <Property Name="NUSDBUSR" Type="number" Precision="13" Scale="2" />
+          <Property Name="NLDYAUSR" Type="number" Precision="13" Scale="2" />
+          <Property Name="TIBAN" Type="varchar2" MaxLength="30" />
+          <Property Name="BSHOWPIC" Type="number" />
+          <Property Name="NCURRUSR" Type="number" Precision="5" />
+          <Property Name="TLASTNAME" Type="varchar2" MaxLength="100" />
+          <Property Name="DDATEBIRTH" Type="date" />
+          <Property Name="TCOUNCODE" Type="varchar2" MaxLength="2" />
+          <Property Name="TUNIQUEID" Type="varchar2" MaxLength="30" />
+          <Property Name="TPASSWORD" Type="varchar2" MaxLength="100" />
+          <Property Name="CTITLE" Type="number" />
+          <Property Name="FBID" Type="varchar2" MaxLength="40" />
+          <Property Name="TFULLNAME" Type="varchar2" MaxLength="100" />
+          <Property Name="SUPID" Type="number" />
+          <Property Name="DRECDATE" Type="date" />
+          <Property Name="DMODIDATE" Type="date" />
+          <Property Name="TMODIUSR" Type="varchar2" MaxLength="200" />
+        </EntityType>
+        <Association Name="FK_TADDRLIST_R01">
+          <End Role="TUSERLIST" Type="Model.Store.TUSERLIST" Multiplicity="1" />
+          <End Role="TADDRLIST" Type="Model.Store.TADDRLIST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TUSERLIST">
+              <PropertyRef Name="USRID" />
+            </Principal>
+            <Dependent Role="TADDRLIST">
+              <PropertyRef Name="USRID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TCARTITMLIST_CARTID">
+          <End Role="TCARTLIST" Type="Model.Store.TCARTLIST" Multiplicity="0..1" />
+          <End Role="TCARTITMLIST" Type="Model.Store.TCARTITMLIST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TCARTLIST">
+              <PropertyRef Name="CARTID" />
+            </Principal>
+            <Dependent Role="TCARTITMLIST">
+              <PropertyRef Name="CARTID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TCARTITMLIST_R01">
+          <End Role="TRUSERITEM" Type="Model.Store.TRUSERITEM" Multiplicity="0..1" />
+          <End Role="TCARTITMLIST" Type="Model.Store.TCARTITMLIST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TRUSERITEM">
+              <PropertyRef Name="UIRID" />
+            </Principal>
+            <Dependent Role="TCARTITMLIST">
+              <PropertyRef Name="DEALID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TCARTITMLIST_R03">
+          <End Role="TUSERLIST" Type="Model.Store.TUSERLIST" Multiplicity="0..1" />
+          <End Role="TCARTITMLIST" Type="Model.Store.TCARTITMLIST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TUSERLIST">
+              <PropertyRef Name="USRID" />
+            </Principal>
+            <Dependent Role="TCARTITMLIST">
+              <PropertyRef Name="USRID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TCARTITMLIST_R04">
+          <End Role="TITEMLIST" Type="Model.Store.TITEMLIST" Multiplicity="0..1" />
+          <End Role="TCARTITMLIST" Type="Model.Store.TCARTITMLIST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TITEMLIST">
+              <PropertyRef Name="ITMID" />
+            </Principal>
+            <Dependent Role="TCARTITMLIST">
+              <PropertyRef Name="ITMID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TCARTLIST_INVADDRID">
+          <End Role="TADDRLIST" Type="Model.Store.TADDRLIST" Multiplicity="0..1" />
+          <End Role="TCARTLIST" Type="Model.Store.TCARTLIST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TADDRLIST">
+              <PropertyRef Name="ADDRID" />
+            </Principal>
+            <Dependent Role="TCARTLIST">
+              <PropertyRef Name="INVADDRID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TCARTLIST_SHIPADDRID">
+          <End Role="TADDRLIST" Type="Model.Store.TADDRLIST" Multiplicity="0..1" />
+          <End Role="TCARTLIST" Type="Model.Store.TCARTLIST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TADDRLIST">
+              <PropertyRef Name="ADDRID" />
+            </Principal>
+            <Dependent Role="TCARTLIST">
+              <PropertyRef Name="SHIPADDRID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TCARTLIST_USRID">
+          <End Role="TUSERLIST" Type="Model.Store.TUSERLIST" Multiplicity="1" />
+          <End Role="TCARTLIST" Type="Model.Store.TCARTLIST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TUSERLIST">
+              <PropertyRef Name="USRID" />
+            </Principal>
+            <Dependent Role="TCARTLIST">
+              <PropertyRef Name="USRID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TCARTPYMNT_R01">
+          <End Role="TCARTLIST" Type="Model.Store.TCARTLIST" Multiplicity="1" />
+          <End Role="TCARTPYMNT" Type="Model.Store.TCARTPYMNT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TCARTLIST">
+              <PropertyRef Name="CARTID" />
+            </Principal>
+            <Dependent Role="TCARTPYMNT">
+              <PropertyRef Name="CARTID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TCARTPYMNT_R02">
+          <End Role="TSUPPLIER" Type="Model.Store.TSUPPLIER" Multiplicity="1" />
+          <End Role="TCARTPYMNT" Type="Model.Store.TCARTPYMNT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TSUPPLIER">
+              <PropertyRef Name="SUPID" />
+            </Principal>
+            <Dependent Role="TCARTPYMNT">
+              <PropertyRef Name="SUPID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TGREYON_R01">
+          <End Role="TGREYON" Type="Model.Store.TGREYON" Multiplicity="0..1" />
+          <End Role="TGREYON1" Type="Model.Store.TGREYON" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TGREYON">
+              <PropertyRef Name="GRYID" />
+            </Principal>
+            <Dependent Role="TGREYON1">
+              <PropertyRef Name="PARID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TITEMLIST_R01">
+          <End Role="TSUPPLIER" Type="Model.Store.TSUPPLIER" Multiplicity="0..1" />
+          <End Role="TITEMLIST" Type="Model.Store.TITEMLIST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TSUPPLIER">
+              <PropertyRef Name="SUPID" />
+            </Principal>
+            <Dependent Role="TITEMLIST">
+              <PropertyRef Name="SUPID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TITEMLIST_R03">
+          <End Role="TSREYON" Type="Model.Store.TSREYON" Multiplicity="0..1" />
+          <End Role="TITEMLIST" Type="Model.Store.TITEMLIST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TSREYON">
+              <PropertyRef Name="SRYID" />
+            </Principal>
+            <Dependent Role="TITEMLIST">
+              <PropertyRef Name="SR3ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TRITMREYON_R01">
+          <End Role="TITEMLIST" Type="Model.Store.TITEMLIST" Multiplicity="1" />
+          <End Role="TRITMREYON" Type="Model.Store.TRITMREYON" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TITEMLIST">
+              <PropertyRef Name="ITMID" />
+            </Principal>
+            <Dependent Role="TRITMREYON">
+              <PropertyRef Name="ITMID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TRITMREYON_R02">
+          <End Role="TGREYON" Type="Model.Store.TGREYON" Multiplicity="1" />
+          <End Role="TRITMREYON" Type="Model.Store.TRITMREYON" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TGREYON">
+              <PropertyRef Name="GRYID" />
+            </Principal>
+            <Dependent Role="TRITMREYON">
+              <PropertyRef Name="GRYID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TRITMREYON_R03">
+          <End Role="TSREYON" Type="Model.Store.TSREYON" Multiplicity="1" />
+          <End Role="TRITMREYON" Type="Model.Store.TRITMREYON" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TSREYON">
+              <PropertyRef Name="SRYID" />
+            </Principal>
+            <Dependent Role="TRITMREYON">
+              <PropertyRef Name="SRYID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_USERITEMS_USERLIST">
+          <End Role="TUSERLIST" Type="Model.Store.TUSERLIST" Multiplicity="1" />
+          <End Role="TRUSERITEM" Type="Model.Store.TRUSERITEM" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TUSERLIST">
+              <PropertyRef Name="USRID" />
+            </Principal>
+            <Dependent Role="TRUSERITEM">
+              <PropertyRef Name="USRID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="TMSGTEMPLATE_TMSGMASTER_FK1">
+          <End Role="TMSGMASTER" Type="Model.Store.TMSGMASTER" Multiplicity="1" />
+          <End Role="TMSGTEMPLATE" Type="Model.Store.TMSGTEMPLATE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TMSGMASTER">
+              <PropertyRef Name="MSMID" />
+            </Principal>
+            <Dependent Role="TMSGTEMPLATE">
+              <PropertyRef Name="MSMID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="LidyaEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="KODX" EntityType="Model.KODX" />
+          <EntitySet Name="TCARTLIST" EntityType="Model.TCARTLIST" />
+          <EntitySet Name="TITEMLIST" EntityType="Model.TITEMLIST" />
+          <EntitySet Name="TMEDIALIST" EntityType="Model.TMEDIALIST" />
+          <EntitySet Name="TMEDIASIZE" EntityType="Model.TMEDIASIZE" />
+          <EntitySet Name="TRITMREYON" EntityType="Model.TRITMREYON" />
+          <EntitySet Name="TRUSERITEM" EntityType="Model.TRUSERITEM" />
+          <EntitySet Name="TSUPPLIER" EntityType="Model.TSUPPLIER" />
+          <AssociationSet Name="FK_TITEMLIST_R01" Association="Model.FK_TITEMLIST_R01">
+            <End Role="TSUPPLIER" EntitySet="TSUPPLIER" />
+            <End Role="TITEMLIST" EntitySet="TITEMLIST" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TRITMREYON_R01" Association="Model.FK_TRITMREYON_R01">
+            <End Role="TITEMLIST" EntitySet="TITEMLIST" />
+            <End Role="TRITMREYON" EntitySet="TRITMREYON" />
+          </AssociationSet>
+          <EntitySet Name="TADDRLIST" EntityType="Model.TADDRLIST" />
+          <AssociationSet Name="FK_TCARTLIST_INVADDRID" Association="Model.FK_TCARTLIST_INVADDRID">
+            <End Role="TADDRLIST" EntitySet="TADDRLIST" />
+            <End Role="TCARTLIST" EntitySet="TCARTLIST" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TCARTLIST_SHIPADDRID" Association="Model.FK_TCARTLIST_SHIPADDRID">
+            <End Role="TADDRLIST" EntitySet="TADDRLIST" />
+            <End Role="TCARTLIST" EntitySet="TCARTLIST" />
+          </AssociationSet>
+          <EntitySet Name="TCARTITMLIST" EntityType="Model.TCARTITMLIST" />
+          <EntitySet Name="TGREYON" EntityType="Model.TGREYON" />
+          <AssociationSet Name="FK_TCARTITMLIST_CARTID" Association="Model.FK_TCARTITMLIST_CARTID">
+            <End Role="TCARTLIST" EntitySet="TCARTLIST" />
+            <End Role="TCARTITMLIST" EntitySet="TCARTITMLIST" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TCARTITMLIST_R01" Association="Model.FK_TCARTITMLIST_R01">
+            <End Role="TRUSERITEM" EntitySet="TRUSERITEM" />
+            <End Role="TCARTITMLIST" EntitySet="TCARTITMLIST" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TCARTITMLIST_R04" Association="Model.FK_TCARTITMLIST_R04">
+            <End Role="TITEMLIST" EntitySet="TITEMLIST" />
+            <End Role="TCARTITMLIST" EntitySet="TCARTITMLIST" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TGREYON_R01" Association="Model.FK_TGREYON_R01">
+            <End Role="TGREYON" EntitySet="TGREYON" />
+            <End Role="TGREYON1" EntitySet="TGREYON" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TRITMREYON_R02" Association="Model.FK_TRITMREYON_R02">
+            <End Role="TGREYON" EntitySet="TGREYON" />
+            <End Role="TRITMREYON" EntitySet="TRITMREYON" />
+          </AssociationSet>
+          <EntitySet Name="TMSGMASTER" EntityType="Model.TMSGMASTER" />
+          <EntitySet Name="TMSGQUEUE" EntityType="Model.TMSGQUEUE" />
+          <EntitySet Name="TMSGTEMPLATE" EntityType="Model.TMSGTEMPLATE" />
+          <AssociationSet Name="TMSGTEMPLATE_TMSGMASTER_FK1" Association="Model.TMSGTEMPLATE_TMSGMASTER_FK1">
+            <End Role="TMSGMASTER" EntitySet="TMSGMASTER" />
+            <End Role="TMSGTEMPLATE" EntitySet="TMSGTEMPLATE" />
+          </AssociationSet>
+          <EntitySet Name="TINTLOG" EntityType="Model.TINTLOG" />
+          <EntitySet Name="TSREYON" EntityType="Model.TSREYON" />
+          <EntitySet Name="TUSERLIST" EntityType="Model.TUSERLIST" />
+          <AssociationSet Name="FK_TADDRLIST_R01" Association="Model.FK_TADDRLIST_R01">
+            <End Role="TUSERLIST" EntitySet="TUSERLIST" />
+            <End Role="TADDRLIST" EntitySet="TADDRLIST" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TCARTITMLIST_R03" Association="Model.FK_TCARTITMLIST_R03">
+            <End Role="TUSERLIST" EntitySet="TUSERLIST" />
+            <End Role="TCARTITMLIST" EntitySet="TCARTITMLIST" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TCARTLIST_USRID" Association="Model.FK_TCARTLIST_USRID">
+            <End Role="TUSERLIST" EntitySet="TUSERLIST" />
+            <End Role="TCARTLIST" EntitySet="TCARTLIST" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TITEMLIST_R03" Association="Model.FK_TITEMLIST_R03">
+            <End Role="TSREYON" EntitySet="TSREYON" />
+            <End Role="TITEMLIST" EntitySet="TITEMLIST" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TRITMREYON_R03" Association="Model.FK_TRITMREYON_R03">
+            <End Role="TSREYON" EntitySet="TSREYON" />
+            <End Role="TRITMREYON" EntitySet="TRITMREYON" />
+          </AssociationSet>
+          <AssociationSet Name="FK_USERITEMS_USERLIST" Association="Model.FK_USERITEMS_USERLIST">
+            <End Role="TUSERLIST" EntitySet="TUSERLIST" />
+            <End Role="TRUSERITEM" EntitySet="TRUSERITEM" />
+          </AssociationSet>
+          <EntitySet Name="TCCTICKET" EntityType="Model.TCCTICKET" />
+          <EntitySet Name="TMEDIAQUEUE" EntityType="Model.TMEDIAQUEUE" />
+          <EntitySet Name="TCARTPYMNT" EntityType="Model.TCARTPYMNT" />
+          <AssociationSet Name="FK_TCARTPYMNT_R01" Association="Model.FK_TCARTPYMNT_R01">
+            <End Role="TCARTLIST" EntitySet="TCARTLIST" />
+            <End Role="TCARTPYMNT" EntitySet="TCARTPYMNT" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TCARTPYMNT_R02" Association="Model.FK_TCARTPYMNT_R02">
+            <End Role="TSUPPLIER" EntitySet="TSUPPLIER" />
+            <End Role="TCARTPYMNT" EntitySet="TCARTPYMNT" />
+          </AssociationSet>
+          <EntitySet Name="TRYNMAP" EntityType="Model.TRYNMAP" />
+          </EntityContainer>
+        <EntityType Name="KODX">
+          <Key>
+            <PropertyRef Name="KODID" />
+            <PropertyRef Name="NVALUKOD" />
+          </Key>
+          <Property Name="KODID" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="NVALUKOD" Type="Int16" Nullable="false" />
+          <Property Name="CSTATKOD" Type="Int16" />
+          <Property Name="TDESCTUR" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="TDESCENG" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="NSORTKOD" Type="Int16" />
+          <Property Name="TMNEMKOD" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="DRECDGEN" Type="DateTime" Precision="0" />
+          <Property Name="TUSERGEN" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="DMODIKOD" Type="DateTime" Precision="0" />
+          <Property Name="TMODIKOD" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="TCODEKOD" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="TCARTLIST">
+          <Key>
+            <PropertyRef Name="CARTID" />
+          </Key>
+          <Property Name="CARTID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="USRID" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="SHIPADDRID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="INVADDRID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="NTOTALPROD" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="NTOTALCARGO" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="NDISCARGO" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="NCARGOAMNT" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="NTOTALAMNT" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="TREFNTRX" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="NCASHADV" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="NLIDYAADV" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="BUSEBAL" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="BNKID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="NINST" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="NCASHPYMT" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="NLDYPYMT" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="NCARDPYMT" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="CSTATCART" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="DDATECREATE" Type="DateTime" Precision="0" />
+          <Property Name="DDATESHIP" Type="DateTime" Precision="0" />
+          <Property Name="DDATEEXP" Type="DateTime" Precision="0" />
+          <Property Name="USELIDYA" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="NPYMNTCARD" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="NPYMNTCASH" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="NPYMNTLIDYA" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="TMODIUSR" Type="String" MaxLength="36" Unicode="false" FixedLength="false" />
+          <Property Name="DMODICART" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="TADDRLIST" Relationship="Model.FK_TCARTLIST_INVADDRID" FromRole="TCARTLIST" ToRole="TADDRLIST" />
+          <NavigationProperty Name="TADDRLIST1" Relationship="Model.FK_TCARTLIST_SHIPADDRID" FromRole="TCARTLIST" ToRole="TADDRLIST" />
+          <NavigationProperty Name="TCARTITMLIST" Relationship="Model.FK_TCARTITMLIST_CARTID" FromRole="TCARTLIST" ToRole="TCARTITMLIST" />
+          <NavigationProperty Name="TUSERLIST" Relationship="Model.FK_TCARTLIST_USRID" FromRole="TCARTLIST" ToRole="TUSERLIST" />
+          <Property Type="Decimal" Name="BMAILSENT" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="NTRYCOUNT" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="BNKOID" Precision="38" Scale="0" />
+          <NavigationProperty Name="TCARTPYMNT" Relationship="Model.FK_TCARTPYMNT_R01" FromRole="TCARTLIST" ToRole="TCARTPYMNT" />
+          <Property Type="String" Name="TNOTE" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TPRCHCODE" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="NRETAMNT" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="NDISCOUNT" Precision="15" Scale="2" />
+        </EntityType>
+        <EntityType Name="TITEMLIST">
+          <Key>
+            <PropertyRef Name="ITMID" />
+          </Key>
+          <Property Name="ITMID" Type="Int64" Nullable="false" />
+          <Property Name="TDESCTUR" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="TDESCENG" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="LAST_PRICE" Type="Decimal" Precision="13" Scale="2" />
+          <Property Name="LAST_PRICE_DATE" Type="DateTime" Precision="0" />
+          <Property Name="CCATGITM" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="CUNITITM" Type="Int16" />
+          <Property Name="PREV_PRICE" Type="Decimal" Precision="13" Scale="2" />
+          <Property Name="CTYPEITM" Type="Int16" />
+          <Property Name="DLAUNITM" Type="DateTime" Precision="0" />
+          <Property Name="NINIPITM" Type="Decimal" Precision="13" Scale="2" />
+          <Property Name="NLIFEITM" Type="Int32" />
+          <Property Name="NMINPITM" Type="Decimal" Precision="13" Scale="2" />
+          <Property Name="NMAXPITM" Type="Decimal" Precision="13" Scale="2" />
+          <Property Name="NADETITM" Type="Int64" />
+          <Property Name="TBRANDNAME" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="TPRODCODE" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="TPRODUCTID" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="TMODELID" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="TMODELSIZE" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="NCOGSITM" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="SUPID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="BFIXPITM" Type="Int16" />
+          <Property Name="NITMGRPID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="TSPEC1" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="TSPEC2" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="TSPEC3" Type="String" MaxLength="400" Unicode="false" FixedLength="false" />
+          <Property Name="NITMFAMID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="CSTATITM" Type="Int16" />
+          <Property Name="DGENEITM" Type="DateTime" Precision="0" />
+          <Property Name="TGENEITM" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DMODIITM" Type="DateTime" Precision="0" />
+          <Property Name="TMODIITM" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SR3ID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="BSYNCREQ" Type="Int16" />
+          <Property Name="NVAT" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="TCOLGRP" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="TMODELCOLOR" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="TCOLGRPID" Type="Int64" />
+          <Property Name="TDESC" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="NDLVDAYS" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="NNOTESIZE" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="NQTYLIMIT" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="NINSTPITM" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="BDEFITM" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="TTHUMBID" Type="Decimal" Precision="38" Scale="0" />
+          <NavigationProperty Name="TSUPPLIER" Relationship="Model.FK_TITEMLIST_R01" FromRole="TITEMLIST" ToRole="TSUPPLIER" />
+          <NavigationProperty Name="TRITMREYON" Relationship="Model.FK_TRITMREYON_R01" FromRole="TITEMLIST" ToRole="TRITMREYON" />
+          <NavigationProperty Name="TCARTITMLIST" Relationship="Model.FK_TCARTITMLIST_R04" FromRole="TITEMLIST" ToRole="TCARTITMLIST" />
+          <NavigationProperty Name="TSREYON" Relationship="Model.FK_TITEMLIST_R03" FromRole="TITEMLIST" ToRole="TSREYON" />
+        </EntityType>
+        <EntityType Name="TMEDIALIST">
+          <Key>
+            <PropertyRef Name="MDYID" />
+          </Key>
+          <Property Name="MDYID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="ENTITYID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="PACKNO" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="MEDIAPATH" Type="String" Nullable="false" MaxLength="256" Unicode="false" FixedLength="false" />
+          <Property Name="ISDEFAULT" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="LASTSYNCTIME" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="MEDIASIZE" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="SUPID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="MEDIATYPE" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="MDYQID" Precision="38" Scale="0" />
+          <Property Type="String" Name="TCOLGRP" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="TMEDIASIZE">
+          <Key>
+            <PropertyRef Name="MSID" />
+          </Key>
+          <Property Name="MSID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="WIDTH" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="HEIGHT" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="ISACTIVE" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="TITLE" Type="String" Nullable="false" MaxLength="64" Unicode="false" FixedLength="false" />
+          <Property Name="QUALITY" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="FORMAT" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="MEDIATYPE" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="FILENAME" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="SIZENO" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="BUCKETNAME" Type="String" MaxLength="64" Unicode="false" FixedLength="false" />
+          <Property Name="BUCKETFOLDER" Type="String" MaxLength="128" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="TRITMREYON">
+          <Key>
+            <PropertyRef Name="ITMID" />
+            <PropertyRef Name="GRYID" />
+            <PropertyRef Name="SRYID" />
+          </Key>
+          <Property Name="ITMID" Type="Int64" Nullable="false" />
+          <Property Name="GRYID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="SRYID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="BDFLTIRR" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="CSTATIRR" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="DGENEIRR" Type="DateTime" Precision="0" />
+          <Property Name="TGENEIRR" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="DMODIIRR" Type="DateTime" Precision="0" />
+          <Property Name="TMODIIRR" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="NSORTORDER" Type="Decimal" Precision="38" Scale="0" />
+          <NavigationProperty Name="TITEMLIST" Relationship="Model.FK_TRITMREYON_R01" FromRole="TRITMREYON" ToRole="TITEMLIST" />
+          <NavigationProperty Name="TGREYON" Relationship="Model.FK_TRITMREYON_R02" FromRole="TRITMREYON" ToRole="TGREYON" />
+          <NavigationProperty Name="TSREYON" Relationship="Model.FK_TRITMREYON_R03" FromRole="TRITMREYON" ToRole="TSREYON" />
+        </EntityType>
+        <EntityType Name="TRUSERITEM">
+          <Key>
+            <PropertyRef Name="UIRID" />
+          </Key>
+          <Property Name="UIRID" Type="Int64" Nullable="false" />
+          <Property Name="USRID" Type="String" Nullable="false" MaxLength="36" Unicode="false" FixedLength="false" />
+          <Property Name="ITMID" Type="Int64" Nullable="false" />
+          <Property Name="NADETUIR" Type="Decimal" Precision="12" Scale="2" />
+          <Property Name="NUNICUIR" Type="Decimal" Precision="13" Scale="2" />
+          <Property Name="NDEALUIR" Type="Int16" />
+          <Property Name="NBUYDUIR" Type="Int16" />
+          <Property Name="NSELDUIR" Type="Int16" />
+          <Property Name="STRID" Type="Int64" />
+          <Property Name="NPRICUIR" Type="Decimal" Precision="13" Scale="2" />
+          <Property Name="NBUYBUIR" Type="Decimal" Precision="13" Scale="2" />
+          <Property Name="NFRNDBUIR" Type="Decimal" Precision="13" Scale="2" />
+          <Property Name="BUSRPICK" Type="Int16" />
+          <Property Name="BRYNPICT" Type="Int16" />
+          <NavigationProperty Name="TCARTITMLIST" Relationship="Model.FK_TCARTITMLIST_R01" FromRole="TRUSERITEM" ToRole="TCARTITMLIST" />
+          <NavigationProperty Name="TUSERLIST" Relationship="Model.FK_USERITEMS_USERLIST" FromRole="TRUSERITEM" ToRole="TUSERLIST" />
+        </EntityType>
+        <EntityType Name="TSUPPLIER">
+          <Key>
+            <PropertyRef Name="SUPID" />
+          </Key>
+          <Property Name="SUPID" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="TSUPNAME" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="TCOMPANY" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="TADDRLINE1" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="TADDRLINE2" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="TTOWN" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="TCITY" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="TZIPCODE" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="TPHONE" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="TCONTACT" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="TCNTPHONE" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="AD1ID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="AD2ID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="SS0ID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="BUIDREQ" Type="Int16" />
+          <Property Name="CCATGITM" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="CSTATMRCH" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="NADVANTAGE" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="CTYPEADV" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="NACCITMID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="BFIXPITM" Type="Int16" />
+          <Property Name="CSTORETYPE" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="NINVCOUNT" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="NADVMGZ" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="NFRNDADV" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="SORTORDER" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="NLIMCARGO" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="NCARGOAMNT" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="NPROFIT" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="BCHRGBNK" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="UNAME" Type="String" MaxLength="64" Unicode="false" FixedLength="false" />
+          <Property Name="PASS" Type="String" MaxLength="64" Unicode="false" FixedLength="false" />
+          <Property Name="NVAT" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="TINTRO" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="NPAYDAYS" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="TXMLURL" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="TITEMLIST" Relationship="Model.FK_TITEMLIST_R01" FromRole="TSUPPLIER" ToRole="TITEMLIST" />
+          <Property Type="String" Name="TCNTMAIL" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TTAXBUREAU" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TTAXNUMBER" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TTECHCNT" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TTECHPHONE" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TTECHMAIL" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TRETURNCNT" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TRETURNPHONE" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TRETURNMAIL" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TRETURNADDR1" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TRETURNADDR2" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TRETURNTOWN" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TRETURNCITY" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TRETURNZIP" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TCARGOCOMPANY1" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TCARGOCOMPANY2" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TCARGOCOMPANY3" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TBANKNAME" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TBANKBRANCH" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TBANKACC" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TIBANCODE" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="BCOMWITHVAT" Precision="38" Scale="0" />
+          <NavigationProperty Name="TCARTPYMNT" Relationship="Model.FK_TCARTPYMNT_R02" FromRole="TSUPPLIER" ToRole="TCARTPYMNT" />
+        </EntityType>
+        <Association Name="FK_TITEMLIST_R01">
+          <End Role="TSUPPLIER" Type="Model.TSUPPLIER" Multiplicity="0..1" />
+          <End Role="TITEMLIST" Type="Model.TITEMLIST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TSUPPLIER">
+              <PropertyRef Name="SUPID" />
+            </Principal>
+            <Dependent Role="TITEMLIST">
+              <PropertyRef Name="SUPID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TRITMREYON_R01">
+          <End Role="TITEMLIST" Type="Model.TITEMLIST" Multiplicity="1" />
+          <End Role="TRITMREYON" Type="Model.TRITMREYON" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TITEMLIST">
+              <PropertyRef Name="ITMID" />
+            </Principal>
+            <Dependent Role="TRITMREYON">
+              <PropertyRef Name="ITMID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="TADDRLIST">
+          <Key>
+            <PropertyRef Name="ADDRID" />
+          </Key>
+          <Property Type="Decimal" Name="ADDRID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="USRID" Nullable="false" MaxLength="36" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TADDRTYPE" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TPHONERCPT" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TNAMERCPT" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TUNIQUEID" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TADDRLINE1" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TADDRLINE2" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TCOUNCODE" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TCOUNTRY" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Int64" Name="CITYID" />
+          <Property Type="String" Name="TCITY" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Int64" Name="TOWNID" />
+          <Property Type="String" Name="TTOWN" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TZIPCODE" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="CSTATADDR" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="DRECDGEN" Precision="0" />
+          <Property Type="DateTime" Name="DMODIADDR" Precision="0" />
+          <Property Type="String" Name="TEMAIL" MaxLength="250" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="TCARTLIST" Relationship="Model.FK_TCARTLIST_INVADDRID" FromRole="TADDRLIST" ToRole="TCARTLIST" />
+          <NavigationProperty Name="TCARTLIST1" Relationship="Model.FK_TCARTLIST_SHIPADDRID" FromRole="TADDRLIST" ToRole="TCARTLIST" />
+          <NavigationProperty Name="TUSERLIST" Relationship="Model.FK_TADDRLIST_R01" FromRole="TADDRLIST" ToRole="TUSERLIST" />
+        </EntityType>
+        <Association Name="FK_TCARTLIST_INVADDRID">
+          <End Type="Model.TADDRLIST" Role="TADDRLIST" Multiplicity="0..1" />
+          <End Type="Model.TCARTLIST" Role="TCARTLIST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TADDRLIST">
+              <PropertyRef Name="ADDRID" />
+            </Principal>
+            <Dependent Role="TCARTLIST">
+              <PropertyRef Name="INVADDRID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TCARTLIST_SHIPADDRID">
+          <End Type="Model.TADDRLIST" Role="TADDRLIST" Multiplicity="0..1" />
+          <End Type="Model.TCARTLIST" Role="TCARTLIST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TADDRLIST">
+              <PropertyRef Name="ADDRID" />
+            </Principal>
+            <Dependent Role="TCARTLIST">
+              <PropertyRef Name="SHIPADDRID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="TCARTITMLIST">
+          <Key>
+            <PropertyRef Name="CARTITMID" />
+          </Key>
+          <Property Type="Decimal" Name="CARTITMID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="CARTID" Precision="38" Scale="0" />
+          <Property Type="Int64" Name="DEALID" />
+          <Property Type="Decimal" Name="STRID" Precision="38" Scale="0" />
+          <Property Type="String" Name="USRID" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="Int64" Name="ITMID" />
+          <Property Type="Decimal" Name="NQTY" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="NPRICUIR" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="NINIPITM" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="NTERMAMNT" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="NITMAMNT" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="NCOUPON" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="NCASHPYMT" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="NLDYPYMT" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="NCARGOAMNT" Precision="38" Scale="0" />
+          <Property Type="String" Name="TREFNTRX" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="DRECDATE" Precision="0" />
+          <Property Type="Decimal" Name="NVAT" Precision="38" Scale="0" />
+          <Property Type="String" Name="TNOTE" MaxLength="1024" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="CSTATINT" Precision="38" Scale="0" />
+          <Property Type="String" Name="TSUPORDERID" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TCANCELMSG" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="DDATECANCEL" Precision="0" />
+          <Property Type="String" Name="TMODIUSR" MaxLength="36" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TCARGOINFO" MaxLength="512" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="NPROFIT" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="NADVANTAGE" Precision="38" Scale="0" />
+          <NavigationProperty Name="TCARTLIST" Relationship="Model.FK_TCARTITMLIST_CARTID" FromRole="TCARTITMLIST" ToRole="TCARTLIST" />
+          <NavigationProperty Name="TRUSERITEM" Relationship="Model.FK_TCARTITMLIST_R01" FromRole="TCARTITMLIST" ToRole="TRUSERITEM" />
+          <NavigationProperty Name="TITEMLIST" Relationship="Model.FK_TCARTITMLIST_R04" FromRole="TCARTITMLIST" ToRole="TITEMLIST" />
+          <Property Type="Int64" Name="FROMSTRID" />
+          <Property Type="Decimal" Name="RETCARTITMID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="DMODIDATE" Precision="0" />
+          <NavigationProperty Name="TUSERLIST" Relationship="Model.FK_TCARTITMLIST_R03" FromRole="TCARTITMLIST" ToRole="TUSERLIST" />
+          <Property Type="DateTime" Name="DAPPDATE" Precision="0" />
+          <Property Type="Decimal" Name="NLDYBUYER" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="NCOMSELLER" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="BMAILSENT" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="NTRYCOUNT" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="NRETAMNT" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="NRETQTY" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="NDISCOUNT" Precision="15" Scale="2" />
+        </EntityType>
+        <EntityType Name="TGREYON">
+          <Key>
+            <PropertyRef Name="GRYID" />
+          </Key>
+          <Property Type="Decimal" Name="GRYID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="CCATGITM" Precision="38" Scale="0" />
+          <Property Type="String" Name="TDESCTUR" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TDESCENG" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TIMAGE" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TIMAGE2" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TIMAGE3" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TIMAGE4" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="PARID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="NLEVEL" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="CSTATGRY" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="BIMGCHG" Precision="38" Scale="0" />
+          <NavigationProperty Name="TGREYON1" Relationship="Model.FK_TGREYON_R01" FromRole="TGREYON" ToRole="TGREYON1" />
+          <NavigationProperty Name="TGREYON2" Relationship="Model.FK_TGREYON_R01" FromRole="TGREYON1" ToRole="TGREYON" />
+          <NavigationProperty Name="TRITMREYON" Relationship="Model.FK_TRITMREYON_R02" FromRole="TGREYON" ToRole="TRITMREYON" />
+          <Property Type="String" Name="TQRYSTR" MaxLength="2000" FixedLength="false" Unicode="false" />
+          <Property Type="Int16" Name="NSORTORDER" />
+          <Property Type="Decimal" Name="NIMGVERSION" Precision="38" Scale="0" />
+          <Property Type="String" Name="TPATH" MaxLength="1000" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <Association Name="FK_TCARTITMLIST_CARTID">
+          <End Type="Model.TCARTLIST" Role="TCARTLIST" Multiplicity="0..1" />
+          <End Type="Model.TCARTITMLIST" Role="TCARTITMLIST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TCARTLIST">
+              <PropertyRef Name="CARTID" />
+            </Principal>
+            <Dependent Role="TCARTITMLIST">
+              <PropertyRef Name="CARTID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TCARTITMLIST_R01">
+          <End Type="Model.TRUSERITEM" Role="TRUSERITEM" Multiplicity="0..1" />
+          <End Type="Model.TCARTITMLIST" Role="TCARTITMLIST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TRUSERITEM">
+              <PropertyRef Name="UIRID" />
+            </Principal>
+            <Dependent Role="TCARTITMLIST">
+              <PropertyRef Name="DEALID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TCARTITMLIST_R04">
+          <End Type="Model.TITEMLIST" Role="TITEMLIST" Multiplicity="0..1" />
+          <End Type="Model.TCARTITMLIST" Role="TCARTITMLIST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TITEMLIST">
+              <PropertyRef Name="ITMID" />
+            </Principal>
+            <Dependent Role="TCARTITMLIST">
+              <PropertyRef Name="ITMID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TGREYON_R01">
+          <End Type="Model.TGREYON" Role="TGREYON" Multiplicity="0..1" />
+          <End Type="Model.TGREYON" Role="TGREYON1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TGREYON">
+              <PropertyRef Name="GRYID" />
+            </Principal>
+            <Dependent Role="TGREYON1">
+              <PropertyRef Name="PARID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TRITMREYON_R02">
+          <End Type="Model.TGREYON" Role="TGREYON" Multiplicity="1" />
+          <End Type="Model.TRITMREYON" Role="TRITMREYON" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TGREYON">
+              <PropertyRef Name="GRYID" />
+            </Principal>
+            <Dependent Role="TRITMREYON">
+              <PropertyRef Name="GRYID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="TMSGMASTER">
+          <Key>
+            <PropertyRef Name="MSMID" />
+          </Key>
+          <Property Type="Decimal" Name="MSMID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="TDESC" Nullable="false" MaxLength="512" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="THTML" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="Int16" Name="BACTIVE" Nullable="false" />
+          <NavigationProperty Name="TMSGTEMPLATE" Relationship="Model.TMSGTEMPLATE_TMSGMASTER_FK1" FromRole="TMSGMASTER" ToRole="TMSGTEMPLATE" />
+        </EntityType>
+        <EntityType Name="TMSGQUEUE">
+          <Key>
+            <PropertyRef Name="TMSGQID" />
+          </Key>
+          <Property Type="String" Name="TBODY" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TSUBJECT" Nullable="false" MaxLength="512" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TMAILUSER" Nullable="false" MaxLength="1024" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="TMSGQID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="TFRUSR" Nullable="false" MaxLength="256" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TTOUSRS" Nullable="false" MaxLength="512" FixedLength="false" Unicode="false" />
+          <Property Type="Int16" Name="BISSENT" Nullable="false" />
+          <Property Type="Decimal" Name="NSENDTRIES" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="TGENEMSGQ" Nullable="false" Precision="0" />
+          <Property Type="DateTime" Name="TSENTMSGQ" Precision="0" />
+        </EntityType>
+        <EntityType Name="TMSGTEMPLATE">
+          <Key>
+            <PropertyRef Name="MSTID" />
+          </Key>
+          <Property Type="Decimal" Name="MSTID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="TSUBJECT" Nullable="false" MaxLength="512" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TBODY" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TDESC" Nullable="false" MaxLength="512" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="BACTIVE" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="TGENEMST" Nullable="false" Precision="0" />
+          <Property Type="Decimal" Name="MSMID" Nullable="false" Precision="38" Scale="0" />
+          <NavigationProperty Name="TMSGMASTER" Relationship="Model.TMSGTEMPLATE_TMSGMASTER_FK1" FromRole="TMSGTEMPLATE" ToRole="TMSGMASTER" />
+        </EntityType>
+        <Association Name="TMSGTEMPLATE_TMSGMASTER_FK1">
+          <End Type="Model.TMSGMASTER" Role="TMSGMASTER" Multiplicity="1" />
+          <End Type="Model.TMSGTEMPLATE" Role="TMSGTEMPLATE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TMSGMASTER">
+              <PropertyRef Name="MSMID" />
+            </Principal>
+            <Dependent Role="TMSGTEMPLATE">
+              <PropertyRef Name="MSMID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="TINTLOG">
+          <Key>
+            <PropertyRef Name="DLOGDATE" />
+          </Key>
+          <Property Type="DateTime" Name="DLOGDATE" Nullable="false" Precision="0" />
+          <Property Type="String" Name="USRID" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TNAME" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TLOGDATA" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="CTYPELOG" Precision="38" Scale="0" />
+        </EntityType>
+        <EntityType Name="TSREYON">
+          <Key>
+            <PropertyRef Name="SRYID" />
+          </Key>
+          <Property Type="Decimal" Name="SRYID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="CCATGITM" Precision="38" Scale="0" />
+          <Property Type="String" Name="TDESCTUR" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TDESCENG" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TIMAGE" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TIMAGE2" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TIMAGE3" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TIMAGE4" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="PARID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="NLEVEL" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="SUPID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="GRYID" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="CSTATSRY" />
+          <Property Type="DateTime" Name="DGENESRY" Precision="0" />
+          <Property Type="String" Name="TGENESRY" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="DMODISRY" Precision="0" />
+          <Property Type="String" Name="TMODISRY" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SCATID" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SPARID" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="BIMGCHG" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="NSORTORDER" Precision="38" Scale="0" />
+          <NavigationProperty Name="TITEMLIST" Relationship="Model.FK_TITEMLIST_R03" FromRole="TSREYON" ToRole="TITEMLIST" />
+          <NavigationProperty Name="TRITMREYON" Relationship="Model.FK_TRITMREYON_R03" FromRole="TSREYON" ToRole="TRITMREYON" />
+          <Property Type="Decimal" Name="BSENSITIVE" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="CTYPERYN" />
+          <Property Type="Decimal" Name="NIMGVERSION" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="BGRPBYCOL" />
+          <Property Type="String" Name="TPATH" MaxLength="1000" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="TUSERLIST">
+          <Key>
+            <PropertyRef Name="USRID" />
+          </Key>
+          <Property Type="String" Name="USRID" Nullable="false" MaxLength="36" FixedLength="false" Unicode="false" />
+          <Property Type="Int16" Name="CTYPEUSR" />
+          <Property Type="String" Name="TNICKUSR" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TNAMEUSR" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TMAILUSR" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TMOBIUSR" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="LONGITUDE" Precision="15" Scale="11" />
+          <Property Type="Decimal" Name="LATITUDE" Precision="15" Scale="11" />
+          <Property Type="Int16" Name="CSTATUSR" />
+          <Property Type="Int16" Name="CLANGUSR" />
+          <Property Type="Int64" Name="NRANKUSR" />
+          <Property Type="Decimal" Name="NUSDBUSR" Precision="13" Scale="2" />
+          <Property Type="Decimal" Name="NLDYAUSR" Precision="13" Scale="2" />
+          <Property Type="String" Name="TIBAN" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="BSHOWPIC" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="NCURRUSR" />
+          <Property Type="String" Name="TLASTNAME" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="DDATEBIRTH" Precision="0" />
+          <Property Type="String" Name="TCOUNCODE" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TUNIQUEID" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TPASSWORD" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="CTITLE" Precision="38" Scale="0" />
+          <Property Type="String" Name="FBID" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TFULLNAME" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="SUPID" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="DMODIDATE" Precision="0" />
+          <Property Type="String" Name="TMODIUSR" MaxLength="200" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="TADDRLIST" Relationship="Model.FK_TADDRLIST_R01" FromRole="TUSERLIST" ToRole="TADDRLIST" />
+          <NavigationProperty Name="TCARTITMLIST" Relationship="Model.FK_TCARTITMLIST_R03" FromRole="TUSERLIST" ToRole="TCARTITMLIST" />
+          <NavigationProperty Name="TCARTLIST" Relationship="Model.FK_TCARTLIST_USRID" FromRole="TUSERLIST" ToRole="TCARTLIST" />
+          <NavigationProperty Name="TRUSERITEM" Relationship="Model.FK_USERITEMS_USERLIST" FromRole="TUSERLIST" ToRole="TRUSERITEM" />
+          <Property Type="DateTime" Name="DRECDATE" Precision="0" />
+        </EntityType>
+        <Association Name="FK_TADDRLIST_R01">
+          <End Type="Model.TUSERLIST" Role="TUSERLIST" Multiplicity="1" />
+          <End Type="Model.TADDRLIST" Role="TADDRLIST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TUSERLIST">
+              <PropertyRef Name="USRID" />
+            </Principal>
+            <Dependent Role="TADDRLIST">
+              <PropertyRef Name="USRID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TCARTITMLIST_R03">
+          <End Type="Model.TUSERLIST" Role="TUSERLIST" Multiplicity="0..1" />
+          <End Type="Model.TCARTITMLIST" Role="TCARTITMLIST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TUSERLIST">
+              <PropertyRef Name="USRID" />
+            </Principal>
+            <Dependent Role="TCARTITMLIST">
+              <PropertyRef Name="USRID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TCARTLIST_USRID">
+          <End Type="Model.TUSERLIST" Role="TUSERLIST" Multiplicity="1" />
+          <End Type="Model.TCARTLIST" Role="TCARTLIST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TUSERLIST">
+              <PropertyRef Name="USRID" />
+            </Principal>
+            <Dependent Role="TCARTLIST">
+              <PropertyRef Name="USRID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TITEMLIST_R03">
+          <End Type="Model.TSREYON" Role="TSREYON" Multiplicity="0..1" />
+          <End Type="Model.TITEMLIST" Role="TITEMLIST" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TSREYON">
+              <PropertyRef Name="SRYID" />
+            </Principal>
+            <Dependent Role="TITEMLIST">
+              <PropertyRef Name="SR3ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TRITMREYON_R03">
+          <End Type="Model.TSREYON" Role="TSREYON" Multiplicity="1" />
+          <End Type="Model.TRITMREYON" Role="TRITMREYON" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TSREYON">
+              <PropertyRef Name="SRYID" />
+            </Principal>
+            <Dependent Role="TRITMREYON">
+              <PropertyRef Name="SRYID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_USERITEMS_USERLIST">
+          <End Type="Model.TUSERLIST" Role="TUSERLIST" Multiplicity="1" />
+          <End Type="Model.TRUSERITEM" Role="TRUSERITEM" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TUSERLIST">
+              <PropertyRef Name="USRID" />
+            </Principal>
+            <Dependent Role="TRUSERITEM">
+              <PropertyRef Name="USRID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="TCCTICKET">
+          <Key>
+            <PropertyRef Name="TICKETID" />
+          </Key>
+          <Property Type="Decimal" Name="TICKETID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="TCCTICKETID" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TCCUSER" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="DCCDATE" Precision="0" />
+          <Property Type="DateTime" Name="DCREATEDON" Precision="0" />
+          <Property Type="String" Name="TTOPICCODE" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TTOPIC" MaxLength="2000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TDESCRIPTION" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="NPRIORITY" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="CSTATISSUE" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="DMODIFYON" Precision="0" />
+          <Property Type="String" Name="TASSIGNEE" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TRESOLUTION" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="DRESOLUTIONTARGET" Precision="0" />
+          <Property Type="DateTime" Name="DRESOLUTION" Precision="0" />
+          <Property Type="Decimal" Name="ORDERID" Precision="38" Scale="0" />
+          <Property Type="String" Name="TCUSTNAME" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TCUSTUSRID" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TCUSTPHONE" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TCUSTMAIL" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="SUPID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ITMID" Precision="38" Scale="0" />
+          <Property Type="String" Name="TPRODUCTID" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TPRODCODE" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TCUSTTOWN" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TCUSTCITY" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TCARGOCOMPANY" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TCARGOTRACKID" MaxLength="400" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="TMEDIAQUEUE">
+          <Key>
+            <PropertyRef Name="MDYQID" />
+          </Key>
+          <Property Type="Decimal" Name="MDYQID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="URL" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="MEDIATYPE" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="SRYID" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="ISUPLOADED" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="UPLOADTRIES" Precision="38" Scale="0" />
+          <Property Type="String" Name="TCOLGRP" MaxLength="256" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="SUPID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="MEDIAORDER" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="DRECDATE" Precision="0" />
+        </EntityType>
+        <EntityType Name="TCARTPYMNT">
+          <Key>
+            <PropertyRef Name="CARTID" />
+            <PropertyRef Name="SUPID" />
+          </Key>
+          <Property Type="Decimal" Name="CARTID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="SUPID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="String" Name="TCOMPANY" Nullable="false" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="NORDERAMNT" Precision="15" Scale="2" />
+          <Property Type="Decimal" Name="NINST" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Int16" Name="NINSTRATE" />
+          <Property Type="Decimal" Name="NTOTALPROD" Precision="15" Scale="2" />
+          <Property Type="Decimal" Name="NLIMCARGO" Precision="15" Scale="2" />
+          <Property Type="Decimal" Name="NCARGOAMNT" Precision="15" Scale="2" />
+          <Property Type="Decimal" Name="NTOTALAMNT" Precision="15" Scale="2" />
+          <Property Type="Decimal" Name="NCARGOPYMT" Precision="15" Scale="2" />
+          <Property Type="Decimal" Name="NCASHPYMT" Precision="15" Scale="2" />
+          <Property Type="Decimal" Name="NLDYPYMT" Precision="15" Scale="2" />
+          <Property Type="Decimal" Name="NTOTALPYMNT" Precision="15" Scale="2" />
+          <Property Type="Decimal" Name="NCRDPYMT" Precision="15" Scale="2" />
+          <Property Type="Decimal" Name="NBNKCOST" Precision="15" Scale="2" />
+          <Property Type="Decimal" Name="NBNKRCVD" Precision="15" Scale="2" />
+          <Property Type="Decimal" Name="NCOLLECTED" Precision="15" Scale="2" />
+          <Property Type="Decimal" Name="NTOTALVAT" Precision="15" Scale="2" />
+          <Property Type="Decimal" Name="NLWMARGIN" Precision="15" Scale="2" />
+          <Property Type="Decimal" Name="NLWINCOME" Precision="15" Scale="2" />
+          <Property Type="Decimal" Name="NSUPPYMT" Precision="15" Scale="2" />
+          <Property Type="String" Name="TMODIUSR" MaxLength="36" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="DMODIDATE" Precision="0" />
+          <Property Type="Int16" Name="CTYPEPYMT" />
+          <Property Type="Int16" Name="CSTATPYMT" />
+          <Property Type="DateTime" Name="DDATEPYMT" Precision="0" />
+          <Property Type="Int16" Name="BMAILSENT" />
+          <Property Type="Int16" Name="NTRYCOUNT" />
+          <Property Type="Decimal" Name="NLWCOMVAT" Precision="15" Scale="2" />
+          <Property Type="String" Name="TINVINFO" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="DDATEINV" Precision="0" />
+          <Property Type="DateTime" Name="DDATEDLV" Precision="0" />
+          <Property Type="String" Name="TREFNTRX" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="DBNKPYMT" Precision="0" />
+          <Property Type="String" Name="TBANKDESC" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TIBAN" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TBANKREF" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="TCARTLIST" Relationship="Model.FK_TCARTPYMNT_R01" FromRole="TCARTPYMNT" ToRole="TCARTLIST" />
+          <NavigationProperty Name="TSUPPLIER" Relationship="Model.FK_TCARTPYMNT_R02" FromRole="TCARTPYMNT" ToRole="TSUPPLIER" />
+          <Property Type="Decimal" Name="NCASHITMPYMT" Precision="15" Scale="2" />
+          <Property Type="Decimal" Name="NLDYITMPYMT" Precision="15" Scale="2" />
+          <Property Type="Decimal" Name="NDEDUCTAMNT" Precision="15" Scale="2" />
+          <Property Type="String" Name="TDESCDEDUCT" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="NRETAMNT" Precision="15" Scale="2" />
+        </EntityType>
+        <Association Name="FK_TCARTPYMNT_R01">
+          <End Type="Model.TCARTLIST" Role="TCARTLIST" Multiplicity="1" />
+          <End Type="Model.TCARTPYMNT" Role="TCARTPYMNT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TCARTLIST">
+              <PropertyRef Name="CARTID" />
+            </Principal>
+            <Dependent Role="TCARTPYMNT">
+              <PropertyRef Name="CARTID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TCARTPYMNT_R02">
+          <End Type="Model.TSUPPLIER" Role="TSUPPLIER" Multiplicity="1" />
+          <End Type="Model.TCARTPYMNT" Role="TCARTPYMNT" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TSUPPLIER">
+              <PropertyRef Name="SUPID" />
+            </Principal>
+            <Dependent Role="TCARTPYMNT">
+              <PropertyRef Name="SUPID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="TRYNMAP">
+          <Key>
+            <PropertyRef Name="GRYID" />
+            <PropertyRef Name="SRYID" />
+          </Key>
+          <Property Type="Decimal" Name="GRYID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="Decimal" Name="SRYID" Nullable="false" Precision="38" Scale="0" />
+          <Property Type="DateTime" Name="DMODIRYN" Precision="0" />
+          <Property Type="String" Name="TMODIRYN" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="LidyaEntities">
+          <EntitySetMapping Name="KODX">
+            <EntityTypeMapping TypeName="Model.KODX">
+              <MappingFragment StoreEntitySet="KODX">
+                <ScalarProperty Name="KODID" ColumnName="KODID" />
+                <ScalarProperty Name="NVALUKOD" ColumnName="NVALUKOD" />
+                <ScalarProperty Name="CSTATKOD" ColumnName="CSTATKOD" />
+                <ScalarProperty Name="TDESCTUR" ColumnName="TDESCTUR" />
+                <ScalarProperty Name="TDESCENG" ColumnName="TDESCENG" />
+                <ScalarProperty Name="NSORTKOD" ColumnName="NSORTKOD" />
+                <ScalarProperty Name="TMNEMKOD" ColumnName="TMNEMKOD" />
+                <ScalarProperty Name="DRECDGEN" ColumnName="DRECDGEN" />
+                <ScalarProperty Name="TUSERGEN" ColumnName="TUSERGEN" />
+                <ScalarProperty Name="DMODIKOD" ColumnName="DMODIKOD" />
+                <ScalarProperty Name="TMODIKOD" ColumnName="TMODIKOD" />
+                <ScalarProperty Name="TCODEKOD" ColumnName="TCODEKOD" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TCARTLIST">
+            <EntityTypeMapping TypeName="Model.TCARTLIST">
+              <MappingFragment StoreEntitySet="TCARTLIST">
+                <ScalarProperty Name="NDISCOUNT" ColumnName="NDISCOUNT" />
+                <ScalarProperty Name="NRETAMNT" ColumnName="NRETAMNT" />
+                <ScalarProperty Name="TPRCHCODE" ColumnName="TPRCHCODE" />
+                <ScalarProperty Name="TNOTE" ColumnName="TNOTE" />
+                <ScalarProperty Name="BNKOID" ColumnName="BNKOID" />
+                <ScalarProperty Name="NTRYCOUNT" ColumnName="NTRYCOUNT" />
+                <ScalarProperty Name="BMAILSENT" ColumnName="BMAILSENT" />
+                <ScalarProperty Name="CARTID" ColumnName="CARTID" />
+                <ScalarProperty Name="USRID" ColumnName="USRID" />
+                <ScalarProperty Name="SHIPADDRID" ColumnName="SHIPADDRID" />
+                <ScalarProperty Name="INVADDRID" ColumnName="INVADDRID" />
+                <ScalarProperty Name="NTOTALPROD" ColumnName="NTOTALPROD" />
+                <ScalarProperty Name="NTOTALCARGO" ColumnName="NTOTALCARGO" />
+                <ScalarProperty Name="NDISCARGO" ColumnName="NDISCARGO" />
+                <ScalarProperty Name="NCARGOAMNT" ColumnName="NCARGOAMNT" />
+                <ScalarProperty Name="NTOTALAMNT" ColumnName="NTOTALAMNT" />
+                <ScalarProperty Name="TREFNTRX" ColumnName="TREFNTRX" />
+                <ScalarProperty Name="NCASHADV" ColumnName="NCASHADV" />
+                <ScalarProperty Name="NLIDYAADV" ColumnName="NLIDYAADV" />
+                <ScalarProperty Name="BUSEBAL" ColumnName="BUSEBAL" />
+                <ScalarProperty Name="BNKID" ColumnName="BNKID" />
+                <ScalarProperty Name="NINST" ColumnName="NINST" />
+                <ScalarProperty Name="NCASHPYMT" ColumnName="NCASHPYMT" />
+                <ScalarProperty Name="NLDYPYMT" ColumnName="NLDYPYMT" />
+                <ScalarProperty Name="NCARDPYMT" ColumnName="NCARDPYMT" />
+                <ScalarProperty Name="CSTATCART" ColumnName="CSTATCART" />
+                <ScalarProperty Name="DDATECREATE" ColumnName="DDATECREATE" />
+                <ScalarProperty Name="DDATESHIP" ColumnName="DDATESHIP" />
+                <ScalarProperty Name="DDATEEXP" ColumnName="DDATEEXP" />
+                <ScalarProperty Name="USELIDYA" ColumnName="USELIDYA" />
+                <ScalarProperty Name="NPYMNTCARD" ColumnName="NPYMNTCARD" />
+                <ScalarProperty Name="NPYMNTCASH" ColumnName="NPYMNTCASH" />
+                <ScalarProperty Name="NPYMNTLIDYA" ColumnName="NPYMNTLIDYA" />
+                <ScalarProperty Name="TMODIUSR" ColumnName="TMODIUSR" />
+                <ScalarProperty Name="DMODICART" ColumnName="DMODICART" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TITEMLIST">
+            <EntityTypeMapping TypeName="Model.TITEMLIST">
+              <MappingFragment StoreEntitySet="TITEMLIST">
+                <ScalarProperty Name="ITMID" ColumnName="ITMID" />
+                <ScalarProperty Name="TDESCTUR" ColumnName="TDESCTUR" />
+                <ScalarProperty Name="TDESCENG" ColumnName="TDESCENG" />
+                <ScalarProperty Name="LAST_PRICE" ColumnName="LAST_PRICE" />
+                <ScalarProperty Name="LAST_PRICE_DATE" ColumnName="LAST_PRICE_DATE" />
+                <ScalarProperty Name="CCATGITM" ColumnName="CCATGITM" />
+                <ScalarProperty Name="CUNITITM" ColumnName="CUNITITM" />
+                <ScalarProperty Name="PREV_PRICE" ColumnName="PREV_PRICE" />
+                <ScalarProperty Name="CTYPEITM" ColumnName="CTYPEITM" />
+                <ScalarProperty Name="DLAUNITM" ColumnName="DLAUNITM" />
+                <ScalarProperty Name="NINIPITM" ColumnName="NINIPITM" />
+                <ScalarProperty Name="NLIFEITM" ColumnName="NLIFEITM" />
+                <ScalarProperty Name="NMINPITM" ColumnName="NMINPITM" />
+                <ScalarProperty Name="NMAXPITM" ColumnName="NMAXPITM" />
+                <ScalarProperty Name="NADETITM" ColumnName="NADETITM" />
+                <ScalarProperty Name="TBRANDNAME" ColumnName="TBRANDNAME" />
+                <ScalarProperty Name="TPRODCODE" ColumnName="TPRODCODE" />
+                <ScalarProperty Name="TPRODUCTID" ColumnName="TPRODUCTID" />
+                <ScalarProperty Name="TMODELID" ColumnName="TMODELID" />
+                <ScalarProperty Name="TMODELSIZE" ColumnName="TMODELSIZE" />
+                <ScalarProperty Name="NCOGSITM" ColumnName="NCOGSITM" />
+                <ScalarProperty Name="SUPID" ColumnName="SUPID" />
+                <ScalarProperty Name="BFIXPITM" ColumnName="BFIXPITM" />
+                <ScalarProperty Name="NITMGRPID" ColumnName="NITMGRPID" />
+                <ScalarProperty Name="TSPEC1" ColumnName="TSPEC1" />
+                <ScalarProperty Name="TSPEC2" ColumnName="TSPEC2" />
+                <ScalarProperty Name="TSPEC3" ColumnName="TSPEC3" />
+                <ScalarProperty Name="NITMFAMID" ColumnName="NITMFAMID" />
+                <ScalarProperty Name="CSTATITM" ColumnName="CSTATITM" />
+                <ScalarProperty Name="DGENEITM" ColumnName="DGENEITM" />
+                <ScalarProperty Name="TGENEITM" ColumnName="TGENEITM" />
+                <ScalarProperty Name="DMODIITM" ColumnName="DMODIITM" />
+                <ScalarProperty Name="TMODIITM" ColumnName="TMODIITM" />
+                <ScalarProperty Name="SR3ID" ColumnName="SR3ID" />
+                <ScalarProperty Name="BSYNCREQ" ColumnName="BSYNCREQ" />
+                <ScalarProperty Name="NVAT" ColumnName="NVAT" />
+                <ScalarProperty Name="TCOLGRP" ColumnName="TCOLGRP" />
+                <ScalarProperty Name="TMODELCOLOR" ColumnName="TMODELCOLOR" />
+                <ScalarProperty Name="TCOLGRPID" ColumnName="TCOLGRPID" />
+                <ScalarProperty Name="TDESC" ColumnName="TDESC" />
+                <ScalarProperty Name="NDLVDAYS" ColumnName="NDLVDAYS" />
+                <ScalarProperty Name="NNOTESIZE" ColumnName="NNOTESIZE" />
+                <ScalarProperty Name="NQTYLIMIT" ColumnName="NQTYLIMIT" />
+                <ScalarProperty Name="NINSTPITM" ColumnName="NINSTPITM" />
+                <ScalarProperty Name="BDEFITM" ColumnName="BDEFITM" />
+                <ScalarProperty Name="TTHUMBID" ColumnName="TTHUMBID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TMEDIALIST">
+            <EntityTypeMapping TypeName="Model.TMEDIALIST">
+              <MappingFragment StoreEntitySet="TMEDIALIST">
+                <ScalarProperty Name="TCOLGRP" ColumnName="TCOLGRP" />
+                <ScalarProperty Name="MDYQID" ColumnName="MDYQID" />
+                <ScalarProperty Name="MDYID" ColumnName="MDYID" />
+                <ScalarProperty Name="ENTITYID" ColumnName="ENTITYID" />
+                <ScalarProperty Name="PACKNO" ColumnName="PACKNO" />
+                <ScalarProperty Name="MEDIAPATH" ColumnName="MEDIAPATH" />
+                <ScalarProperty Name="ISDEFAULT" ColumnName="ISDEFAULT" />
+                <ScalarProperty Name="LASTSYNCTIME" ColumnName="LASTSYNCTIME" />
+                <ScalarProperty Name="MEDIASIZE" ColumnName="MEDIASIZE" />
+                <ScalarProperty Name="SUPID" ColumnName="SUPID" />
+                <ScalarProperty Name="MEDIATYPE" ColumnName="MEDIATYPE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TMEDIASIZE">
+            <EntityTypeMapping TypeName="Model.TMEDIASIZE">
+              <MappingFragment StoreEntitySet="TMEDIASIZE">
+                <ScalarProperty Name="MSID" ColumnName="MSID" />
+                <ScalarProperty Name="WIDTH" ColumnName="WIDTH" />
+                <ScalarProperty Name="HEIGHT" ColumnName="HEIGHT" />
+                <ScalarProperty Name="ISACTIVE" ColumnName="ISACTIVE" />
+                <ScalarProperty Name="TITLE" ColumnName="TITLE" />
+                <ScalarProperty Name="QUALITY" ColumnName="QUALITY" />
+                <ScalarProperty Name="FORMAT" ColumnName="FORMAT" />
+                <ScalarProperty Name="MEDIATYPE" ColumnName="MEDIATYPE" />
+                <ScalarProperty Name="FILENAME" ColumnName="FILENAME" />
+                <ScalarProperty Name="SIZENO" ColumnName="SIZENO" />
+                <ScalarProperty Name="BUCKETNAME" ColumnName="BUCKETNAME" />
+                <ScalarProperty Name="BUCKETFOLDER" ColumnName="BUCKETFOLDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TRITMREYON">
+            <EntityTypeMapping TypeName="Model.TRITMREYON">
+              <MappingFragment StoreEntitySet="TRITMREYON">
+                <ScalarProperty Name="ITMID" ColumnName="ITMID" />
+                <ScalarProperty Name="GRYID" ColumnName="GRYID" />
+                <ScalarProperty Name="SRYID" ColumnName="SRYID" />
+                <ScalarProperty Name="BDFLTIRR" ColumnName="BDFLTIRR" />
+                <ScalarProperty Name="CSTATIRR" ColumnName="CSTATIRR" />
+                <ScalarProperty Name="DGENEIRR" ColumnName="DGENEIRR" />
+                <ScalarProperty Name="TGENEIRR" ColumnName="TGENEIRR" />
+                <ScalarProperty Name="DMODIIRR" ColumnName="DMODIIRR" />
+                <ScalarProperty Name="TMODIIRR" ColumnName="TMODIIRR" />
+                <ScalarProperty Name="NSORTORDER" ColumnName="NSORTORDER" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TRUSERITEM">
+            <EntityTypeMapping TypeName="Model.TRUSERITEM">
+              <MappingFragment StoreEntitySet="TRUSERITEM">
+                <ScalarProperty Name="UIRID" ColumnName="UIRID" />
+                <ScalarProperty Name="USRID" ColumnName="USRID" />
+                <ScalarProperty Name="ITMID" ColumnName="ITMID" />
+                <ScalarProperty Name="NADETUIR" ColumnName="NADETUIR" />
+                <ScalarProperty Name="NUNICUIR" ColumnName="NUNICUIR" />
+                <ScalarProperty Name="NDEALUIR" ColumnName="NDEALUIR" />
+                <ScalarProperty Name="NBUYDUIR" ColumnName="NBUYDUIR" />
+                <ScalarProperty Name="NSELDUIR" ColumnName="NSELDUIR" />
+                <ScalarProperty Name="STRID" ColumnName="STRID" />
+                <ScalarProperty Name="NPRICUIR" ColumnName="NPRICUIR" />
+                <ScalarProperty Name="NBUYBUIR" ColumnName="NBUYBUIR" />
+                <ScalarProperty Name="NFRNDBUIR" ColumnName="NFRNDBUIR" />
+                <ScalarProperty Name="BUSRPICK" ColumnName="BUSRPICK" />
+                <ScalarProperty Name="BRYNPICT" ColumnName="BRYNPICT" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TSUPPLIER">
+            <EntityTypeMapping TypeName="Model.TSUPPLIER">
+              <MappingFragment StoreEntitySet="TSUPPLIER">
+                <ScalarProperty Name="BCOMWITHVAT" ColumnName="BCOMWITHVAT" />
+                <ScalarProperty Name="TIBANCODE" ColumnName="TIBANCODE" />
+                <ScalarProperty Name="TBANKACC" ColumnName="TBANKACC" />
+                <ScalarProperty Name="TBANKBRANCH" ColumnName="TBANKBRANCH" />
+                <ScalarProperty Name="TBANKNAME" ColumnName="TBANKNAME" />
+                <ScalarProperty Name="TCARGOCOMPANY3" ColumnName="TCARGOCOMPANY3" />
+                <ScalarProperty Name="TCARGOCOMPANY2" ColumnName="TCARGOCOMPANY2" />
+                <ScalarProperty Name="TCARGOCOMPANY1" ColumnName="TCARGOCOMPANY1" />
+                <ScalarProperty Name="TRETURNZIP" ColumnName="TRETURNZIP" />
+                <ScalarProperty Name="TRETURNCITY" ColumnName="TRETURNCITY" />
+                <ScalarProperty Name="TRETURNTOWN" ColumnName="TRETURNTOWN" />
+                <ScalarProperty Name="TRETURNADDR2" ColumnName="TRETURNADDR2" />
+                <ScalarProperty Name="TRETURNADDR1" ColumnName="TRETURNADDR1" />
+                <ScalarProperty Name="TRETURNMAIL" ColumnName="TRETURNMAIL" />
+                <ScalarProperty Name="TRETURNPHONE" ColumnName="TRETURNPHONE" />
+                <ScalarProperty Name="TRETURNCNT" ColumnName="TRETURNCNT" />
+                <ScalarProperty Name="TTECHMAIL" ColumnName="TTECHMAIL" />
+                <ScalarProperty Name="TTECHPHONE" ColumnName="TTECHPHONE" />
+                <ScalarProperty Name="TTECHCNT" ColumnName="TTECHCNT" />
+                <ScalarProperty Name="TTAXNUMBER" ColumnName="TTAXNUMBER" />
+                <ScalarProperty Name="TTAXBUREAU" ColumnName="TTAXBUREAU" />
+                <ScalarProperty Name="TCNTMAIL" ColumnName="TCNTMAIL" />
+                <ScalarProperty Name="SUPID" ColumnName="SUPID" />
+                <ScalarProperty Name="TSUPNAME" ColumnName="TSUPNAME" />
+                <ScalarProperty Name="TCOMPANY" ColumnName="TCOMPANY" />
+                <ScalarProperty Name="TADDRLINE1" ColumnName="TADDRLINE1" />
+                <ScalarProperty Name="TADDRLINE2" ColumnName="TADDRLINE2" />
+                <ScalarProperty Name="TTOWN" ColumnName="TTOWN" />
+                <ScalarProperty Name="TCITY" ColumnName="TCITY" />
+                <ScalarProperty Name="TZIPCODE" ColumnName="TZIPCODE" />
+                <ScalarProperty Name="TPHONE" ColumnName="TPHONE" />
+                <ScalarProperty Name="TCONTACT" ColumnName="TCONTACT" />
+                <ScalarProperty Name="TCNTPHONE" ColumnName="TCNTPHONE" />
+                <ScalarProperty Name="AD1ID" ColumnName="AD1ID" />
+                <ScalarProperty Name="AD2ID" ColumnName="AD2ID" />
+                <ScalarProperty Name="SS0ID" ColumnName="SS0ID" />
+                <ScalarProperty Name="BUIDREQ" ColumnName="BUIDREQ" />
+                <ScalarProperty Name="CCATGITM" ColumnName="CCATGITM" />
+                <ScalarProperty Name="CSTATMRCH" ColumnName="CSTATMRCH" />
+                <ScalarProperty Name="NADVANTAGE" ColumnName="NADVANTAGE" />
+                <ScalarProperty Name="CTYPEADV" ColumnName="CTYPEADV" />
+                <ScalarProperty Name="NACCITMID" ColumnName="NACCITMID" />
+                <ScalarProperty Name="BFIXPITM" ColumnName="BFIXPITM" />
+                <ScalarProperty Name="CSTORETYPE" ColumnName="CSTORETYPE" />
+                <ScalarProperty Name="NINVCOUNT" ColumnName="NINVCOUNT" />
+                <ScalarProperty Name="NADVMGZ" ColumnName="NADVMGZ" />
+                <ScalarProperty Name="NFRNDADV" ColumnName="NFRNDADV" />
+                <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+                <ScalarProperty Name="NLIMCARGO" ColumnName="NLIMCARGO" />
+                <ScalarProperty Name="NCARGOAMNT" ColumnName="NCARGOAMNT" />
+                <ScalarProperty Name="NPROFIT" ColumnName="NPROFIT" />
+                <ScalarProperty Name="BCHRGBNK" ColumnName="BCHRGBNK" />
+                <ScalarProperty Name="UNAME" ColumnName="UNAME" />
+                <ScalarProperty Name="PASS" ColumnName="PASS" />
+                <ScalarProperty Name="NVAT" ColumnName="NVAT" />
+                <ScalarProperty Name="TINTRO" ColumnName="TINTRO" />
+                <ScalarProperty Name="NPAYDAYS" ColumnName="NPAYDAYS" />
+                <ScalarProperty Name="TXMLURL" ColumnName="TXMLURL" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TADDRLIST">
+            <EntityTypeMapping TypeName="Model.TADDRLIST">
+              <MappingFragment StoreEntitySet="TADDRLIST">
+                <ScalarProperty Name="TEMAIL" ColumnName="TEMAIL" />
+                <ScalarProperty Name="DMODIADDR" ColumnName="DMODIADDR" />
+                <ScalarProperty Name="DRECDGEN" ColumnName="DRECDGEN" />
+                <ScalarProperty Name="CSTATADDR" ColumnName="CSTATADDR" />
+                <ScalarProperty Name="TZIPCODE" ColumnName="TZIPCODE" />
+                <ScalarProperty Name="TTOWN" ColumnName="TTOWN" />
+                <ScalarProperty Name="TOWNID" ColumnName="TOWNID" />
+                <ScalarProperty Name="TCITY" ColumnName="TCITY" />
+                <ScalarProperty Name="CITYID" ColumnName="CITYID" />
+                <ScalarProperty Name="TCOUNTRY" ColumnName="TCOUNTRY" />
+                <ScalarProperty Name="TCOUNCODE" ColumnName="TCOUNCODE" />
+                <ScalarProperty Name="TADDRLINE2" ColumnName="TADDRLINE2" />
+                <ScalarProperty Name="TADDRLINE1" ColumnName="TADDRLINE1" />
+                <ScalarProperty Name="TUNIQUEID" ColumnName="TUNIQUEID" />
+                <ScalarProperty Name="TNAMERCPT" ColumnName="TNAMERCPT" />
+                <ScalarProperty Name="TPHONERCPT" ColumnName="TPHONERCPT" />
+                <ScalarProperty Name="TADDRTYPE" ColumnName="TADDRTYPE" />
+                <ScalarProperty Name="USRID" ColumnName="USRID" />
+                <ScalarProperty Name="ADDRID" ColumnName="ADDRID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TCARTITMLIST">
+            <EntityTypeMapping TypeName="Model.TCARTITMLIST">
+              <MappingFragment StoreEntitySet="TCARTITMLIST">
+                <ScalarProperty Name="NDISCOUNT" ColumnName="NDISCOUNT" />
+                <ScalarProperty Name="NRETQTY" ColumnName="NRETQTY" />
+                <ScalarProperty Name="NRETAMNT" ColumnName="NRETAMNT" />
+                <ScalarProperty Name="NTRYCOUNT" ColumnName="NTRYCOUNT" />
+                <ScalarProperty Name="BMAILSENT" ColumnName="BMAILSENT" />
+                <ScalarProperty Name="NCOMSELLER" ColumnName="NCOMSELLER" />
+                <ScalarProperty Name="NLDYBUYER" ColumnName="NLDYBUYER" />
+                <ScalarProperty Name="DAPPDATE" ColumnName="DAPPDATE" />
+                <ScalarProperty Name="DMODIDATE" ColumnName="DMODIDATE" />
+                <ScalarProperty Name="RETCARTITMID" ColumnName="RETCARTITMID" />
+                <ScalarProperty Name="FROMSTRID" ColumnName="FROMSTRID" />
+                <ScalarProperty Name="NADVANTAGE" ColumnName="NADVANTAGE" />
+                <ScalarProperty Name="NPROFIT" ColumnName="NPROFIT" />
+                <ScalarProperty Name="TCARGOINFO" ColumnName="TCARGOINFO" />
+                <ScalarProperty Name="TMODIUSR" ColumnName="TMODIUSR" />
+                <ScalarProperty Name="DDATECANCEL" ColumnName="DDATECANCEL" />
+                <ScalarProperty Name="TCANCELMSG" ColumnName="TCANCELMSG" />
+                <ScalarProperty Name="TSUPORDERID" ColumnName="TSUPORDERID" />
+                <ScalarProperty Name="CSTATINT" ColumnName="CSTATINT" />
+                <ScalarProperty Name="TNOTE" ColumnName="TNOTE" />
+                <ScalarProperty Name="NVAT" ColumnName="NVAT" />
+                <ScalarProperty Name="DRECDATE" ColumnName="DRECDATE" />
+                <ScalarProperty Name="TREFNTRX" ColumnName="TREFNTRX" />
+                <ScalarProperty Name="NCARGOAMNT" ColumnName="NCARGOAMNT" />
+                <ScalarProperty Name="NLDYPYMT" ColumnName="NLDYPYMT" />
+                <ScalarProperty Name="NCASHPYMT" ColumnName="NCASHPYMT" />
+                <ScalarProperty Name="NCOUPON" ColumnName="NCOUPON" />
+                <ScalarProperty Name="NITMAMNT" ColumnName="NITMAMNT" />
+                <ScalarProperty Name="NTERMAMNT" ColumnName="NTERMAMNT" />
+                <ScalarProperty Name="NINIPITM" ColumnName="NINIPITM" />
+                <ScalarProperty Name="NPRICUIR" ColumnName="NPRICUIR" />
+                <ScalarProperty Name="NQTY" ColumnName="NQTY" />
+                <ScalarProperty Name="ITMID" ColumnName="ITMID" />
+                <ScalarProperty Name="USRID" ColumnName="USRID" />
+                <ScalarProperty Name="STRID" ColumnName="STRID" />
+                <ScalarProperty Name="DEALID" ColumnName="DEALID" />
+                <ScalarProperty Name="CARTID" ColumnName="CARTID" />
+                <ScalarProperty Name="CARTITMID" ColumnName="CARTITMID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TGREYON">
+            <EntityTypeMapping TypeName="Model.TGREYON">
+              <MappingFragment StoreEntitySet="TGREYON">
+                <ScalarProperty Name="TPATH" ColumnName="TPATH" />
+                <ScalarProperty Name="NIMGVERSION" ColumnName="NIMGVERSION" />
+                <ScalarProperty Name="NSORTORDER" ColumnName="NSORTORDER" />
+                <ScalarProperty Name="TQRYSTR" ColumnName="TQRYSTR" />
+                <ScalarProperty Name="BIMGCHG" ColumnName="BIMGCHG" />
+                <ScalarProperty Name="CSTATGRY" ColumnName="CSTATGRY" />
+                <ScalarProperty Name="NLEVEL" ColumnName="NLEVEL" />
+                <ScalarProperty Name="PARID" ColumnName="PARID" />
+                <ScalarProperty Name="TIMAGE4" ColumnName="TIMAGE4" />
+                <ScalarProperty Name="TIMAGE3" ColumnName="TIMAGE3" />
+                <ScalarProperty Name="TIMAGE2" ColumnName="TIMAGE2" />
+                <ScalarProperty Name="TIMAGE" ColumnName="TIMAGE" />
+                <ScalarProperty Name="TDESCENG" ColumnName="TDESCENG" />
+                <ScalarProperty Name="TDESCTUR" ColumnName="TDESCTUR" />
+                <ScalarProperty Name="CCATGITM" ColumnName="CCATGITM" />
+                <ScalarProperty Name="GRYID" ColumnName="GRYID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TMSGMASTER">
+            <EntityTypeMapping TypeName="Model.TMSGMASTER">
+              <MappingFragment StoreEntitySet="TMSGMASTER">
+                <ScalarProperty Name="BACTIVE" ColumnName="BACTIVE" />
+                <ScalarProperty Name="THTML" ColumnName="THTML" />
+                <ScalarProperty Name="TDESC" ColumnName="TDESC" />
+                <ScalarProperty Name="MSMID" ColumnName="MSMID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TMSGQUEUE">
+            <EntityTypeMapping TypeName="Model.TMSGQUEUE">
+              <MappingFragment StoreEntitySet="TMSGQUEUE">
+                <ScalarProperty Name="TSENTMSGQ" ColumnName="TSENTMSGQ" />
+                <ScalarProperty Name="TGENEMSGQ" ColumnName="TGENEMSGQ" />
+                <ScalarProperty Name="NSENDTRIES" ColumnName="NSENDTRIES" />
+                <ScalarProperty Name="BISSENT" ColumnName="BISSENT" />
+                <ScalarProperty Name="TTOUSRS" ColumnName="TTOUSRS" />
+                <ScalarProperty Name="TFRUSR" ColumnName="TFRUSR" />
+                <ScalarProperty Name="TMSGQID" ColumnName="TMSGQID" />
+                <ScalarProperty Name="TMAILUSER" ColumnName="TMAILUSER" />
+                <ScalarProperty Name="TSUBJECT" ColumnName="TSUBJECT" />
+                <ScalarProperty Name="TBODY" ColumnName="TBODY" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TMSGTEMPLATE">
+            <EntityTypeMapping TypeName="Model.TMSGTEMPLATE">
+              <MappingFragment StoreEntitySet="TMSGTEMPLATE">
+                <ScalarProperty Name="MSMID" ColumnName="MSMID" />
+                <ScalarProperty Name="TGENEMST" ColumnName="TGENEMST" />
+                <ScalarProperty Name="BACTIVE" ColumnName="BACTIVE" />
+                <ScalarProperty Name="TDESC" ColumnName="TDESC" />
+                <ScalarProperty Name="TBODY" ColumnName="TBODY" />
+                <ScalarProperty Name="TSUBJECT" ColumnName="TSUBJECT" />
+                <ScalarProperty Name="MSTID" ColumnName="MSTID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TINTLOG">
+            <EntityTypeMapping TypeName="Model.TINTLOG">
+              <MappingFragment StoreEntitySet="TINTLOG">
+                <ScalarProperty Name="CTYPELOG" ColumnName="CTYPELOG" />
+                <ScalarProperty Name="TLOGDATA" ColumnName="TLOGDATA" />
+                <ScalarProperty Name="TNAME" ColumnName="TNAME" />
+                <ScalarProperty Name="USRID" ColumnName="USRID" />
+                <ScalarProperty Name="DLOGDATE" ColumnName="DLOGDATE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TSREYON">
+            <EntityTypeMapping TypeName="Model.TSREYON">
+              <MappingFragment StoreEntitySet="TSREYON">
+                <ScalarProperty Name="TPATH" ColumnName="TPATH" />
+                <ScalarProperty Name="BGRPBYCOL" ColumnName="BGRPBYCOL" />
+                <ScalarProperty Name="NIMGVERSION" ColumnName="NIMGVERSION" />
+                <ScalarProperty Name="CTYPERYN" ColumnName="CTYPERYN" />
+                <ScalarProperty Name="BSENSITIVE" ColumnName="BSENSITIVE" />
+                <ScalarProperty Name="NSORTORDER" ColumnName="NSORTORDER" />
+                <ScalarProperty Name="BIMGCHG" ColumnName="BIMGCHG" />
+                <ScalarProperty Name="SPARID" ColumnName="SPARID" />
+                <ScalarProperty Name="SCATID" ColumnName="SCATID" />
+                <ScalarProperty Name="TMODISRY" ColumnName="TMODISRY" />
+                <ScalarProperty Name="DMODISRY" ColumnName="DMODISRY" />
+                <ScalarProperty Name="TGENESRY" ColumnName="TGENESRY" />
+                <ScalarProperty Name="DGENESRY" ColumnName="DGENESRY" />
+                <ScalarProperty Name="CSTATSRY" ColumnName="CSTATSRY" />
+                <ScalarProperty Name="GRYID" ColumnName="GRYID" />
+                <ScalarProperty Name="SUPID" ColumnName="SUPID" />
+                <ScalarProperty Name="NLEVEL" ColumnName="NLEVEL" />
+                <ScalarProperty Name="PARID" ColumnName="PARID" />
+                <ScalarProperty Name="TIMAGE4" ColumnName="TIMAGE4" />
+                <ScalarProperty Name="TIMAGE3" ColumnName="TIMAGE3" />
+                <ScalarProperty Name="TIMAGE2" ColumnName="TIMAGE2" />
+                <ScalarProperty Name="TIMAGE" ColumnName="TIMAGE" />
+                <ScalarProperty Name="TDESCENG" ColumnName="TDESCENG" />
+                <ScalarProperty Name="TDESCTUR" ColumnName="TDESCTUR" />
+                <ScalarProperty Name="CCATGITM" ColumnName="CCATGITM" />
+                <ScalarProperty Name="SRYID" ColumnName="SRYID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TUSERLIST">
+            <EntityTypeMapping TypeName="Model.TUSERLIST">
+              <MappingFragment StoreEntitySet="TUSERLIST">
+                <ScalarProperty Name="DRECDATE" ColumnName="DRECDATE" />
+                <ScalarProperty Name="TMODIUSR" ColumnName="TMODIUSR" />
+                <ScalarProperty Name="DMODIDATE" ColumnName="DMODIDATE" />
+                <ScalarProperty Name="SUPID" ColumnName="SUPID" />
+                <ScalarProperty Name="TFULLNAME" ColumnName="TFULLNAME" />
+                <ScalarProperty Name="FBID" ColumnName="FBID" />
+                <ScalarProperty Name="CTITLE" ColumnName="CTITLE" />
+                <ScalarProperty Name="TPASSWORD" ColumnName="TPASSWORD" />
+                <ScalarProperty Name="TUNIQUEID" ColumnName="TUNIQUEID" />
+                <ScalarProperty Name="TCOUNCODE" ColumnName="TCOUNCODE" />
+                <ScalarProperty Name="DDATEBIRTH" ColumnName="DDATEBIRTH" />
+                <ScalarProperty Name="TLASTNAME" ColumnName="TLASTNAME" />
+                <ScalarProperty Name="NCURRUSR" ColumnName="NCURRUSR" />
+                <ScalarProperty Name="BSHOWPIC" ColumnName="BSHOWPIC" />
+                <ScalarProperty Name="TIBAN" ColumnName="TIBAN" />
+                <ScalarProperty Name="NLDYAUSR" ColumnName="NLDYAUSR" />
+                <ScalarProperty Name="NUSDBUSR" ColumnName="NUSDBUSR" />
+                <ScalarProperty Name="NRANKUSR" ColumnName="NRANKUSR" />
+                <ScalarProperty Name="CLANGUSR" ColumnName="CLANGUSR" />
+                <ScalarProperty Name="CSTATUSR" ColumnName="CSTATUSR" />
+                <ScalarProperty Name="LATITUDE" ColumnName="LATITUDE" />
+                <ScalarProperty Name="LONGITUDE" ColumnName="LONGITUDE" />
+                <ScalarProperty Name="TMOBIUSR" ColumnName="TMOBIUSR" />
+                <ScalarProperty Name="TMAILUSR" ColumnName="TMAILUSR" />
+                <ScalarProperty Name="TNAMEUSR" ColumnName="TNAMEUSR" />
+                <ScalarProperty Name="TNICKUSR" ColumnName="TNICKUSR" />
+                <ScalarProperty Name="CTYPEUSR" ColumnName="CTYPEUSR" />
+                <ScalarProperty Name="USRID" ColumnName="USRID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TCCTICKET">
+            <EntityTypeMapping TypeName="Model.TCCTICKET">
+              <MappingFragment StoreEntitySet="TCCTICKET">
+                <ScalarProperty Name="TCARGOTRACKID" ColumnName="TCARGOTRACKID" />
+                <ScalarProperty Name="TCARGOCOMPANY" ColumnName="TCARGOCOMPANY" />
+                <ScalarProperty Name="TCUSTCITY" ColumnName="TCUSTCITY" />
+                <ScalarProperty Name="TCUSTTOWN" ColumnName="TCUSTTOWN" />
+                <ScalarProperty Name="TPRODCODE" ColumnName="TPRODCODE" />
+                <ScalarProperty Name="TPRODUCTID" ColumnName="TPRODUCTID" />
+                <ScalarProperty Name="ITMID" ColumnName="ITMID" />
+                <ScalarProperty Name="SUPID" ColumnName="SUPID" />
+                <ScalarProperty Name="TCUSTMAIL" ColumnName="TCUSTMAIL" />
+                <ScalarProperty Name="TCUSTPHONE" ColumnName="TCUSTPHONE" />
+                <ScalarProperty Name="TCUSTUSRID" ColumnName="TCUSTUSRID" />
+                <ScalarProperty Name="TCUSTNAME" ColumnName="TCUSTNAME" />
+                <ScalarProperty Name="ORDERID" ColumnName="ORDERID" />
+                <ScalarProperty Name="DRESOLUTION" ColumnName="DRESOLUTION" />
+                <ScalarProperty Name="DRESOLUTIONTARGET" ColumnName="DRESOLUTIONTARGET" />
+                <ScalarProperty Name="TRESOLUTION" ColumnName="TRESOLUTION" />
+                <ScalarProperty Name="TASSIGNEE" ColumnName="TASSIGNEE" />
+                <ScalarProperty Name="DMODIFYON" ColumnName="DMODIFYON" />
+                <ScalarProperty Name="CSTATISSUE" ColumnName="CSTATISSUE" />
+                <ScalarProperty Name="NPRIORITY" ColumnName="NPRIORITY" />
+                <ScalarProperty Name="TDESCRIPTION" ColumnName="TDESCRIPTION" />
+                <ScalarProperty Name="TTOPIC" ColumnName="TTOPIC" />
+                <ScalarProperty Name="TTOPICCODE" ColumnName="TTOPICCODE" />
+                <ScalarProperty Name="DCREATEDON" ColumnName="DCREATEDON" />
+                <ScalarProperty Name="DCCDATE" ColumnName="DCCDATE" />
+                <ScalarProperty Name="TCCUSER" ColumnName="TCCUSER" />
+                <ScalarProperty Name="TCCTICKETID" ColumnName="TCCTICKETID" />
+                <ScalarProperty Name="TICKETID" ColumnName="TICKETID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TMEDIAQUEUE">
+            <EntityTypeMapping TypeName="Model.TMEDIAQUEUE">
+              <MappingFragment StoreEntitySet="TMEDIAQUEUE">
+                <ScalarProperty Name="DRECDATE" ColumnName="DRECDATE" />
+                <ScalarProperty Name="MEDIAORDER" ColumnName="MEDIAORDER" />
+                <ScalarProperty Name="SUPID" ColumnName="SUPID" />
+                <ScalarProperty Name="TCOLGRP" ColumnName="TCOLGRP" />
+                <ScalarProperty Name="UPLOADTRIES" ColumnName="UPLOADTRIES" />
+                <ScalarProperty Name="ISUPLOADED" ColumnName="ISUPLOADED" />
+                <ScalarProperty Name="SRYID" ColumnName="SRYID" />
+                <ScalarProperty Name="MEDIATYPE" ColumnName="MEDIATYPE" />
+                <ScalarProperty Name="URL" ColumnName="URL" />
+                <ScalarProperty Name="MDYQID" ColumnName="MDYQID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TCARTPYMNT">
+            <EntityTypeMapping TypeName="Model.TCARTPYMNT">
+              <MappingFragment StoreEntitySet="TCARTPYMNT">
+                <ScalarProperty Name="NRETAMNT" ColumnName="NRETAMNT" />
+                <ScalarProperty Name="TDESCDEDUCT" ColumnName="TDESCDEDUCT" />
+                <ScalarProperty Name="NDEDUCTAMNT" ColumnName="NDEDUCTAMNT" />
+                <ScalarProperty Name="NLDYITMPYMT" ColumnName="NLDYITMPYMT" />
+                <ScalarProperty Name="NCASHITMPYMT" ColumnName="NCASHITMPYMT" />
+                <ScalarProperty Name="TBANKREF" ColumnName="TBANKREF" />
+                <ScalarProperty Name="TIBAN" ColumnName="TIBAN" />
+                <ScalarProperty Name="TBANKDESC" ColumnName="TBANKDESC" />
+                <ScalarProperty Name="DBNKPYMT" ColumnName="DBNKPYMT" />
+                <ScalarProperty Name="TREFNTRX" ColumnName="TREFNTRX" />
+                <ScalarProperty Name="DDATEDLV" ColumnName="DDATEDLV" />
+                <ScalarProperty Name="DDATEINV" ColumnName="DDATEINV" />
+                <ScalarProperty Name="TINVINFO" ColumnName="TINVINFO" />
+                <ScalarProperty Name="NLWCOMVAT" ColumnName="NLWCOMVAT" />
+                <ScalarProperty Name="NTRYCOUNT" ColumnName="NTRYCOUNT" />
+                <ScalarProperty Name="BMAILSENT" ColumnName="BMAILSENT" />
+                <ScalarProperty Name="DDATEPYMT" ColumnName="DDATEPYMT" />
+                <ScalarProperty Name="CSTATPYMT" ColumnName="CSTATPYMT" />
+                <ScalarProperty Name="CTYPEPYMT" ColumnName="CTYPEPYMT" />
+                <ScalarProperty Name="DMODIDATE" ColumnName="DMODIDATE" />
+                <ScalarProperty Name="TMODIUSR" ColumnName="TMODIUSR" />
+                <ScalarProperty Name="NSUPPYMT" ColumnName="NSUPPYMT" />
+                <ScalarProperty Name="NLWINCOME" ColumnName="NLWINCOME" />
+                <ScalarProperty Name="NLWMARGIN" ColumnName="NLWMARGIN" />
+                <ScalarProperty Name="NTOTALVAT" ColumnName="NTOTALVAT" />
+                <ScalarProperty Name="NCOLLECTED" ColumnName="NCOLLECTED" />
+                <ScalarProperty Name="NBNKRCVD" ColumnName="NBNKRCVD" />
+                <ScalarProperty Name="NBNKCOST" ColumnName="NBNKCOST" />
+                <ScalarProperty Name="NCRDPYMT" ColumnName="NCRDPYMT" />
+                <ScalarProperty Name="NTOTALPYMNT" ColumnName="NTOTALPYMNT" />
+                <ScalarProperty Name="NLDYPYMT" ColumnName="NLDYPYMT" />
+                <ScalarProperty Name="NCASHPYMT" ColumnName="NCASHPYMT" />
+                <ScalarProperty Name="NCARGOPYMT" ColumnName="NCARGOPYMT" />
+                <ScalarProperty Name="NTOTALAMNT" ColumnName="NTOTALAMNT" />
+                <ScalarProperty Name="NCARGOAMNT" ColumnName="NCARGOAMNT" />
+                <ScalarProperty Name="NLIMCARGO" ColumnName="NLIMCARGO" />
+                <ScalarProperty Name="NTOTALPROD" ColumnName="NTOTALPROD" />
+                <ScalarProperty Name="NINSTRATE" ColumnName="NINSTRATE" />
+                <ScalarProperty Name="NINST" ColumnName="NINST" />
+                <ScalarProperty Name="NORDERAMNT" ColumnName="NORDERAMNT" />
+                <ScalarProperty Name="TCOMPANY" ColumnName="TCOMPANY" />
+                <ScalarProperty Name="SUPID" ColumnName="SUPID" />
+                <ScalarProperty Name="CARTID" ColumnName="CARTID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TRYNMAP">
+            <EntityTypeMapping TypeName="Model.TRYNMAP">
+              <MappingFragment StoreEntitySet="TRYNMAP">
+                <ScalarProperty Name="TMODIRYN" ColumnName="TMODIRYN" />
+                <ScalarProperty Name="DMODIRYN" ColumnName="DMODIRYN" />
+                <ScalarProperty Name="SRYID" ColumnName="SRYID" />
+                <ScalarProperty Name="GRYID" ColumnName="GRYID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

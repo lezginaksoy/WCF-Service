@@ -1,0 +1,8 @@
+C:\Lidya\Lidya.Models\bin\Release\Lidya.Models.dll.config
+C:\Lidya\Lidya.Models\bin\Release\Lidya.Models.dll
+C:\Lidya\Lidya.Models\bin\Release\Lidya.Models.pdb
+C:\Lidya\Lidya.Models\bin\Release\Autofac.dll
+C:\Lidya\Lidya.Models\bin\Release\Autofac.xml
+C:\Lidya\Lidya.Models\obj\Release\Lidya.Models.csprojResolveAssemblyReference.cache
+C:\Lidya\Lidya.Models\obj\Release\Lidya.Models.dll
+C:\Lidya\Lidya.Models\obj\Release\Lidya.Models.pdb

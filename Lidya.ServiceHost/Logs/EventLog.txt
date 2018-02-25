@@ -1,0 +1,438 @@
+2014-02-12 14:38:24,300 [10] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :The specified store provider cannot be found in the configuration, or is not valid. StackTrace :   at System.Data.EntityClient.EntityConnection.GetFactory(String providerString)
+   at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Entity.Internal.LazyInternalConnection.InitializeFromConnectionStringSetting(ConnectionStringSettings appConfigConnection)
+   at System.Data.Entity.Internal.LazyInternalConnection.TryInitializeFromAppConfig(String name, AppConfig config)
+   at System.Data.Entity.Internal.LazyInternalConnection.Initialize()
+   at System.Data.Entity.Internal.LazyInternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Lidya.Repository.SupplierRepository.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Repository\SupplierRepository.cs:line 49
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 149
+2014-02-12 14:42:59,870 [10] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :The specified store provider cannot be found in the configuration, or is not valid. StackTrace :   at System.Data.EntityClient.EntityConnection.GetFactory(String providerString)
+   at System.Data.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Entity.Internal.LazyInternalConnection.InitializeFromConnectionStringSetting(ConnectionStringSettings appConfigConnection)
+   at System.Data.Entity.Internal.LazyInternalConnection.TryInitializeFromAppConfig(String name, AppConfig config)
+   at System.Data.Entity.Internal.LazyInternalConnection.Initialize()
+   at System.Data.Entity.Internal.LazyInternalConnection.CreateObjectContextFromConnectionModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Lidya.Repository.SupplierRepository.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Repository\SupplierRepository.cs:line 49
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 149
+2014-02-12 17:36:31,196 [7] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :The underlying provider failed on Open. StackTrace :   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at Lidya.Repository.SupplierRepository.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Repository\SupplierRepository.cs:line 49
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 149
+2014-02-12 17:38:22,694 [7] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :The underlying provider failed on Open. StackTrace :   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at Lidya.Repository.SupplierRepository.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Repository\SupplierRepository.cs:line 49
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 149
+2014-02-13 15:48:58,183 [8] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :ORA-00911: geçersiz karakter StackTrace :   at OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   at OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteReader(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, OracleDataReaderImpl& rdrImpl, Int32 longFetchSize, Int32 lobPrefetchSize, OracleDependencyImpl orclDependencyImpl, Int64[] scnForExecution, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, Boolean isDescribeOnly, Boolean isFromEF)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteReader(Boolean requery, Boolean fillRequest, CommandBehavior behavior)
+   at Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at System.Data.Objects.ObjectContext.ExecuteStoreQueryInternal[TElement](String commandText, String entitySetName, MergeOption mergeOption, Object[] parameters)
+   at System.Data.Objects.ObjectContext.ExecuteStoreQuery[TElement](String commandText, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQueryAsIEnumerable[TElement](String sql, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Internal.InternalSqlQuery`1.GetEnumerator()
+   at Lidya.Repository.AdminProccessRepository.GetPaymentList() in c:\Lidya\Lidya.Repository\AdminProccessRepository.cs:line 75
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 205
+2014-02-13 15:51:55,963 [8] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :The cast to value type 'Decimal' failed because the materialized value is null. Either the result type's generic parameter or the query must use a nullable type. StackTrace :   at System.Data.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   at System.Data.Common.Internal.Materialization.Shaper.GetColumnValueWithErrorHandling[TColumn](Int32 ordinal)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at Lidya.Repository.AdminProccessRepository.GetPaymentList() in c:\Lidya\Lidya.Repository\AdminProccessRepository.cs:line 75
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 205
+2014-02-13 16:08:49,870 [8] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :The specified cast from a materialized 'System.String' type to the 'System.Decimal' type is not valid. StackTrace :   at System.Data.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   at System.Data.Common.Internal.Materialization.Shaper.GetColumnValueWithErrorHandling[TColumn](Int32 ordinal)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at Lidya.Repository.AdminProccessRepository.GetPaymentList() in c:\Lidya\Lidya.Repository\AdminProccessRepository.cs:line 77
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 205
+2014-02-17 09:38:06,415 [8] WARN  Lidya.Business.MemberBusiness - AuthenticatePortal() baþarýsýz giriþ. Böyle bir kullanýcý yok.!  Kullanýcý Adý: lidyaworld
+2014-02-17 09:38:09,877 [12] WARN  Lidya.Business.MemberBusiness - AuthenticatePortal() baþarýsýz giriþ. Böyle bir kullanýcý yok.!  Kullanýcý Adý: lidyaworld
+2014-02-19 14:16:18,303 [8] WARN  Lidya.Business.MemberBusiness - AuthenticatePortal() baþarýsýz giriþ. Böyle bir kullanýcý yok.!  Kullanýcý Adý: divas
+2014-02-19 14:16:25,992 [12] WARN  Lidya.Business.MemberBusiness - AuthenticatePortal() baþarýsýz giriþ. Böyle bir kullanýcý yok.!  Kullanýcý Adý: divas
+2014-02-28 18:49:08,117 [9] WARN  Lidya.Business.MemberBusiness - AuthenticatePortal() baþarýsýz giriþ. Böyle bir kullanýcý yok.!  Kullanýcý Adý: lidyaworld
+2014-03-04 17:49:19,179 [7] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :Object reference not set to an instance of an object. StackTrace :   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 197
+2014-03-04 17:49:19,180 [15] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :Object reference not set to an instance of an object. StackTrace :   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 197
+2014-03-11 13:53:56,519 [14] WARN  Lidya.Business.MemberBusiness - AuthenticatePortal() baþarýsýz giriþ. Böyle bir kullanýcý yok.!  Kullanýcý Adý: lidyamuh
+2014-03-11 14:41:55,107 [7] WARN  Lidya.Business.MemberBusiness - AuthenticatePortal() baþarýsýz giriþ. Böyle bir kullanýcý yok.!  Kullanýcý Adý: lidyamuh
+2014-03-13 11:03:29,237 [24] WARN  Lidya.Business.MemberBusiness - AuthenticatePortal() baþarýsýz giriþ. Böyle bir kullanýcý yok.!  Kullanýcý Adý: lidyamuh
+2014-03-13 11:04:31,787 [17] WARN  Lidya.Business.MemberBusiness - AuthenticatePortal() baþarýsýz giriþ. Böyle bir kullanýcý yok.!  Kullanýcý Adý: lidyamuh
+2014-03-13 17:20:33,147 [4] WARN  Lidya.Business.MemberBusiness - AuthenticatePortal() baþarýsýz giriþ. Böyle bir kullanýcý yok.!  Kullanýcý Adý: lidyamuh
+2014-03-13 17:20:57,473 [10] WARN  Lidya.Business.MemberBusiness - AuthenticatePortal() baþarýsýz giriþ. Böyle bir kullanýcý yok.!  Kullanýcý Adý: lidyamuh
+2014-03-18 16:16:13,511 [5] WARN  Lidya.Business.MemberBusiness - AuthenticatePortal() baþarýsýz giriþ. Böyle bir kullanýcý yok.!  Kullanýcý Adý: lidyamuh
+2014-03-19 12:44:21,794 [17] WARN  Lidya.Business.MemberBusiness - AuthenticatePortal() baþarýsýz giriþ. Böyle bir kullanýcý yok.!  Kullanýcý Adý: lidyamuh
+2014-03-20 15:49:25,662 [6] WARN  Lidya.Business.MemberBusiness - AuthenticatePortal() baþarýsýz giriþ. Böyle bir kullanýcý yok.!  Kullanýcý Adý: lidyamuh
+2014-03-26 09:28:06,518 [11] WARN  Lidya.Business.MemberBusiness - AuthenticatePortal() baþarýsýz giriþ. Böyle bir kullanýcý yok.!  Kullanýcý Adý: korayspor
+2014-04-28 11:08:02,805 [7] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :The underlying provider failed on Open. StackTrace :   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at Lidya.Repository.SupplierRepository.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Repository\SupplierRepository.cs:line 49
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 152
+2014-04-28 11:08:49,590 [7] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :The underlying provider failed on Open. StackTrace :   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at Lidya.Repository.SupplierRepository.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Repository\SupplierRepository.cs:line 49
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 152
+2014-04-28 11:08:55,021 [10] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :The underlying provider failed on Open. StackTrace :   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at Lidya.Repository.SupplierRepository.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Repository\SupplierRepository.cs:line 49
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 152
+2014-04-28 11:09:39,845 [7] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :The underlying provider failed on Open. StackTrace :   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at Lidya.Repository.SupplierRepository.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Repository\SupplierRepository.cs:line 49
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 152
+2014-04-28 11:09:44,882 [16] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :The underlying provider failed on Open. StackTrace :   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at Lidya.Repository.SupplierRepository.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Repository\SupplierRepository.cs:line 49
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 152
+2014-04-28 11:39:05,301 [7] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :The underlying provider failed on Open. StackTrace :   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at Lidya.Repository.SupplierRepository.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Repository\SupplierRepository.cs:line 49
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 152
+2014-04-28 11:39:14,261 [9] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :The underlying provider failed on Open. StackTrace :   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at Lidya.Repository.SupplierRepository.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Repository\SupplierRepository.cs:line 49
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 152
+2014-04-28 11:40:03,476 [9] WARN  Lidya.Business.MemberBusiness - AuthenticatePortal() Hatalý Giriþ,kullanýcý adý alaný boþ.!
+2014-04-28 11:40:23,550 [10] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :The underlying provider failed on Open. StackTrace :   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at Lidya.Repository.SupplierRepository.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Repository\SupplierRepository.cs:line 49
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 152
+2014-04-28 11:44:44,134 [9] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :The underlying provider failed on Open. StackTrace :   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at Lidya.Repository.SupplierRepository.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Repository\SupplierRepository.cs:line 49
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 152
+2014-04-29 18:10:31,435 [7] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :The underlying provider failed on Open. StackTrace :   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at Lidya.Repository.SupplierRepository.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Repository\SupplierRepository.cs:line 49
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 152
+2014-05-05 10:24:51,015 [8] WARN  Lidya.Business.MemberBusiness - AuthenticatePortal() baþarýsýz giriþ. Böyle bir kullanýcý yok.!  Kullanýcý Adý: lidyaworld
+2014-05-05 10:25:08,303 [10] WARN  Lidya.Business.MemberBusiness - AuthenticatePortal() baþarýsýz giriþ. Böyle bir kullanýcý yok.!  Kullanýcý Adý: lidyaworld
+2014-05-05 10:25:16,384 [12] WARN  Lidya.Business.MemberBusiness - AuthenticatePortal() baþarýsýz giriþ. Böyle bir kullanýcý yok.!  Kullanýcý Adý: lidyaworld
+2014-05-05 10:25:25,529 [10] WARN  Lidya.Business.MemberBusiness - AuthenticatePortal() baþarýsýz giriþ. Böyle bir kullanýcý yok.!  Kullanýcý Adý: lidyaworld
+2014-05-09 11:23:48,178 [10] WARN  Lidya.Business.MemberBusiness - AuthenticatePortal() baþarýsýz giriþ. Böyle bir kullanýcý yok.!  Kullanýcý Adý: liyaworld
+2014-05-09 11:24:03,159 [10] WARN  Lidya.Business.MemberBusiness - AuthenticatePortal() baþarýsýz giriþ. Böyle bir kullanýcý yok.!  Kullanýcý Adý: lidyaworld
+2014-05-30 13:48:26,506 [10] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :The underlying provider failed on Open. StackTrace :   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at Lidya.Repository.SupplierRepository.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Repository\SupplierRepository.cs:line 49
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 152
+2014-05-30 13:48:53,447 [10] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :The underlying provider failed on Open. StackTrace :   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at Lidya.Repository.SupplierRepository.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Repository\SupplierRepository.cs:line 49
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 152
+2014-05-30 13:49:23,017 [12] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :The underlying provider failed on Open. StackTrace :   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at Lidya.Repository.SupplierRepository.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Repository\SupplierRepository.cs:line 49
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 152
+2014-05-30 13:50:09,516 [12] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :The underlying provider failed on Open. StackTrace :   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at Lidya.Repository.SupplierRepository.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Repository\SupplierRepository.cs:line 49
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 152
+2014-05-30 13:50:44,921 [12] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :The underlying provider failed on Open. StackTrace :   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at Lidya.Repository.SupplierRepository.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Repository\SupplierRepository.cs:line 49
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 152
+2014-05-30 13:57:24,883 [12] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :The underlying provider failed on Open. StackTrace :   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at Lidya.Repository.SupplierRepository.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Repository\SupplierRepository.cs:line 49
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 152
+2014-06-01 15:13:31,415 [8] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :The underlying provider failed on Open. StackTrace :   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at Lidya.Repository.SupplierRepository.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Repository\SupplierRepository.cs:line 49
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 152
+2014-06-01 15:15:24,057 [8] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :The underlying provider failed on Open. StackTrace :   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at Lidya.Repository.SupplierRepository.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Repository\SupplierRepository.cs:line 49
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 152
+2014-06-01 15:16:17,701 [8] WARN  Lidya.Business.MemberBusiness - AuthenticatePortal() baþarýsýz giriþ. Böyle bir kullanýcý yok.!  Kullanýcý Adý: lidyaworld
+2014-06-03 17:54:01,875 [8] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :The underlying provider failed on Open. StackTrace :   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at Lidya.Repository.SupplierRepository.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Repository\SupplierRepository.cs:line 49
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 152
+2014-06-03 17:54:10,605 [12] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :The underlying provider failed on Open. StackTrace :   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at Lidya.Repository.SupplierRepository.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Repository\SupplierRepository.cs:line 49
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 152
+2014-06-03 17:54:29,835 [14] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :The underlying provider failed on Open. StackTrace :   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at Lidya.Repository.SupplierRepository.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Repository\SupplierRepository.cs:line 49
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 152
+2014-06-03 17:55:44,732 [14] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :The underlying provider failed on Open. StackTrace :   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at Lidya.Repository.SupplierRepository.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Repository\SupplierRepository.cs:line 49
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 152
+2014-06-03 17:56:32,311 [14] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :The underlying provider failed on Open. StackTrace :   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at Lidya.Repository.SupplierRepository.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Repository\SupplierRepository.cs:line 49
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 152
+2014-06-03 17:59:12,902 [14] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :The underlying provider failed on Open. StackTrace :   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at Lidya.Repository.SupplierRepository.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Repository\SupplierRepository.cs:line 49
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 152
+2014-09-12 19:04:49,900 [7] ERROR Lidya.Business.MemberBusiness - AuthenticatePortal() ,Hata Oluþtu.! Exception.! : Message :The underlying provider failed on Open. StackTrace :   at System.Data.EntityClient.EntityConnection.OpenStoreConnectionIf(Boolean openCondition, DbConnection storeConnectionToOpen, DbConnection originalConnection, String exceptionCode, String attemptedOperation, Boolean& closeStoreConnectionOnFailure)
+   at System.Data.EntityClient.EntityConnection.Open()
+   at System.Data.Objects.ObjectContext.EnsureConnection()
+   at System.Data.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Objects.ObjectQuery`1.System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   at System.Data.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[S](Expression expression)
+   at System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at Lidya.Repository.SupplierRepository.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Repository\SupplierRepository.cs:line 49
+   at Lidya.Business.MemberBusiness.AuthenticatePortal(AuthenticatePortalInputDVO userInfo) in c:\Lidya\Lidya.Business\MemberBusiness.cs:line 152

@@ -1,0 +1,31 @@
+C:\Lidya\Lidya.Repository\obj\Debug\Lidya.Repository.csprojResolveAssemblyReference.cache
+C:\Lidya\Lidya.Repository\bin\Debug\Lidya.Repository.dll.config
+C:\Lidya\Lidya.Repository\bin\Debug\Lidya.Repository.dll
+C:\Lidya\Lidya.Repository\bin\Debug\Lidya.Repository.pdb
+C:\Lidya\Lidya.Repository\bin\Debug\Autofac.dll
+C:\Lidya\Lidya.Repository\bin\Debug\AWSSDK.Fakes.dll
+C:\Lidya\Lidya.Repository\bin\Debug\EntityFramework.dll
+C:\Lidya\Lidya.Repository\bin\Debug\HtmlAgilityPack.dll
+C:\Lidya\Lidya.Repository\bin\Debug\Lidya.Common.dll
+C:\Lidya\Lidya.Repository\bin\Debug\Lidya.Models.dll
+C:\Lidya\Lidya.Repository\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Lidya\Lidya.Repository\bin\Debug\RazorEngine.dll
+C:\Lidya\Lidya.Repository\bin\Debug\System.Web.Razor.dll
+C:\Lidya\Lidya.Repository\bin\Debug\ImageResizer.dll
+C:\Lidya\Lidya.Repository\bin\Debug\ImageResizer.Plugins.PrettyGifs.dll
+C:\Lidya\Lidya.Repository\bin\Debug\Lidya.Common.pdb
+C:\Lidya\Lidya.Repository\bin\Debug\Lidya.Models.pdb
+C:\Lidya\Lidya.Repository\bin\Debug\Autofac.xml
+C:\Lidya\Lidya.Repository\bin\Debug\AWSSDK.Fakes.xml
+C:\Lidya\Lidya.Repository\bin\Debug\EntityFramework.xml
+C:\Lidya\Lidya.Repository\bin\Debug\HtmlAgilityPack.pdb
+C:\Lidya\Lidya.Repository\bin\Debug\HtmlAgilityPack.xml
+C:\Lidya\Lidya.Repository\bin\Debug\RazorEngine.pdb
+C:\Lidya\Lidya.Repository\bin\Debug\RazorEngine.xml
+C:\Lidya\Lidya.Repository\bin\Debug\System.Web.Razor.xml
+C:\Lidya\Lidya.Repository\bin\Debug\ImageResizer.xml
+C:\Lidya\Lidya.Repository\bin\Debug\ImageResizer.Plugins.PrettyGifs.xml
+C:\Lidya\Lidya.Repository\obj\Debug\Lidya.Repository.dll
+C:\Lidya\Lidya.Repository\obj\Debug\Lidya.Repository.pdb
+C:\Users\la185067\Projects\WCF Service\Lidya\Lidya.Repository\obj\Debug\Lidya.Repository.csprojResolveAssemblyReference.cache
+C:\Users\la185067\Projects\WCF Service\Lidya\Lidya.Repository\obj\Debug\Lidya.Repository.csproj.CoreCompileInputs.cache

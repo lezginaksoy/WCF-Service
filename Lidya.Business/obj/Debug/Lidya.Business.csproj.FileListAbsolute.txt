@@ -1,0 +1,34 @@
+C:\Lidya\Lidya.Business\bin\Debug\Lidya.Business.dll.config
+C:\Lidya\Lidya.Business\bin\Debug\Lidya.Business.dll
+C:\Lidya\Lidya.Business\bin\Debug\Lidya.Business.pdb
+C:\Lidya\Lidya.Business\bin\Debug\Autofac.dll
+C:\Lidya\Lidya.Business\bin\Debug\Lidya.Common.dll
+C:\Lidya\Lidya.Business\bin\Debug\Lidya.Models.dll
+C:\Lidya\Lidya.Business\bin\Debug\Lidya.Repository.dll
+C:\Lidya\Lidya.Business\bin\Debug\log4net.dll
+C:\Lidya\Lidya.Business\bin\Debug\ImageResizer.dll
+C:\Lidya\Lidya.Business\bin\Debug\ImageResizer.Plugins.PrettyGifs.dll
+C:\Lidya\Lidya.Business\bin\Debug\AWSSDK.dll
+C:\Lidya\Lidya.Business\bin\Debug\EntityFramework.dll
+C:\Lidya\Lidya.Business\bin\Debug\RazorEngine.dll
+C:\Lidya\Lidya.Business\bin\Debug\HtmlAgilityPack.dll
+C:\Lidya\Lidya.Business\bin\Debug\System.Web.Razor.dll
+C:\Lidya\Lidya.Business\bin\Debug\Lidya.Common.pdb
+C:\Lidya\Lidya.Business\bin\Debug\Lidya.Models.pdb
+C:\Lidya\Lidya.Business\bin\Debug\Lidya.Repository.pdb
+C:\Lidya\Lidya.Business\bin\Debug\Autofac.xml
+C:\Lidya\Lidya.Business\bin\Debug\log4net.xml
+C:\Lidya\Lidya.Business\bin\Debug\ImageResizer.xml
+C:\Lidya\Lidya.Business\bin\Debug\ImageResizer.Plugins.PrettyGifs.xml
+C:\Lidya\Lidya.Business\bin\Debug\EntityFramework.xml
+C:\Lidya\Lidya.Business\bin\Debug\RazorEngine.pdb
+C:\Lidya\Lidya.Business\bin\Debug\RazorEngine.xml
+C:\Lidya\Lidya.Business\bin\Debug\HtmlAgilityPack.pdb
+C:\Lidya\Lidya.Business\bin\Debug\HtmlAgilityPack.xml
+C:\Lidya\Lidya.Business\bin\Debug\System.Web.Razor.xml
+C:\Lidya\Lidya.Business\obj\Debug\Lidya.Business.csprojResolveAssemblyReference.cache
+C:\Lidya\Lidya.Business\obj\Debug\Lidya.Business.dll
+C:\Lidya\Lidya.Business\obj\Debug\Lidya.Business.pdb
+C:\Lidya\Lidya.Business\bin\Debug\AWSSDK.pdb
+C:\Users\la185067\Projects\WCF Service\Lidya\Lidya.Business\obj\Debug\Lidya.Business.csprojResolveAssemblyReference.cache
+C:\Users\la185067\Projects\WCF Service\Lidya\Lidya.Business\obj\Debug\Lidya.Business.csproj.CoreCompileInputs.cache

@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8C700443-573A-4E3A-B306-2CD10B98352A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lidya.Repository</RootNamespace>
+    <AssemblyName>Lidya.Repository</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac, Version=3.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Autofac.3.2.0\lib\net40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK, Version=2.0.5.0, Culture=neutral, PublicKeyToken=9f476d3089b52be3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\AWSSDK.2.0.5.0\lib\net45\AWSSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Fakes">
+      <HintPath>FakesAssemblies\AWSSDK.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.6\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Oracle.DataAccess, Version=4.112.3.60, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DynamoDBLoader\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="RazorEngine, Version=3.4.1.0, Culture=neutral, PublicKeyToken=9ee697374c7e744a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\RazorEngine.3.4.1\lib\net45\RazorEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.1.1\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Teta.Basic">
+      <HintPath>..\..\..\Users\mehmetyavuz\Downloads\Teta.Basic.dll</HintPath>
+    </Reference>
+    <Reference Include="Teta.Utility">
+      <HintPath>..\DynamoDBLoader\Teta.Utility.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="KODX.cs">
+      <DependentUpon>Lidya.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Lidya.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lidya.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Lidya.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lidya.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Lidya.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lidya.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="TCCTICKET.cs">
+      <DependentUpon>Lidya.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TINTLOG.cs">
+      <DependentUpon>Lidya.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMEDIAQUEUE.cs">
+      <DependentUpon>Lidya.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMSGMASTER.cs">
+      <DependentUpon>Lidya.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMSGQUEUE.cs">
+      <DependentUpon>Lidya.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMSGTEMPLATE.cs">
+      <DependentUpon>Lidya.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepositoryBase.cs" />
+    <Compile Include="TADDRLIST.cs">
+      <DependentUpon>Lidya.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TCARTITMLIST.cs">
+      <DependentUpon>Lidya.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TCARTLIST.cs">
+      <DependentUpon>Lidya.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TCARTPYMNT.cs">
+      <DependentUpon>Lidya.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TGREYON.cs">
+      <DependentUpon>Lidya.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TITEMLIST.cs">
+      <DependentUpon>Lidya.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMEDIALIST.cs">
+      <DependentUpon>Lidya.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TMEDIASIZE.cs">
+      <DependentUpon>Lidya.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TRITMREYON.cs">
+      <DependentUpon>Lidya.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TRUSERITEM.cs">
+      <DependentUpon>Lidya.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TRYNMAP.cs">
+      <DependentUpon>Lidya.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TSREYON.cs">
+      <DependentUpon>Lidya.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TSUPPLIER.cs">
+      <DependentUpon>Lidya.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TUSERLIST.cs">
+      <DependentUpon>Lidya.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lidya.Models\Lidya.Models.csproj">
+      <Project>{c7cd8d9b-f7e2-43d5-b21e-2a067168fa61}</Project>
+      <Name>Lidya.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="Lidya.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Lidya.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Lidya.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Lidya.edmx</DependentUpon>
+      <LastGenOutput>Lidya.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Lidya.edmx.diagram">
+      <DependentUpon>Lidya.edmx</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Lidya.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Lidya.edmx</DependentUpon>
+      <LastGenOutput>Lidya.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

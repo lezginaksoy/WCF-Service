@@ -1,0 +1,39 @@
+C:\Lidya\Lidya.ServiceHost\bin\Lidya.ServiceHost.dll.config
+C:\Lidya\Lidya.ServiceHost\bin\Lidya.ServiceHost.dll
+C:\Lidya\Lidya.ServiceHost\bin\Lidya.ServiceHost.pdb
+C:\Lidya\Lidya.ServiceHost\bin\Autofac.dll
+C:\Lidya\Lidya.ServiceHost\bin\Autofac.Integration.Wcf.dll
+C:\Lidya\Lidya.ServiceHost\bin\Lidya.Business.dll
+C:\Lidya\Lidya.ServiceHost\bin\Lidya.Models.dll
+C:\Lidya\Lidya.ServiceHost\bin\Lidya.Repository.dll
+C:\Lidya\Lidya.ServiceHost\bin\log4net.dll
+C:\Lidya\Lidya.ServiceHost\bin\Lidya.Common.dll
+C:\Lidya\Lidya.ServiceHost\bin\EntityFramework.dll
+C:\Lidya\Lidya.ServiceHost\bin\RazorEngine.dll
+C:\Lidya\Lidya.ServiceHost\bin\HtmlAgilityPack.dll
+C:\Lidya\Lidya.ServiceHost\bin\ImageResizer.dll
+C:\Lidya\Lidya.ServiceHost\bin\ImageResizer.Plugins.PrettyGifs.dll
+C:\Lidya\Lidya.ServiceHost\bin\AWSSDK.dll
+C:\Lidya\Lidya.ServiceHost\bin\System.Web.Razor.dll
+C:\Lidya\Lidya.ServiceHost\bin\Lidya.Business.pdb
+C:\Lidya\Lidya.ServiceHost\bin\Lidya.Models.pdb
+C:\Lidya\Lidya.ServiceHost\bin\Autofac.xml
+C:\Lidya\Lidya.ServiceHost\bin\Lidya.Repository.pdb
+C:\Lidya\Lidya.ServiceHost\bin\log4net.xml
+C:\Lidya\Lidya.ServiceHost\bin\Lidya.Common.pdb
+C:\Lidya\Lidya.ServiceHost\bin\EntityFramework.xml
+C:\Lidya\Lidya.ServiceHost\bin\RazorEngine.pdb
+C:\Lidya\Lidya.ServiceHost\bin\RazorEngine.xml
+C:\Lidya\Lidya.ServiceHost\bin\HtmlAgilityPack.pdb
+C:\Lidya\Lidya.ServiceHost\bin\HtmlAgilityPack.xml
+C:\Lidya\Lidya.ServiceHost\bin\ImageResizer.xml
+C:\Lidya\Lidya.ServiceHost\bin\ImageResizer.Plugins.PrettyGifs.xml
+C:\Lidya\Lidya.ServiceHost\bin\System.Web.Razor.xml
+C:\Lidya\Lidya.ServiceHost\obj\Debug\Lidya.ServiceHost.csprojResolveAssemblyReference.cache
+C:\Lidya\Lidya.ServiceHost\obj\Debug\Lidya.ServiceHost.dll
+C:\Lidya\Lidya.ServiceHost\obj\Debug\Lidya.ServiceHost.pdb
+C:\Lidya\Lidya.ServiceHost\bin\AWSSDK.pdb
+C:\Users\la185067\Projects\WCF Service\Lidya\Lidya.ServiceHost\obj\Debug\Lidya.ServiceHost.csprojResolveAssemblyReference.cache
+C:\Users\la185067\Projects\WCF Service\Lidya\Lidya.ServiceHost\obj\Debug\Lidya.ServiceHost.csproj.CoreCompileInputs.cache
+C:\Users\la185067\Projects\WCF Service\Lidya\Lidya.ServiceHost\obj\Debug\Lidya.ServiceHost.dll
+C:\Users\la185067\Projects\WCF Service\Lidya\Lidya.ServiceHost\obj\Debug\Lidya.ServiceHost.pdb

@@ -1,0 +1,567 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="LidyaEntities">
+    <EntitySetMapping Name="KODX">
+      <EntityTypeMapping TypeName="Model.KODX">
+        <MappingFragment StoreEntitySet="KODX">
+          <ScalarProperty Name="KODID" ColumnName="KODID" />
+          <ScalarProperty Name="NVALUKOD" ColumnName="NVALUKOD" />
+          <ScalarProperty Name="CSTATKOD" ColumnName="CSTATKOD" />
+          <ScalarProperty Name="TDESCTUR" ColumnName="TDESCTUR" />
+          <ScalarProperty Name="TDESCENG" ColumnName="TDESCENG" />
+          <ScalarProperty Name="NSORTKOD" ColumnName="NSORTKOD" />
+          <ScalarProperty Name="TMNEMKOD" ColumnName="TMNEMKOD" />
+          <ScalarProperty Name="DRECDGEN" ColumnName="DRECDGEN" />
+          <ScalarProperty Name="TUSERGEN" ColumnName="TUSERGEN" />
+          <ScalarProperty Name="DMODIKOD" ColumnName="DMODIKOD" />
+          <ScalarProperty Name="TMODIKOD" ColumnName="TMODIKOD" />
+          <ScalarProperty Name="TCODEKOD" ColumnName="TCODEKOD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TCARTLIST">
+      <EntityTypeMapping TypeName="Model.TCARTLIST">
+        <MappingFragment StoreEntitySet="TCARTLIST">
+          <ScalarProperty Name="NDISCOUNT" ColumnName="NDISCOUNT" />
+          <ScalarProperty Name="NRETAMNT" ColumnName="NRETAMNT" />
+          <ScalarProperty Name="TPRCHCODE" ColumnName="TPRCHCODE" />
+          <ScalarProperty Name="TNOTE" ColumnName="TNOTE" />
+          <ScalarProperty Name="BNKOID" ColumnName="BNKOID" />
+          <ScalarProperty Name="NTRYCOUNT" ColumnName="NTRYCOUNT" />
+          <ScalarProperty Name="BMAILSENT" ColumnName="BMAILSENT" />
+          <ScalarProperty Name="CARTID" ColumnName="CARTID" />
+          <ScalarProperty Name="USRID" ColumnName="USRID" />
+          <ScalarProperty Name="SHIPADDRID" ColumnName="SHIPADDRID" />
+          <ScalarProperty Name="INVADDRID" ColumnName="INVADDRID" />
+          <ScalarProperty Name="NTOTALPROD" ColumnName="NTOTALPROD" />
+          <ScalarProperty Name="NTOTALCARGO" ColumnName="NTOTALCARGO" />
+          <ScalarProperty Name="NDISCARGO" ColumnName="NDISCARGO" />
+          <ScalarProperty Name="NCARGOAMNT" ColumnName="NCARGOAMNT" />
+          <ScalarProperty Name="NTOTALAMNT" ColumnName="NTOTALAMNT" />
+          <ScalarProperty Name="TREFNTRX" ColumnName="TREFNTRX" />
+          <ScalarProperty Name="NCASHADV" ColumnName="NCASHADV" />
+          <ScalarProperty Name="NLIDYAADV" ColumnName="NLIDYAADV" />
+          <ScalarProperty Name="BUSEBAL" ColumnName="BUSEBAL" />
+          <ScalarProperty Name="BNKID" ColumnName="BNKID" />
+          <ScalarProperty Name="NINST" ColumnName="NINST" />
+          <ScalarProperty Name="NCASHPYMT" ColumnName="NCASHPYMT" />
+          <ScalarProperty Name="NLDYPYMT" ColumnName="NLDYPYMT" />
+          <ScalarProperty Name="NCARDPYMT" ColumnName="NCARDPYMT" />
+          <ScalarProperty Name="CSTATCART" ColumnName="CSTATCART" />
+          <ScalarProperty Name="DDATECREATE" ColumnName="DDATECREATE" />
+          <ScalarProperty Name="DDATESHIP" ColumnName="DDATESHIP" />
+          <ScalarProperty Name="DDATEEXP" ColumnName="DDATEEXP" />
+          <ScalarProperty Name="USELIDYA" ColumnName="USELIDYA" />
+          <ScalarProperty Name="NPYMNTCARD" ColumnName="NPYMNTCARD" />
+          <ScalarProperty Name="NPYMNTCASH" ColumnName="NPYMNTCASH" />
+          <ScalarProperty Name="NPYMNTLIDYA" ColumnName="NPYMNTLIDYA" />
+          <ScalarProperty Name="TMODIUSR" ColumnName="TMODIUSR" />
+          <ScalarProperty Name="DMODICART" ColumnName="DMODICART" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TITEMLIST">
+      <EntityTypeMapping TypeName="Model.TITEMLIST">
+        <MappingFragment StoreEntitySet="TITEMLIST">
+          <ScalarProperty Name="ITMID" ColumnName="ITMID" />
+          <ScalarProperty Name="TDESCTUR" ColumnName="TDESCTUR" />
+          <ScalarProperty Name="TDESCENG" ColumnName="TDESCENG" />
+          <ScalarProperty Name="LAST_PRICE" ColumnName="LAST_PRICE" />
+          <ScalarProperty Name="LAST_PRICE_DATE" ColumnName="LAST_PRICE_DATE" />
+          <ScalarProperty Name="CCATGITM" ColumnName="CCATGITM" />
+          <ScalarProperty Name="CUNITITM" ColumnName="CUNITITM" />
+          <ScalarProperty Name="PREV_PRICE" ColumnName="PREV_PRICE" />
+          <ScalarProperty Name="CTYPEITM" ColumnName="CTYPEITM" />
+          <ScalarProperty Name="DLAUNITM" ColumnName="DLAUNITM" />
+          <ScalarProperty Name="NINIPITM" ColumnName="NINIPITM" />
+          <ScalarProperty Name="NLIFEITM" ColumnName="NLIFEITM" />
+          <ScalarProperty Name="NMINPITM" ColumnName="NMINPITM" />
+          <ScalarProperty Name="NMAXPITM" ColumnName="NMAXPITM" />
+          <ScalarProperty Name="NADETITM" ColumnName="NADETITM" />
+          <ScalarProperty Name="TBRANDNAME" ColumnName="TBRANDNAME" />
+          <ScalarProperty Name="TPRODCODE" ColumnName="TPRODCODE" />
+          <ScalarProperty Name="TPRODUCTID" ColumnName="TPRODUCTID" />
+          <ScalarProperty Name="TMODELID" ColumnName="TMODELID" />
+          <ScalarProperty Name="TMODELSIZE" ColumnName="TMODELSIZE" />
+          <ScalarProperty Name="NCOGSITM" ColumnName="NCOGSITM" />
+          <ScalarProperty Name="SUPID" ColumnName="SUPID" />
+          <ScalarProperty Name="BFIXPITM" ColumnName="BFIXPITM" />
+          <ScalarProperty Name="NITMGRPID" ColumnName="NITMGRPID" />
+          <ScalarProperty Name="TSPEC1" ColumnName="TSPEC1" />
+          <ScalarProperty Name="TSPEC2" ColumnName="TSPEC2" />
+          <ScalarProperty Name="TSPEC3" ColumnName="TSPEC3" />
+          <ScalarProperty Name="NITMFAMID" ColumnName="NITMFAMID" />
+          <ScalarProperty Name="CSTATITM" ColumnName="CSTATITM" />
+          <ScalarProperty Name="DGENEITM" ColumnName="DGENEITM" />
+          <ScalarProperty Name="TGENEITM" ColumnName="TGENEITM" />
+          <ScalarProperty Name="DMODIITM" ColumnName="DMODIITM" />
+          <ScalarProperty Name="TMODIITM" ColumnName="TMODIITM" />
+          <ScalarProperty Name="SR3ID" ColumnName="SR3ID" />
+          <ScalarProperty Name="BSYNCREQ" ColumnName="BSYNCREQ" />
+          <ScalarProperty Name="NVAT" ColumnName="NVAT" />
+          <ScalarProperty Name="TCOLGRP" ColumnName="TCOLGRP" />
+          <ScalarProperty Name="TMODELCOLOR" ColumnName="TMODELCOLOR" />
+          <ScalarProperty Name="TCOLGRPID" ColumnName="TCOLGRPID" />
+          <ScalarProperty Name="TDESC" ColumnName="TDESC" />
+          <ScalarProperty Name="NDLVDAYS" ColumnName="NDLVDAYS" />
+          <ScalarProperty Name="NNOTESIZE" ColumnName="NNOTESIZE" />
+          <ScalarProperty Name="NQTYLIMIT" ColumnName="NQTYLIMIT" />
+          <ScalarProperty Name="NINSTPITM" ColumnName="NINSTPITM" />
+          <ScalarProperty Name="BDEFITM" ColumnName="BDEFITM" />
+          <ScalarProperty Name="TTHUMBID" ColumnName="TTHUMBID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TMEDIALIST">
+      <EntityTypeMapping TypeName="Model.TMEDIALIST">
+        <MappingFragment StoreEntitySet="TMEDIALIST">
+          <ScalarProperty Name="TCOLGRP" ColumnName="TCOLGRP" />
+          <ScalarProperty Name="MDYQID" ColumnName="MDYQID" />
+          <ScalarProperty Name="MDYID" ColumnName="MDYID" />
+          <ScalarProperty Name="ENTITYID" ColumnName="ENTITYID" />
+          <ScalarProperty Name="PACKNO" ColumnName="PACKNO" />
+          <ScalarProperty Name="MEDIAPATH" ColumnName="MEDIAPATH" />
+          <ScalarProperty Name="ISDEFAULT" ColumnName="ISDEFAULT" />
+          <ScalarProperty Name="LASTSYNCTIME" ColumnName="LASTSYNCTIME" />
+          <ScalarProperty Name="MEDIASIZE" ColumnName="MEDIASIZE" />
+          <ScalarProperty Name="SUPID" ColumnName="SUPID" />
+          <ScalarProperty Name="MEDIATYPE" ColumnName="MEDIATYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TMEDIASIZE">
+      <EntityTypeMapping TypeName="Model.TMEDIASIZE">
+        <MappingFragment StoreEntitySet="TMEDIASIZE">
+          <ScalarProperty Name="MSID" ColumnName="MSID" />
+          <ScalarProperty Name="WIDTH" ColumnName="WIDTH" />
+          <ScalarProperty Name="HEIGHT" ColumnName="HEIGHT" />
+          <ScalarProperty Name="ISACTIVE" ColumnName="ISACTIVE" />
+          <ScalarProperty Name="TITLE" ColumnName="TITLE" />
+          <ScalarProperty Name="QUALITY" ColumnName="QUALITY" />
+          <ScalarProperty Name="FORMAT" ColumnName="FORMAT" />
+          <ScalarProperty Name="MEDIATYPE" ColumnName="MEDIATYPE" />
+          <ScalarProperty Name="FILENAME" ColumnName="FILENAME" />
+          <ScalarProperty Name="SIZENO" ColumnName="SIZENO" />
+          <ScalarProperty Name="BUCKETNAME" ColumnName="BUCKETNAME" />
+          <ScalarProperty Name="BUCKETFOLDER" ColumnName="BUCKETFOLDER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TRITMREYON">
+      <EntityTypeMapping TypeName="Model.TRITMREYON">
+        <MappingFragment StoreEntitySet="TRITMREYON">
+          <ScalarProperty Name="ITMID" ColumnName="ITMID" />
+          <ScalarProperty Name="GRYID" ColumnName="GRYID" />
+          <ScalarProperty Name="SRYID" ColumnName="SRYID" />
+          <ScalarProperty Name="BDFLTIRR" ColumnName="BDFLTIRR" />
+          <ScalarProperty Name="CSTATIRR" ColumnName="CSTATIRR" />
+          <ScalarProperty Name="DGENEIRR" ColumnName="DGENEIRR" />
+          <ScalarProperty Name="TGENEIRR" ColumnName="TGENEIRR" />
+          <ScalarProperty Name="DMODIIRR" ColumnName="DMODIIRR" />
+          <ScalarProperty Name="TMODIIRR" ColumnName="TMODIIRR" />
+          <ScalarProperty Name="NSORTORDER" ColumnName="NSORTORDER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TRUSERITEM">
+      <EntityTypeMapping TypeName="Model.TRUSERITEM">
+        <MappingFragment StoreEntitySet="TRUSERITEM">
+          <ScalarProperty Name="UIRID" ColumnName="UIRID" />
+          <ScalarProperty Name="USRID" ColumnName="USRID" />
+          <ScalarProperty Name="ITMID" ColumnName="ITMID" />
+          <ScalarProperty Name="NADETUIR" ColumnName="NADETUIR" />
+          <ScalarProperty Name="NUNICUIR" ColumnName="NUNICUIR" />
+          <ScalarProperty Name="NDEALUIR" ColumnName="NDEALUIR" />
+          <ScalarProperty Name="NBUYDUIR" ColumnName="NBUYDUIR" />
+          <ScalarProperty Name="NSELDUIR" ColumnName="NSELDUIR" />
+          <ScalarProperty Name="STRID" ColumnName="STRID" />
+          <ScalarProperty Name="NPRICUIR" ColumnName="NPRICUIR" />
+          <ScalarProperty Name="NBUYBUIR" ColumnName="NBUYBUIR" />
+          <ScalarProperty Name="NFRNDBUIR" ColumnName="NFRNDBUIR" />
+          <ScalarProperty Name="BUSRPICK" ColumnName="BUSRPICK" />
+          <ScalarProperty Name="BRYNPICT" ColumnName="BRYNPICT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TSUPPLIER">
+      <EntityTypeMapping TypeName="Model.TSUPPLIER">
+        <MappingFragment StoreEntitySet="TSUPPLIER">
+          <ScalarProperty Name="BCOMWITHVAT" ColumnName="BCOMWITHVAT" />
+          <ScalarProperty Name="TIBANCODE" ColumnName="TIBANCODE" />
+          <ScalarProperty Name="TBANKACC" ColumnName="TBANKACC" />
+          <ScalarProperty Name="TBANKBRANCH" ColumnName="TBANKBRANCH" />
+          <ScalarProperty Name="TBANKNAME" ColumnName="TBANKNAME" />
+          <ScalarProperty Name="TCARGOCOMPANY3" ColumnName="TCARGOCOMPANY3" />
+          <ScalarProperty Name="TCARGOCOMPANY2" ColumnName="TCARGOCOMPANY2" />
+          <ScalarProperty Name="TCARGOCOMPANY1" ColumnName="TCARGOCOMPANY1" />
+          <ScalarProperty Name="TRETURNZIP" ColumnName="TRETURNZIP" />
+          <ScalarProperty Name="TRETURNCITY" ColumnName="TRETURNCITY" />
+          <ScalarProperty Name="TRETURNTOWN" ColumnName="TRETURNTOWN" />
+          <ScalarProperty Name="TRETURNADDR2" ColumnName="TRETURNADDR2" />
+          <ScalarProperty Name="TRETURNADDR1" ColumnName="TRETURNADDR1" />
+          <ScalarProperty Name="TRETURNMAIL" ColumnName="TRETURNMAIL" />
+          <ScalarProperty Name="TRETURNPHONE" ColumnName="TRETURNPHONE" />
+          <ScalarProperty Name="TRETURNCNT" ColumnName="TRETURNCNT" />
+          <ScalarProperty Name="TTECHMAIL" ColumnName="TTECHMAIL" />
+          <ScalarProperty Name="TTECHPHONE" ColumnName="TTECHPHONE" />
+          <ScalarProperty Name="TTECHCNT" ColumnName="TTECHCNT" />
+          <ScalarProperty Name="TTAXNUMBER" ColumnName="TTAXNUMBER" />
+          <ScalarProperty Name="TTAXBUREAU" ColumnName="TTAXBUREAU" />
+          <ScalarProperty Name="TCNTMAIL" ColumnName="TCNTMAIL" />
+          <ScalarProperty Name="SUPID" ColumnName="SUPID" />
+          <ScalarProperty Name="TSUPNAME" ColumnName="TSUPNAME" />
+          <ScalarProperty Name="TCOMPANY" ColumnName="TCOMPANY" />
+          <ScalarProperty Name="TADDRLINE1" ColumnName="TADDRLINE1" />
+          <ScalarProperty Name="TADDRLINE2" ColumnName="TADDRLINE2" />
+          <ScalarProperty Name="TTOWN" ColumnName="TTOWN" />
+          <ScalarProperty Name="TCITY" ColumnName="TCITY" />
+          <ScalarProperty Name="TZIPCODE" ColumnName="TZIPCODE" />
+          <ScalarProperty Name="TPHONE" ColumnName="TPHONE" />
+          <ScalarProperty Name="TCONTACT" ColumnName="TCONTACT" />
+          <ScalarProperty Name="TCNTPHONE" ColumnName="TCNTPHONE" />
+          <ScalarProperty Name="AD1ID" ColumnName="AD1ID" />
+          <ScalarProperty Name="AD2ID" ColumnName="AD2ID" />
+          <ScalarProperty Name="SS0ID" ColumnName="SS0ID" />
+          <ScalarProperty Name="BUIDREQ" ColumnName="BUIDREQ" />
+          <ScalarProperty Name="CCATGITM" ColumnName="CCATGITM" />
+          <ScalarProperty Name="CSTATMRCH" ColumnName="CSTATMRCH" />
+          <ScalarProperty Name="NADVANTAGE" ColumnName="NADVANTAGE" />
+          <ScalarProperty Name="CTYPEADV" ColumnName="CTYPEADV" />
+          <ScalarProperty Name="NACCITMID" ColumnName="NACCITMID" />
+          <ScalarProperty Name="BFIXPITM" ColumnName="BFIXPITM" />
+          <ScalarProperty Name="CSTORETYPE" ColumnName="CSTORETYPE" />
+          <ScalarProperty Name="NINVCOUNT" ColumnName="NINVCOUNT" />
+          <ScalarProperty Name="NADVMGZ" ColumnName="NADVMGZ" />
+          <ScalarProperty Name="NFRNDADV" ColumnName="NFRNDADV" />
+          <ScalarProperty Name="SORTORDER" ColumnName="SORTORDER" />
+          <ScalarProperty Name="NLIMCARGO" ColumnName="NLIMCARGO" />
+          <ScalarProperty Name="NCARGOAMNT" ColumnName="NCARGOAMNT" />
+          <ScalarProperty Name="NPROFIT" ColumnName="NPROFIT" />
+          <ScalarProperty Name="BCHRGBNK" ColumnName="BCHRGBNK" />
+          <ScalarProperty Name="UNAME" ColumnName="UNAME" />
+          <ScalarProperty Name="PASS" ColumnName="PASS" />
+          <ScalarProperty Name="NVAT" ColumnName="NVAT" />
+          <ScalarProperty Name="TINTRO" ColumnName="TINTRO" />
+          <ScalarProperty Name="NPAYDAYS" ColumnName="NPAYDAYS" />
+          <ScalarProperty Name="TXMLURL" ColumnName="TXMLURL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TADDRLIST">
+      <EntityTypeMapping TypeName="Model.TADDRLIST">
+        <MappingFragment StoreEntitySet="TADDRLIST">
+          <ScalarProperty Name="TEMAIL" ColumnName="TEMAIL" />
+          <ScalarProperty Name="DMODIADDR" ColumnName="DMODIADDR" />
+          <ScalarProperty Name="DRECDGEN" ColumnName="DRECDGEN" />
+          <ScalarProperty Name="CSTATADDR" ColumnName="CSTATADDR" />
+          <ScalarProperty Name="TZIPCODE" ColumnName="TZIPCODE" />
+          <ScalarProperty Name="TTOWN" ColumnName="TTOWN" />
+          <ScalarProperty Name="TOWNID" ColumnName="TOWNID" />
+          <ScalarProperty Name="TCITY" ColumnName="TCITY" />
+          <ScalarProperty Name="CITYID" ColumnName="CITYID" />
+          <ScalarProperty Name="TCOUNTRY" ColumnName="TCOUNTRY" />
+          <ScalarProperty Name="TCOUNCODE" ColumnName="TCOUNCODE" />
+          <ScalarProperty Name="TADDRLINE2" ColumnName="TADDRLINE2" />
+          <ScalarProperty Name="TADDRLINE1" ColumnName="TADDRLINE1" />
+          <ScalarProperty Name="TUNIQUEID" ColumnName="TUNIQUEID" />
+          <ScalarProperty Name="TNAMERCPT" ColumnName="TNAMERCPT" />
+          <ScalarProperty Name="TPHONERCPT" ColumnName="TPHONERCPT" />
+          <ScalarProperty Name="TADDRTYPE" ColumnName="TADDRTYPE" />
+          <ScalarProperty Name="USRID" ColumnName="USRID" />
+          <ScalarProperty Name="ADDRID" ColumnName="ADDRID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TCARTITMLIST">
+      <EntityTypeMapping TypeName="Model.TCARTITMLIST">
+        <MappingFragment StoreEntitySet="TCARTITMLIST">
+          <ScalarProperty Name="NDISCOUNT" ColumnName="NDISCOUNT" />
+          <ScalarProperty Name="NRETQTY" ColumnName="NRETQTY" />
+          <ScalarProperty Name="NRETAMNT" ColumnName="NRETAMNT" />
+          <ScalarProperty Name="NTRYCOUNT" ColumnName="NTRYCOUNT" />
+          <ScalarProperty Name="BMAILSENT" ColumnName="BMAILSENT" />
+          <ScalarProperty Name="NCOMSELLER" ColumnName="NCOMSELLER" />
+          <ScalarProperty Name="NLDYBUYER" ColumnName="NLDYBUYER" />
+          <ScalarProperty Name="DAPPDATE" ColumnName="DAPPDATE" />
+          <ScalarProperty Name="DMODIDATE" ColumnName="DMODIDATE" />
+          <ScalarProperty Name="RETCARTITMID" ColumnName="RETCARTITMID" />
+          <ScalarProperty Name="FROMSTRID" ColumnName="FROMSTRID" />
+          <ScalarProperty Name="NADVANTAGE" ColumnName="NADVANTAGE" />
+          <ScalarProperty Name="NPROFIT" ColumnName="NPROFIT" />
+          <ScalarProperty Name="TCARGOINFO" ColumnName="TCARGOINFO" />
+          <ScalarProperty Name="TMODIUSR" ColumnName="TMODIUSR" />
+          <ScalarProperty Name="DDATECANCEL" ColumnName="DDATECANCEL" />
+          <ScalarProperty Name="TCANCELMSG" ColumnName="TCANCELMSG" />
+          <ScalarProperty Name="TSUPORDERID" ColumnName="TSUPORDERID" />
+          <ScalarProperty Name="CSTATINT" ColumnName="CSTATINT" />
+          <ScalarProperty Name="TNOTE" ColumnName="TNOTE" />
+          <ScalarProperty Name="NVAT" ColumnName="NVAT" />
+          <ScalarProperty Name="DRECDATE" ColumnName="DRECDATE" />
+          <ScalarProperty Name="TREFNTRX" ColumnName="TREFNTRX" />
+          <ScalarProperty Name="NCARGOAMNT" ColumnName="NCARGOAMNT" />
+          <ScalarProperty Name="NLDYPYMT" ColumnName="NLDYPYMT" />
+          <ScalarProperty Name="NCASHPYMT" ColumnName="NCASHPYMT" />
+          <ScalarProperty Name="NCOUPON" ColumnName="NCOUPON" />
+          <ScalarProperty Name="NITMAMNT" ColumnName="NITMAMNT" />
+          <ScalarProperty Name="NTERMAMNT" ColumnName="NTERMAMNT" />
+          <ScalarProperty Name="NINIPITM" ColumnName="NINIPITM" />
+          <ScalarProperty Name="NPRICUIR" ColumnName="NPRICUIR" />
+          <ScalarProperty Name="NQTY" ColumnName="NQTY" />
+          <ScalarProperty Name="ITMID" ColumnName="ITMID" />
+          <ScalarProperty Name="USRID" ColumnName="USRID" />
+          <ScalarProperty Name="STRID" ColumnName="STRID" />
+          <ScalarProperty Name="DEALID" ColumnName="DEALID" />
+          <ScalarProperty Name="CARTID" ColumnName="CARTID" />
+          <ScalarProperty Name="CARTITMID" ColumnName="CARTITMID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TGREYON">
+      <EntityTypeMapping TypeName="Model.TGREYON">
+        <MappingFragment StoreEntitySet="TGREYON">
+          <ScalarProperty Name="TPATH" ColumnName="TPATH" />
+          <ScalarProperty Name="NIMGVERSION" ColumnName="NIMGVERSION" />
+          <ScalarProperty Name="NSORTORDER" ColumnName="NSORTORDER" />
+          <ScalarProperty Name="TQRYSTR" ColumnName="TQRYSTR" />
+          <ScalarProperty Name="BIMGCHG" ColumnName="BIMGCHG" />
+          <ScalarProperty Name="CSTATGRY" ColumnName="CSTATGRY" />
+          <ScalarProperty Name="NLEVEL" ColumnName="NLEVEL" />
+          <ScalarProperty Name="PARID" ColumnName="PARID" />
+          <ScalarProperty Name="TIMAGE4" ColumnName="TIMAGE4" />
+          <ScalarProperty Name="TIMAGE3" ColumnName="TIMAGE3" />
+          <ScalarProperty Name="TIMAGE2" ColumnName="TIMAGE2" />
+          <ScalarProperty Name="TIMAGE" ColumnName="TIMAGE" />
+          <ScalarProperty Name="TDESCENG" ColumnName="TDESCENG" />
+          <ScalarProperty Name="TDESCTUR" ColumnName="TDESCTUR" />
+          <ScalarProperty Name="CCATGITM" ColumnName="CCATGITM" />
+          <ScalarProperty Name="GRYID" ColumnName="GRYID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TMSGMASTER">
+      <EntityTypeMapping TypeName="Model.TMSGMASTER">
+        <MappingFragment StoreEntitySet="TMSGMASTER">
+          <ScalarProperty Name="BACTIVE" ColumnName="BACTIVE" />
+          <ScalarProperty Name="THTML" ColumnName="THTML" />
+          <ScalarProperty Name="TDESC" ColumnName="TDESC" />
+          <ScalarProperty Name="MSMID" ColumnName="MSMID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TMSGQUEUE">
+      <EntityTypeMapping TypeName="Model.TMSGQUEUE">
+        <MappingFragment StoreEntitySet="TMSGQUEUE">
+          <ScalarProperty Name="TSENTMSGQ" ColumnName="TSENTMSGQ" />
+          <ScalarProperty Name="TGENEMSGQ" ColumnName="TGENEMSGQ" />
+          <ScalarProperty Name="NSENDTRIES" ColumnName="NSENDTRIES" />
+          <ScalarProperty Name="BISSENT" ColumnName="BISSENT" />
+          <ScalarProperty Name="TTOUSRS" ColumnName="TTOUSRS" />
+          <ScalarProperty Name="TFRUSR" ColumnName="TFRUSR" />
+          <ScalarProperty Name="TMSGQID" ColumnName="TMSGQID" />
+          <ScalarProperty Name="TMAILUSER" ColumnName="TMAILUSER" />
+          <ScalarProperty Name="TSUBJECT" ColumnName="TSUBJECT" />
+          <ScalarProperty Name="TBODY" ColumnName="TBODY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TMSGTEMPLATE">
+      <EntityTypeMapping TypeName="Model.TMSGTEMPLATE">
+        <MappingFragment StoreEntitySet="TMSGTEMPLATE">
+          <ScalarProperty Name="MSMID" ColumnName="MSMID" />
+          <ScalarProperty Name="TGENEMST" ColumnName="TGENEMST" />
+          <ScalarProperty Name="BACTIVE" ColumnName="BACTIVE" />
+          <ScalarProperty Name="TDESC" ColumnName="TDESC" />
+          <ScalarProperty Name="TBODY" ColumnName="TBODY" />
+          <ScalarProperty Name="TSUBJECT" ColumnName="TSUBJECT" />
+          <ScalarProperty Name="MSTID" ColumnName="MSTID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TINTLOG">
+      <EntityTypeMapping TypeName="Model.TINTLOG">
+        <MappingFragment StoreEntitySet="TINTLOG">
+          <ScalarProperty Name="CTYPELOG" ColumnName="CTYPELOG" />
+          <ScalarProperty Name="TLOGDATA" ColumnName="TLOGDATA" />
+          <ScalarProperty Name="TNAME" ColumnName="TNAME" />
+          <ScalarProperty Name="USRID" ColumnName="USRID" />
+          <ScalarProperty Name="DLOGDATE" ColumnName="DLOGDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TSREYON">
+      <EntityTypeMapping TypeName="Model.TSREYON">
+        <MappingFragment StoreEntitySet="TSREYON">
+          <ScalarProperty Name="TPATH" ColumnName="TPATH" />
+          <ScalarProperty Name="BGRPBYCOL" ColumnName="BGRPBYCOL" />
+          <ScalarProperty Name="NIMGVERSION" ColumnName="NIMGVERSION" />
+          <ScalarProperty Name="CTYPERYN" ColumnName="CTYPERYN" />
+          <ScalarProperty Name="BSENSITIVE" ColumnName="BSENSITIVE" />
+          <ScalarProperty Name="NSORTORDER" ColumnName="NSORTORDER" />
+          <ScalarProperty Name="BIMGCHG" ColumnName="BIMGCHG" />
+          <ScalarProperty Name="SPARID" ColumnName="SPARID" />
+          <ScalarProperty Name="SCATID" ColumnName="SCATID" />
+          <ScalarProperty Name="TMODISRY" ColumnName="TMODISRY" />
+          <ScalarProperty Name="DMODISRY" ColumnName="DMODISRY" />
+          <ScalarProperty Name="TGENESRY" ColumnName="TGENESRY" />
+          <ScalarProperty Name="DGENESRY" ColumnName="DGENESRY" />
+          <ScalarProperty Name="CSTATSRY" ColumnName="CSTATSRY" />
+          <ScalarProperty Name="GRYID" ColumnName="GRYID" />
+          <ScalarProperty Name="SUPID" ColumnName="SUPID" />
+          <ScalarProperty Name="NLEVEL" ColumnName="NLEVEL" />
+          <ScalarProperty Name="PARID" ColumnName="PARID" />
+          <ScalarProperty Name="TIMAGE4" ColumnName="TIMAGE4" />
+          <ScalarProperty Name="TIMAGE3" ColumnName="TIMAGE3" />
+          <ScalarProperty Name="TIMAGE2" ColumnName="TIMAGE2" />
+          <ScalarProperty Name="TIMAGE" ColumnName="TIMAGE" />
+          <ScalarProperty Name="TDESCENG" ColumnName="TDESCENG" />
+          <ScalarProperty Name="TDESCTUR" ColumnName="TDESCTUR" />
+          <ScalarProperty Name="CCATGITM" ColumnName="CCATGITM" />
+          <ScalarProperty Name="SRYID" ColumnName="SRYID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TUSERLIST">
+      <EntityTypeMapping TypeName="Model.TUSERLIST">
+        <MappingFragment StoreEntitySet="TUSERLIST">
+          <ScalarProperty Name="DRECDATE" ColumnName="DRECDATE" />
+          <ScalarProperty Name="TMODIUSR" ColumnName="TMODIUSR" />
+          <ScalarProperty Name="DMODIDATE" ColumnName="DMODIDATE" />
+          <ScalarProperty Name="SUPID" ColumnName="SUPID" />
+          <ScalarProperty Name="TFULLNAME" ColumnName="TFULLNAME" />
+          <ScalarProperty Name="FBID" ColumnName="FBID" />
+          <ScalarProperty Name="CTITLE" ColumnName="CTITLE" />
+          <ScalarProperty Name="TPASSWORD" ColumnName="TPASSWORD" />
+          <ScalarProperty Name="TUNIQUEID" ColumnName="TUNIQUEID" />
+          <ScalarProperty Name="TCOUNCODE" ColumnName="TCOUNCODE" />
+          <ScalarProperty Name="DDATEBIRTH" ColumnName="DDATEBIRTH" />
+          <ScalarProperty Name="TLASTNAME" ColumnName="TLASTNAME" />
+          <ScalarProperty Name="NCURRUSR" ColumnName="NCURRUSR" />
+          <ScalarProperty Name="BSHOWPIC" ColumnName="BSHOWPIC" />
+          <ScalarProperty Name="TIBAN" ColumnName="TIBAN" />
+          <ScalarProperty Name="NLDYAUSR" ColumnName="NLDYAUSR" />
+          <ScalarProperty Name="NUSDBUSR" ColumnName="NUSDBUSR" />
+          <ScalarProperty Name="NRANKUSR" ColumnName="NRANKUSR" />
+          <ScalarProperty Name="CLANGUSR" ColumnName="CLANGUSR" />
+          <ScalarProperty Name="CSTATUSR" ColumnName="CSTATUSR" />
+          <ScalarProperty Name="LATITUDE" ColumnName="LATITUDE" />
+          <ScalarProperty Name="LONGITUDE" ColumnName="LONGITUDE" />
+          <ScalarProperty Name="TMOBIUSR" ColumnName="TMOBIUSR" />
+          <ScalarProperty Name="TMAILUSR" ColumnName="TMAILUSR" />
+          <ScalarProperty Name="TNAMEUSR" ColumnName="TNAMEUSR" />
+          <ScalarProperty Name="TNICKUSR" ColumnName="TNICKUSR" />
+          <ScalarProperty Name="CTYPEUSR" ColumnName="CTYPEUSR" />
+          <ScalarProperty Name="USRID" ColumnName="USRID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TCCTICKET">
+      <EntityTypeMapping TypeName="Model.TCCTICKET">
+        <MappingFragment StoreEntitySet="TCCTICKET">
+          <ScalarProperty Name="TCARGOTRACKID" ColumnName="TCARGOTRACKID" />
+          <ScalarProperty Name="TCARGOCOMPANY" ColumnName="TCARGOCOMPANY" />
+          <ScalarProperty Name="TCUSTCITY" ColumnName="TCUSTCITY" />
+          <ScalarProperty Name="TCUSTTOWN" ColumnName="TCUSTTOWN" />
+          <ScalarProperty Name="TPRODCODE" ColumnName="TPRODCODE" />
+          <ScalarProperty Name="TPRODUCTID" ColumnName="TPRODUCTID" />
+          <ScalarProperty Name="ITMID" ColumnName="ITMID" />
+          <ScalarProperty Name="SUPID" ColumnName="SUPID" />
+          <ScalarProperty Name="TCUSTMAIL" ColumnName="TCUSTMAIL" />
+          <ScalarProperty Name="TCUSTPHONE" ColumnName="TCUSTPHONE" />
+          <ScalarProperty Name="TCUSTUSRID" ColumnName="TCUSTUSRID" />
+          <ScalarProperty Name="TCUSTNAME" ColumnName="TCUSTNAME" />
+          <ScalarProperty Name="ORDERID" ColumnName="ORDERID" />
+          <ScalarProperty Name="DRESOLUTION" ColumnName="DRESOLUTION" />
+          <ScalarProperty Name="DRESOLUTIONTARGET" ColumnName="DRESOLUTIONTARGET" />
+          <ScalarProperty Name="TRESOLUTION" ColumnName="TRESOLUTION" />
+          <ScalarProperty Name="TASSIGNEE" ColumnName="TASSIGNEE" />
+          <ScalarProperty Name="DMODIFYON" ColumnName="DMODIFYON" />
+          <ScalarProperty Name="CSTATISSUE" ColumnName="CSTATISSUE" />
+          <ScalarProperty Name="NPRIORITY" ColumnName="NPRIORITY" />
+          <ScalarProperty Name="TDESCRIPTION" ColumnName="TDESCRIPTION" />
+          <ScalarProperty Name="TTOPIC" ColumnName="TTOPIC" />
+          <ScalarProperty Name="TTOPICCODE" ColumnName="TTOPICCODE" />
+          <ScalarProperty Name="DCREATEDON" ColumnName="DCREATEDON" />
+          <ScalarProperty Name="DCCDATE" ColumnName="DCCDATE" />
+          <ScalarProperty Name="TCCUSER" ColumnName="TCCUSER" />
+          <ScalarProperty Name="TCCTICKETID" ColumnName="TCCTICKETID" />
+          <ScalarProperty Name="TICKETID" ColumnName="TICKETID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TMEDIAQUEUE">
+      <EntityTypeMapping TypeName="Model.TMEDIAQUEUE">
+        <MappingFragment StoreEntitySet="TMEDIAQUEUE">
+          <ScalarProperty Name="DRECDATE" ColumnName="DRECDATE" />
+          <ScalarProperty Name="MEDIAORDER" ColumnName="MEDIAORDER" />
+          <ScalarProperty Name="SUPID" ColumnName="SUPID" />
+          <ScalarProperty Name="TCOLGRP" ColumnName="TCOLGRP" />
+          <ScalarProperty Name="UPLOADTRIES" ColumnName="UPLOADTRIES" />
+          <ScalarProperty Name="ISUPLOADED" ColumnName="ISUPLOADED" />
+          <ScalarProperty Name="SRYID" ColumnName="SRYID" />
+          <ScalarProperty Name="MEDIATYPE" ColumnName="MEDIATYPE" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="MDYQID" ColumnName="MDYQID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TCARTPYMNT">
+      <EntityTypeMapping TypeName="Model.TCARTPYMNT">
+        <MappingFragment StoreEntitySet="TCARTPYMNT">
+          <ScalarProperty Name="NRETAMNT" ColumnName="NRETAMNT" />
+          <ScalarProperty Name="TDESCDEDUCT" ColumnName="TDESCDEDUCT" />
+          <ScalarProperty Name="NDEDUCTAMNT" ColumnName="NDEDUCTAMNT" />
+          <ScalarProperty Name="NLDYITMPYMT" ColumnName="NLDYITMPYMT" />
+          <ScalarProperty Name="NCASHITMPYMT" ColumnName="NCASHITMPYMT" />
+          <ScalarProperty Name="TBANKREF" ColumnName="TBANKREF" />
+          <ScalarProperty Name="TIBAN" ColumnName="TIBAN" />
+          <ScalarProperty Name="TBANKDESC" ColumnName="TBANKDESC" />
+          <ScalarProperty Name="DBNKPYMT" ColumnName="DBNKPYMT" />
+          <ScalarProperty Name="TREFNTRX" ColumnName="TREFNTRX" />
+          <ScalarProperty Name="DDATEDLV" ColumnName="DDATEDLV" />
+          <ScalarProperty Name="DDATEINV" ColumnName="DDATEINV" />
+          <ScalarProperty Name="TINVINFO" ColumnName="TINVINFO" />
+          <ScalarProperty Name="NLWCOMVAT" ColumnName="NLWCOMVAT" />
+          <ScalarProperty Name="NTRYCOUNT" ColumnName="NTRYCOUNT" />
+          <ScalarProperty Name="BMAILSENT" ColumnName="BMAILSENT" />
+          <ScalarProperty Name="DDATEPYMT" ColumnName="DDATEPYMT" />
+          <ScalarProperty Name="CSTATPYMT" ColumnName="CSTATPYMT" />
+          <ScalarProperty Name="CTYPEPYMT" ColumnName="CTYPEPYMT" />
+          <ScalarProperty Name="DMODIDATE" ColumnName="DMODIDATE" />
+          <ScalarProperty Name="TMODIUSR" ColumnName="TMODIUSR" />
+          <ScalarProperty Name="NSUPPYMT" ColumnName="NSUPPYMT" />
+          <ScalarProperty Name="NLWINCOME" ColumnName="NLWINCOME" />
+          <ScalarProperty Name="NLWMARGIN" ColumnName="NLWMARGIN" />
+          <ScalarProperty Name="NTOTALVAT" ColumnName="NTOTALVAT" />
+          <ScalarProperty Name="NCOLLECTED" ColumnName="NCOLLECTED" />
+          <ScalarProperty Name="NBNKRCVD" ColumnName="NBNKRCVD" />
+          <ScalarProperty Name="NBNKCOST" ColumnName="NBNKCOST" />
+          <ScalarProperty Name="NCRDPYMT" ColumnName="NCRDPYMT" />
+          <ScalarProperty Name="NTOTALPYMNT" ColumnName="NTOTALPYMNT" />
+          <ScalarProperty Name="NLDYPYMT" ColumnName="NLDYPYMT" />
+          <ScalarProperty Name="NCASHPYMT" ColumnName="NCASHPYMT" />
+          <ScalarProperty Name="NCARGOPYMT" ColumnName="NCARGOPYMT" />
+          <ScalarProperty Name="NTOTALAMNT" ColumnName="NTOTALAMNT" />
+          <ScalarProperty Name="NCARGOAMNT" ColumnName="NCARGOAMNT" />
+          <ScalarProperty Name="NLIMCARGO" ColumnName="NLIMCARGO" />
+          <ScalarProperty Name="NTOTALPROD" ColumnName="NTOTALPROD" />
+          <ScalarProperty Name="NINSTRATE" ColumnName="NINSTRATE" />
+          <ScalarProperty Name="NINST" ColumnName="NINST" />
+          <ScalarProperty Name="NORDERAMNT" ColumnName="NORDERAMNT" />
+          <ScalarProperty Name="TCOMPANY" ColumnName="TCOMPANY" />
+          <ScalarProperty Name="SUPID" ColumnName="SUPID" />
+          <ScalarProperty Name="CARTID" ColumnName="CARTID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TRYNMAP">
+      <EntityTypeMapping TypeName="Model.TRYNMAP">
+        <MappingFragment StoreEntitySet="TRYNMAP">
+          <ScalarProperty Name="TMODIRYN" ColumnName="TMODIRYN" />
+          <ScalarProperty Name="DMODIRYN" ColumnName="DMODIRYN" />
+          <ScalarProperty Name="SRYID" ColumnName="SRYID" />
+          <ScalarProperty Name="GRYID" ColumnName="GRYID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

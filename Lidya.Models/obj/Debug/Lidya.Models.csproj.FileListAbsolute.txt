@@ -1,0 +1,16 @@
+C:\Lidya\Lidya.Models\bin\Debug\Lidya.Models.dll.config
+C:\Lidya\Lidya.Models\bin\Debug\Lidya.Models.dll
+C:\Lidya\Lidya.Models\bin\Debug\Lidya.Models.pdb
+C:\Lidya\Lidya.Models\bin\Debug\Autofac.dll
+C:\Lidya\Lidya.Models\bin\Debug\Autofac.xml
+C:\Lidya\Lidya.Models\obj\Debug\Lidya.Models.csprojResolveAssemblyReference.cache
+C:\Lidya\Lidya.Models\obj\Debug\Lidya.Models.dll
+C:\Lidya\Lidya.Models\obj\Debug\Lidya.Models.pdb
+C:\Users\la185067\Projects\WCF Service\Lidya\Lidya.Models\bin\Debug\Lidya.Models.dll.config
+C:\Users\la185067\Projects\WCF Service\Lidya\Lidya.Models\bin\Debug\Lidya.Models.dll
+C:\Users\la185067\Projects\WCF Service\Lidya\Lidya.Models\bin\Debug\Lidya.Models.pdb
+C:\Users\la185067\Projects\WCF Service\Lidya\Lidya.Models\bin\Debug\Autofac.dll
+C:\Users\la185067\Projects\WCF Service\Lidya\Lidya.Models\bin\Debug\Autofac.xml
+C:\Users\la185067\Projects\WCF Service\Lidya\Lidya.Models\obj\Debug\Lidya.Models.csproj.CoreCompileInputs.cache
+C:\Users\la185067\Projects\WCF Service\Lidya\Lidya.Models\obj\Debug\Lidya.Models.dll
+C:\Users\la185067\Projects\WCF Service\Lidya\Lidya.Models\obj\Debug\Lidya.Models.pdb
